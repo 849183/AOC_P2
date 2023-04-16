@@ -46,7 +46,7 @@ begin
    end if;
 end process; 
 count <= int_count;
-			
+//coment			
 
 end Behavioral;
 
