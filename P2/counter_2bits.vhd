@@ -46,7 +46,7 @@ begin
    end if;
 end process; 
 count <= int_count;
-
+//Prueba
 
 end Behavioral;
 
