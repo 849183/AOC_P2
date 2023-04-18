@@ -14,7 +14,7 @@
 --
 -- Revision: 
 -- Revision 0.01 - File Created
--- Additional Comments: la UC incluye un contador de 2 bits para llevar la cuenta de las transferencias de bloque y una máquina de estados
+-- Additional Comments: la UC incluye un contador de 2 bits para llevar la cuenta de las transferencias de bloque y una mï¿½quina de estados
 --
 ----------------------------------------------------------------------------------
 library IEEE;
@@ -36,32 +36,32 @@ entity UC_MC is
 			WE : in  STD_LOGIC;
 			hit0 : in  STD_LOGIC; --se activa si hay acierto en la via 0
 			hit1 : in  STD_LOGIC; --se activa si hay acierto en la via 1
-			addr_non_cacheable: in STD_LOGIC; --indica que la dirección no debe almacenarse en MC. En este caso porque pertenece a la scratch
-			bus_TRDY : in  STD_LOGIC; --indica que el esclavo no puede realizar la operación solicitada en este ciclo
-			Bus_DevSel: in  STD_LOGIC; --indica que el esclavo ha reconocido que la dirección está dentro de su rango
+			addr_non_cacheable: in STD_LOGIC; --indica que la direcciï¿½n no debe almacenarse en MC. En este caso porque pertenece a la scratch
+			bus_TRDY : in  STD_LOGIC; --indica que el esclavo no puede realizar la operaciï¿½n solicitada en este ciclo
+			Bus_DevSel: in  STD_LOGIC; --indica que el esclavo ha reconocido que la direcciï¿½n estï¿½ dentro de su rango
 			via_2_rpl :  in  STD_LOGIC; --indica que via se va a reemplazar
-			Bus_grant :  in  STD_LOGIC; --indica la concesión del uso del bus
-			Bus_req :  out  STD_LOGIC; --indica la petición al árbitro del uso del bus
-			-- Nueva señal que indica que la dirección solicitada es de un registro de MC
+			Bus_grant :  in  STD_LOGIC; --indica la concesiï¿½n del uso del bus
+			Bus_req :  out  STD_LOGIC; --indica la peticiï¿½n al ï¿½rbitro del uso del bus
+			-- Nueva seï¿½al que indica que la direcciï¿½n solicitada es de un registro de MC
 			internal_addr: in STD_LOGIC;
-			-- Nueva señal que indica que la dirección que envía el MIPS no está alineada
+			-- Nueva seï¿½al que indica que la direcciï¿½n que envï¿½a el MIPS no estï¿½ alineada
 			unaligned : in STD_LOGIC;
-			-- Nueva señal de error
-			Mem_ERROR: out std_logic; -- Se activa si en la ultima transferencia el esclavo no respondió a su dirección o la dirección solicitada no está alineada
-			load_addr_error: out std_logic; --para controlar el registro que guarda la dirección que causó error
+			-- Nueva seï¿½al de error
+			Mem_ERROR: out std_logic; -- Se activa si en la ultima transferencia el esclavo no respondiï¿½ a su direcciï¿½n o la direcciï¿½n solicitada no estï¿½ alineada
+			load_addr_error: out std_logic; --para controlar el registro que guarda la direcciï¿½n que causï¿½ error
 			--Interfaz con el bus
             MC_WE0 : out  STD_LOGIC; -- write enable de la VIA 0 y 1
             MC_WE1 : out  STD_LOGIC;
             MC_bus_Rd_Wr : out  STD_LOGIC; --1 para escritura en Memoria y 0 para lectura
             MC_tags_WE : out  STD_LOGIC; -- para escribir la etiqueta en la memoria de etiquetas
-            palabra : out  STD_LOGIC_VECTOR (1 downto 0);--indica la palabra actual dentro de una transferencia de bloque (1ª, 2ª...)
-            mux_origen: out STD_LOGIC; -- Se utiliza para elegir si el origen de la dirección y el dato es el Mips (cuando vale 0) o la UC y el bus (cuando vale 1)
-            ready : out  STD_LOGIC; -- indica si podemos procesar la orden actual del MIPS en este ciclo. En caso contrario habrá que detener el MIPs
-            block_addr : out  STD_LOGIC; -- indica si la dirección a enviar es la de bloque (rm) o la de palabra (w)
-			MC_send_addr_ctrl : out  STD_LOGIC; --ordena que se envíen la dirección y las señales de control al bus
-            MC_send_data : out  STD_LOGIC; --ordena que se envíen los datos
-            Frame : out  STD_LOGIC; --indica que la operación no ha terminado
-            last_word : out  STD_LOGIC; --indica que es el último dato de la transferencia
+            palabra : out  STD_LOGIC_VECTOR (1 downto 0);--indica la palabra actual dentro de una transferencia de bloque (1ï¿½, 2ï¿½...)
+            mux_origen: out STD_LOGIC; -- Se utiliza para elegir si el origen de la direcciï¿½n y el dato es el Mips (cuando vale 0) o la UC y el bus (cuando vale 1)
+            ready : out  STD_LOGIC; -- indica si podemos procesar la orden actual del MIPS en este ciclo. En caso contrario habrï¿½ que detener el MIPs
+            block_addr : out  STD_LOGIC; -- indica si la direcciï¿½n a enviar es la de bloque (rm) o la de palabra (w)
+			MC_send_addr_ctrl : out  STD_LOGIC; --ordena que se envï¿½en la direcciï¿½n y las seï¿½ales de control al bus
+            MC_send_data : out  STD_LOGIC; --ordena que se envï¿½en los datos
+            Frame : out  STD_LOGIC; --indica que la operaciï¿½n no ha terminado
+            last_word : out  STD_LOGIC; --indica que es el ï¿½ltimo dato de la transferencia
             mux_output: out  std_logic_vector(1 downto 0); -- para elegir si le mandamos al procesador la salida de MC (valor 0),los datos que hay en el bus (valor 1), o un registro interno( valor 2)
 			inc_m : out STD_LOGIC; -- indica que ha habido un fallo
 			inc_w : out STD_LOGIC -- indica que ha habido una escritura			
@@ -80,13 +80,13 @@ component counter is
 	       count : out  STD_LOGIC_VECTOR (size-1 downto 0)
 					  );
 end component;		           
--- Ejemplos de nombres de estado. No hay que usar estos. Nombrad a vuestros estados con nombres descriptivos. Así se facilita la depuración
+-- Ejemplos de nombres de estado. No hay que usar estos. Nombrad a vuestros estados con nombres descriptivos. Asï¿½ se facilita la depuraciï¿½n
 type state_type is (Inicio, single_word_transfer_addr, single_word_transfer_data, block_transfer_addr, block_transfer_data, Send_Addr_Word, Send_ADDR_CB, fallo, CopyBack, bajar_Frame); 
 type error_type is (memory_error, No_error); 
 signal state, next_state : state_type; 
 signal error_state, next_error_state : error_type; 
-signal last_word_block: STD_LOGIC; --se activa cuando se está pidiendo la última palabra de un bloque
-signal one_word: STD_LOGIC; --se activa cuando sólo se quiere transferir una palabra
+signal last_word_block: STD_LOGIC; --se activa cuando se estï¿½ pidiendo la ï¿½ltima palabra de un bloque
+signal one_word: STD_LOGIC; --se activa cuando sï¿½lo se quiere transferir una palabra
 signal count_enable: STD_LOGIC; -- se activa si se ha recibido una palabra de un bloque para que se incremente el contador de palabras
 signal hit: std_logic;
 signal palabra_UC : STD_LOGIC_VECTOR (1 downto 0);
@@ -96,9 +96,9 @@ hit <= hit0 or hit1;
  
 --el contador nos dice cuantas palabras hemos recibido. Se usa para saber cuando se termina la transferencia del bloque y para direccionar la palabra en la que se escribe el dato leido del bus en la MC
 word_counter: counter 	generic map (size => 2)
-						port map (clk, reset, count_enable, palabra_UC); --indica la palabra actual dentro de una transferencia de bloque (1ª, 2ª...)
+						port map (clk, reset, count_enable, palabra_UC); --indica la palabra actual dentro de una transferencia de bloque (1ï¿½, 2ï¿½...)
 
-last_word_block <= '1' when palabra_UC="11" else '0';--se activa cuando estamos pidiendo la última palabra
+last_word_block <= '1' when palabra_UC="11" else '0';--se activa cuando estamos pidiendo la ï¿½ltima palabra
 
 palabra <= palabra_UC;
 
@@ -115,7 +115,7 @@ palabra <= palabra_UC;
  
    ---------------------------------------------------------------------------
 -- 2023
--- Máquina de estados para el bit de error
+-- Mï¿½quina de estados para el bit de error
 ---------------------------------------------------------------------------
 
 error_reg: process (clk)
@@ -137,7 +137,7 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
    --MEALY State-Machine - Outputs based on state and inputs
    OUTPUT_DECODE: process (state, hit, last_word_block, bus_TRDY, RE, WE, Bus_DevSel, Bus_grant, via_2_rpl, hit0, hit1, addr_non_cacheable, internal_addr, unaligned)
    begin
-			  -- valores por defecto, si no se asigna otro valor en un estado valdrán lo que se asigna aquí
+			  -- valores por defecto, si no se asigna otro valor en un estado valdrï¿½n lo que se asigna aquï¿½
 	MC_WE0 <= '0';
 	MC_WE1 <= '0';
 	MC_bus_Rd_Wr <= '0';
@@ -158,34 +158,34 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 	last_word <= '0';
 	next_error_state <= error_state; -- por defecto se mantiene el estado
 	load_addr_error <= '0';
-				
+
         -- Estado Inicio          
     if (state = Inicio) then 
 	    -- algunos ejemplos de las cosas que pueden pasar:
     	if (RE= '0' and WE= '0') then -- si no piden nada no hacemos nada
 			next_state <= Inicio;
 			ready <= '1';
-		elsif (state = Inicio) and ((RE= '1') or (WE= '1')) and  (unaligned ='1') then -- si el procesador quiere leer una dirección no alineada
+		elsif (state = Inicio) and ((RE= '1') or (WE= '1')) and  (unaligned ='1') then -- si el procesador quiere leer una direcciï¿½n no alineada
 			-- Se procesa el error y se ignora la solicitud
 			next_state <= Inicio;
 			ready <= '1';
-			next_error_state <= memory_error; --última dirección incorrecta (no alineada)
+			next_error_state <= memory_error; --ï¿½ltima direcciï¿½n incorrecta (no alineada)
 			load_addr_error <= '1';
 	    elsif (state = Inicio and RE= '1' and  internal_addr ='1') then -- si quieren leer un registro de la MC se lo mandamos
 	    	next_state <= Inicio;
 			ready <= '1';
-			mux_output <= "00"; -- Completar. "00" es el valor por defecto. ¿Qué valor hay que poner?
-			next_error_state <= No_error; --Cuando se lee el registro interno el controlador quita la señal de error
+			mux_output <= "00"; -- Completar. "00" es el valor por defecto. ï¿½Quï¿½ valor hay que poner?
+			next_error_state <= No_error; --Cuando se lee el registro interno el controlador quita la seï¿½al de error
 		elsif (state = Inicio and RE= '1' and  hit='1') then -- si piden y es acierto de lectura mandamos el dato
 	        next_state <= Inicio;
 			ready <= '1';
-			mux_output <= "00"; -- Completar. Es el valor por defecto. ¿Qué valor hay que poner? La salida es un dato almacenado en la MC
+			mux_output <= "00"; -- Completar. Es el valor por defecto. ï¿½Quï¿½ valor hay que poner? La salida es un dato almacenado en la MC
 		elsif (state = Inicio and ((WE = '1')OR(RE = '1'))) then -- escritura o fallo de lectura
 			--pedimos el bus
 	        Bus_Req <= '1';
 	        ready <= '0';
-	        --Completar. ¿Qué más hay que hacer?. 
-	-- Completar. ¿Añadir estados?
+	        --Completar. ï¿½Quï¿½ mï¿½s hay que hacer?. 
+	-- Completar. ï¿½Aï¿½adir estados?
 		end if;	
 	end if;
 		
