@@ -8,7 +8,7 @@
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
--- Description: La memoria cache está compuesta de 8 bloques de 4 datos con: asociatividad 2, escritura directa, y la politica convencional en fallo de escritura (fetch on write miss). 
+-- Description: La memoria cache estï¿½ compuesta de 8 bloques de 4 datos con: asociatividad 2, escritura directa, y la politica convencional en fallo de escritura (fetch on write miss). 
 --
 -- Dependencies: 
 --
@@ -29,29 +29,29 @@ entity MC_datos is port (
 			--Interfaz con el MIPS
 			--entradas
 			ADDR : in std_logic_vector (31 downto 0); --Dir 
-			Din : in std_logic_vector (31 downto 0);
-			RE : in std_logic;		-- read enable		
+			Din : in std_logic_vector (31 downto 0); 
+			RE : in std_logic;		-- read enable	 
 			WE : in  STD_LOGIC; 
 			--salidas
-			ready : out  std_logic;  -- indica si podemos hacer la operación solicitada en el ciclo actual
-			Dout : out std_logic_vector (31 downto 0); --dato que se envía al Mips
-			-- Nueva señal de error
-			Mem_ERROR: out std_logic; -- Se activa si en la ultima transferencia el esclavo no respondió a su dirección
+			ready : out  std_logic;  -- indica si podemos hacer la operaciï¿½n solicitada en el ciclo actual
+			Dout : out std_logic_vector (31 downto 0); --dato que se envï¿½a al Mips
+			-- Nueva seï¿½al de error
+			Mem_ERROR: out std_logic; -- Se activa si en la ultima transferencia el esclavo no respondiï¿½ a su direcciï¿½n
 			--Interfaz con el bus
 			--entradas
 			MC_Bus_Din : in std_logic_vector (31 downto 0);--para leer datos del bus
-			Bus_TRDY : in  STD_LOGIC; --indica que el esclavo (la memoriade datos)  puede realizar la operación solicitada en este ciclo
-			Bus_DevSel: in  STD_LOGIC; --indica que la memoria ha reconocido que la dirección está dentro de su rango
-			MC_Bus_Grant: in  STD_LOGIC; --indica que el árbitro permite usar el bus a la MC;
+			Bus_TRDY : in  STD_LOGIC; --indica que el esclavo (la memoriade datos)  puede realizar la operaciï¿½n solicitada en este ciclo
+			Bus_DevSel: in  STD_LOGIC; --indica que la memoria ha reconocido que la direcciï¿½n estï¿½ dentro de su rango
+			MC_Bus_Grant: in  STD_LOGIC; --indica que el ï¿½rbitro permite usar el bus a la MC;
 			--salidas
-			MC_send_addr_ctrl : out  STD_LOGIC; --ordena que se envíen la dirección y las señales de control al bus
-			MC_send_data : out  STD_LOGIC; --ordena que se envíen los datos
-			MC_frame : out  STD_LOGIC; --indica que la operación no ha terminado
+			MC_send_addr_ctrl : out  STD_LOGIC; --ordena que se envï¿½en la direcciï¿½n y las seï¿½ales de control al bus
+			MC_send_data : out  STD_LOGIC; --ordena que se envï¿½en los datos
+			MC_frame : out  STD_LOGIC; --indica que la operaciï¿½n no ha terminado
 			MC_Bus_ADDR : out std_logic_vector (31 downto 0); --Dir 
 			MC_Bus_data_out : out std_logic_vector (31 downto 0);--para enviar datos por el bus
 			MC_bus_Rd_Wr : out  STD_LOGIC; --'0' para lectura,  '1' para escritura
 			MC_Bus_Req: out  STD_LOGIC; --indica que la MC quiere usar el bus;
-			MC_last_word : out  STD_LOGIC --indica que es el último dato de la transferencia
+			MC_last_word : out  STD_LOGIC --indica que es el ï¿½ltimo dato de la transferencia
 			 );
 end MC_datos;
 
@@ -64,40 +64,40 @@ component UC_MC is
 			WE : in  STD_LOGIC;
 			hit0 : in  STD_LOGIC; --se activa si hay acierto en la via 0
 			hit1 : in  STD_LOGIC; --se activa si hay acierto en la via 1
-			bus_TRDY : in  STD_LOGIC; --indica que la memoria puede realizar la operación solicitada en este ciclo
-			Bus_DevSel: in  STD_LOGIC; --indica que la memoria ha reconocido que la dirección está dentro de su rango
+			bus_TRDY : in  STD_LOGIC; --indica que la memoria puede realizar la operaciï¿½n solicitada en este ciclo
+			Bus_DevSel: in  STD_LOGIC; --indica que la memoria ha reconocido que la direcciï¿½n estï¿½ dentro de su rango
 			via_2_rpl :  in  STD_LOGIC; --indica que via se va a reemplazar
-			Bus_grant :  in  STD_LOGIC; --indica la concesión del uso del bus
-			addr_non_cacheable: in STD_LOGIC; --indica que la dirección no debe almacenarse en MC. En este caso porque pertenece a la scratch
-			-- Nueva señal que indica que la dirección solicitada es de un registro de MC
+			Bus_grant :  in  STD_LOGIC; --indica la concesiï¿½n del uso del bus
+			addr_non_cacheable: in STD_LOGIC; --indica que la direcciï¿½n no debe almacenarse en MC. En este caso porque pertenece a la scratch
+			-- Nueva seï¿½al que indica que la direcciï¿½n solicitada es de un registro de MC
 			internal_addr: in STD_LOGIC;
-			-- Nueva señal para la gestión de errores
-			unaligned: in STD_LOGIC; --indica que la dirección solicitada por el MIPS no está alineada
+			-- Nueva seï¿½al para la gestiï¿½n de errores
+			unaligned: in STD_LOGIC; --indica que la direcciï¿½n solicitada por el MIPS no estï¿½ alineada
 			--salidas
-			Mem_ERROR: out std_logic; -- Se activa si en la ultima transferencia el esclavo no respondió a su dirección
-			load_addr_error: out std_logic; --para controlar el registro que guarda la dirección que causó error
+			Mem_ERROR: out std_logic; -- Se activa si en la ultima transferencia el esclavo no respondiï¿½ a su direcciï¿½n
+			load_addr_error: out std_logic; --para controlar el registro que guarda la direcciï¿½n que causï¿½ error
 			--
 			MC_WE0 : out  STD_LOGIC;
             MC_WE1 : out  STD_LOGIC;
             MC_bus_Rd_Wr : out  STD_LOGIC; --1 para escritura en Memoria y 0 para lectura
 			MC_tags_WE : out  STD_LOGIC; -- para escribir la etiqueta en la memoria de etiquetas
-            palabra : out  STD_LOGIC_VECTOR (1 downto 0);--indica la palabra actual dentro de una transferencia de bloque (1ª, 2ª...)
-            mux_origen: out STD_LOGIC; -- Se utiliza para elegir si el origen de la dirección y el dato es el Mips (cuando vale 0) o la UC y el bus (cuando vale 1)
-            ready : out  STD_LOGIC; -- indica si podemos procesar la orden actual del MIPS en este ciclo. En caso contrario habrá que detener el MIPs
-            block_addr : out  STD_LOGIC; -- indica si la dirección a enviar es la de bloque (rm) o la de palabra (w)
-			MC_send_addr_ctrl : out  STD_LOGIC; --ordena que se envíen la dirección y las señales de control al bus
-            MC_send_data : out  STD_LOGIC; --ordena que se envíen los datos
-            Frame : out  STD_LOGIC; --indica que la operación no ha terminado
+            palabra : out  STD_LOGIC_VECTOR (1 downto 0);--indica la palabra actual dentro de una transferencia de bloque (1ï¿½, 2ï¿½...)
+            mux_origen: out STD_LOGIC; -- Se utiliza para elegir si el origen de la direcciï¿½n y el dato es el Mips (cuando vale 0) o la UC y el bus (cuando vale 1)
+            ready : out  STD_LOGIC; -- indica si podemos procesar la orden actual del MIPS en este ciclo. En caso contrario habrï¿½ que detener el MIPs
+            block_addr : out  STD_LOGIC; -- indica si la direcciï¿½n a enviar es la de bloque (rm) o la de palabra (w)
+			MC_send_addr_ctrl : out  STD_LOGIC; --ordena que se envï¿½en la direcciï¿½n y las seï¿½ales de control al bus
+            MC_send_data : out  STD_LOGIC; --ordena que se envï¿½en los datos
+            Frame : out  STD_LOGIC; --indica que la operaciï¿½n no ha terminado
             inc_m : out STD_LOGIC; -- indica que ha habido un fallo
 			inc_w : out STD_LOGIC; -- indica que ha habido una escritura
             mux_output: out  std_logic_vector(1 downto 0); -- para elegir si le mandamos al procesador la salida de MC (valor 0),los datos que hay en el bus (valor 1), o un registro interno( valor 2)
-            last_word : out  STD_LOGIC; --indica que es el último dato de la transferencia
-            Bus_req :  out  STD_LOGIC --indica la petición al árbitro del uso del bus
+            last_word : out  STD_LOGIC; --indica que es el ï¿½ltimo dato de la transferencia
+            Bus_req :  out  STD_LOGIC --indica la peticiï¿½n al ï¿½rbitro del uso del bus
             );
 end component;
 
 component reg is
-    generic (size: natural := 32);  -- por defecto son de 32 bits, pero se puede usar cualquier tamaño
+    generic (size: natural := 32);  -- por defecto son de 32 bits, pero se puede usar cualquier tamaï¿½o
 	Port ( Din : in  STD_LOGIC_VECTOR (size -1 downto 0);
            clk : in  STD_LOGIC;
 		   reset : in  STD_LOGIC;
@@ -115,7 +115,7 @@ end component;
 
 
 component Via is 
- 	generic ( num_via: integer); -- se usa para los mensajes. Hay que poner el número correcto al instanciarla
+ 	generic ( num_via: integer); -- se usa para los mensajes. Hay que poner el nï¿½mero correcto al instanciarla
  	port (	CLK : in std_logic;
 			reset : in  STD_LOGIC;
  			Dir_word: in std_logic_vector(1 downto 0); -- se usa para elegir la palabra a la que se accede en un conjunto la cache de datos. 
@@ -153,10 +153,10 @@ signal mux_output: std_logic_vector(1 downto 0);
 begin
  -------------------------------------------------------------------------------------------------- 
  -----MC_data: memoria RAM que almacena los 8 bloques de 4 datos que puede guardar la Cache
- -- dir palabra puede venir de la entrada (cuando se busca un dato solicitado por el Mips) o de la Unidad de control, UC, (cuando se está escribiendo un bloque nuevo 
+ -- dir palabra puede venir de la entrada (cuando se busca un dato solicitado por el Mips) o de la Unidad de control, UC, (cuando se estï¿½ escribiendo un bloque nuevo 
  -------------------------------------------------------------------------------------------------- 
- -- la región que empieza por "00010000000000000000000" está definida como no cacheable.
- -- Las direcciones en esa región se envían a la MD_scratch y cuando responda se reenvia el resultado al procesador. 
+ -- la regiï¿½n que empieza por "00010000000000000000000" estï¿½ definida como no cacheable.
+ -- Las direcciones en esa regiï¿½n se envï¿½an a la MD_scratch y cuando responda se reenvia el resultado al procesador. 
  -- Nunca se debe guardar nada de ese intervalo en MC
  
  addr_non_cacheable <= '1' when Addr(31 downto 8) = x"100000" else '0';
@@ -164,7 +164,7 @@ begin
  tag <= ADDR(31 downto 6); 
  dir_word <= ADDR(3 downto 2) when (mux_origen='0') else palabra_UC;
  dir_cjto <= ADDR(5 downto 4); -- es emplazamiento asociativo
- -- la entrada de datos de la MC puede venir del Mips (acceso normal) o del bus (gestión de fallos)
+ -- la entrada de datos de la MC puede venir del Mips (acceso normal) o del bus (gestiï¿½n de fallos)
  MC_Din <= Din when (mux_origen='0') else MC_bus_Din;
 
 Via_0: Via generic map (num_via => 0)PORT MAP(clk => clk, reset => reset, RE => RE, WE => WE_via0, Tags_WE => Tags_WE_via0, hit => hit0, Dir_cjto => Dir_cjto, Dir_word => Dir_word, Tag => Tag, Din => MC_Din, Dout => Dout_via0 );
@@ -177,7 +177,7 @@ new_block <= MC_Tags_WE; -- la info para el fifo se actualiza cada vez que se es
 
 Info_FIFO: FIFO_reg PORT MAP(clk => clk, reset => reset, cjto => dir_cjto, new_block => new_block, via_2_rpl => via_2_rpl);
 
--- se elige en qué via se escribe la nueva etiqueta según indique via_2_rpl
+-- se elige en quï¿½ via se escribe la nueva etiqueta segï¿½n indique via_2_rpl
 Tags_WE_via0 <= MC_Tags_WE and not(via_2_rpl);
 Tags_WE_via1 <= MC_Tags_WE and via_2_rpl;
 
@@ -205,23 +205,23 @@ cont_Mem_stall: counter generic map (size => 8)
 ----------- Salidas para el bus
 -------------------------------------------------------------------------------------------------- 
 MC_bus_Rd_Wr <= internal_MC_bus_Rd_Wr;
---Si es escritura se manda la dirección de la palabra y si es un fallo la dirección del bloque que causó el fallo
+--Si es escritura se manda la direcciï¿½n de la palabra y si es un fallo la direcciï¿½n del bloque que causï¿½ el fallo
 Internal_MC_Bus_ADDR <= 	ADDR(31 downto 2)&"00" when block_addr ='0' else 
 				ADDR(31 downto 4)&"0000"; 
--- se usa la señal "internal" para poder leerla, porque MC_Bus_ADDR es de salida y no se puede leer
+-- se usa la seï¿½al "internal" para poder leerla, porque MC_Bus_ADDR es de salida y no se puede leer
 MC_Bus_ADDR <= Internal_MC_Bus_ADDR;
 									 
 MC_Bus_data_out <= Din; -- se usa para mandar el dato a escribir
 
 --------------------------------------------------------------------------------------------------
 -- Registro Addr Error
--- Cuando se produce un error en el acceso a memoria (porque la dirección solicitada no corresponde a nadie) se guarda la dirección en este registro
--- Su dirección asociada es "01000000"
+-- Cuando se produce un error en el acceso a memoria (porque la direcciï¿½n solicitada no corresponde a nadie) se guarda la direcciï¿½n en este registro
+-- Su direcciï¿½n asociada es "01000000"
 --------------------------------------------------------------------------------------------------
 ADDR_Error_Reg: reg generic map (size => 32)
 					port map (	Din => Internal_MC_Bus_ADDR, clk => clk, reset => reset, load => load_addr_error, Dout => Addr_Error);
 --------------------------------------------------------------------------------------------------
--- Decodificador para detectar si la señal es interna. Es decir si pertenece a un registro de MC
+-- Decodificador para detectar si la seï¿½al es interna. Es decir si pertenece a un registro de MC
 Internal_addr <= '1' when (ADDR(31 downto 0) = x"01000000") else '0'; 
 
 --------------------------------------------------------------------------------------------------

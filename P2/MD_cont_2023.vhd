@@ -25,14 +25,14 @@ use IEEE.std_logic_unsigned.all;
 entity MD_cont is port (
 		  CLK : in std_logic;
 		  reset: in std_logic;
-		  Bus_Frame: in std_logic; -- indica que el master quiere más datos
-		  bus_last_word : in  STD_LOGIC; --indica que es el último dato de la transferencia
+		  Bus_Frame: in std_logic; -- indica que el master quiere mï¿½s datos
+		  bus_last_word : in  STD_LOGIC; --indica que es el ï¿½ltimo dato de la transferencia
 		  bus_Read: in std_logic;
 		  bus_Write: in std_logic;
 		  Bus_Addr : in std_logic_vector (31 downto 0); --Direcciones 
 		  Bus_Data : in std_logic_vector (31 downto 0); --Datos  
-		  MD_Bus_DEVsel: out std_logic; -- para avisar de que se ha reconocido que la dirección pertenece a este módulo
-		  MD_Bus_TRDY: out std_logic; -- para avisar de que se va a realizar la operación solicitada en el ciclo actual
+		  MD_Bus_DEVsel: out std_logic; -- para avisar de que se ha reconocido que la direcciï¿½n pertenece a este mï¿½dulo
+		  MD_Bus_TRDY: out std_logic; -- para avisar de que se va a realizar la operaciï¿½n solicitada en el ciclo actual
 		  MD_send_data: out std_logic; -- para enviar los datos al bus
           MD_Dout : out std_logic_vector (31 downto 0)		  -- salida de datos
 		  );
@@ -51,7 +51,7 @@ end component;
 -- misma memoria que en el proyecto anterior
 component RAM_128_32 is port (
 		  CLK : in std_logic;
-		  enable: in std_logic; --solo se lee o escribe si enable está activado
+		  enable: in std_logic; --solo se lee o escribe si enable estï¿½ activado
 		  ADDR : in std_logic_vector (31 downto 0); --Dir 
           Din : in std_logic_vector (31 downto 0);--entrada de datos para el puerto de escritura
           WE : in std_logic;		-- write enable	
@@ -60,7 +60,7 @@ component RAM_128_32 is port (
 end component;
 
 component reg is
-    generic (size: natural := 32);  -- por defecto son de 32 bits, pero se puede usar cualquier tamaño
+    generic (size: natural := 32);  -- por defecto son de 32 bits, pero se puede usar cualquier tamaï¿½o
 	Port ( Din : in  STD_LOGIC_VECTOR (size -1 downto 0);
            clk : in  STD_LOGIC;
 		   reset : in  STD_LOGIC;
@@ -75,17 +75,17 @@ signal cuenta_palabras, cuenta_retardos:  STD_LOGIC_VECTOR (7 downto 0);
 signal MD_addr: STD_LOGIC_VECTOR (31 downto 0);
 type state_type is (Espera, Transferencia, Detectado); 
 signal state, next_state : state_type; 
-signal last_addr_valid_vector: std_logic_vector (0 downto 0);--indica si el registo last_addr tiene una dirección válida y no un 0 proveniente de un reset
+signal last_addr_valid_vector: std_logic_vector (0 downto 0);--indica si el registo last_addr tiene una direcciï¿½n vï¿½lida y no un 0 proveniente de un reset
 signal load_control, Internal_read, Internal_write, last_addr_valid: std_logic; --signals to store inputs bus_read, and bus_write
 begin
 ---------------------------------------------------------------------------
--- Decodificador: identifica cuando la dirección pertenece a la MD: (X"00000000"-X"000001FF")
+-- Decodificador: identifica cuando la direcciï¿½n pertenece a la MD: (X"00000000"-X"000001FF")
 ---------------------------------------------------------------------------
--- Se activa cuando el bus quiere realizar una operación (bus_read o bus_write = '1') y la dirección está en el rango
+-- Se activa cuando el bus quiere realizar una operaciï¿½n (bus_read o bus_write = '1') y la direcciï¿½n estï¿½ en el rango
 Addr_in_range <= '1' when (Bus_Addr(31 downto 9) = "00000000000000000000000") AND ((bus_Read ='1')or (bus_Write = '1')) else '0'; 
 
 ---------------------------------------------------------------------------
--- Registro que almacena las señales de control del bus
+-- Registro que almacena las seï¿½ales de control del bus
 ---------------------------------------------------------------------------
 
 Read_Write_register: process (clk)
@@ -107,27 +107,27 @@ BUS_WE <= Internal_write;
 
 ---------------------------------------------------------------------------
 -- HW para introducir retardos:
--- Con un contador y una sencilla máquina de estados introducimos un retardo en la memoria de forma articial. 
--- Cuando se pide una dirección nueva manda la primera palabra en 4 ciclos y el resto cada dos
--- Si se accede dos veces a la misma dirección la segunda vez no hay retardo inicial
+-- Con un contador y una sencilla mï¿½quina de estados introducimos un retardo en la memoria de forma articial. 
+-- Cuando se pide una direcciï¿½n nueva manda la primera palabra en 4 ciclos y el resto cada dos
+-- Si se accede dos veces a la misma direcciï¿½n la segunda vez no hay retardo inicial
 ---------------------------------------------------------------------------
 reset_cont_retardos <= reset or reset_retardo;
 cont_retardos: counter 		generic map (size => 8)	port map (clk => clk, reset => reset_retardo, count_enable => contar_retardos, count => cuenta_retardos);
 
--- este registro almacena la ultima dirección accedida. Cada vez que cambia la dirección se resetea el contador de retaros
--- La idea es simular que cuando accedes a una dirección nueva tarda más. Si siempre accedes a la misma no introducirá retardos adicionales
+-- este registro almacena la ultima direcciï¿½n accedida. Cada vez que cambia la direcciï¿½n se resetea el contador de retaros
+-- La idea es simular que cuando accedes a una direcciï¿½n nueva tarda mï¿½s. Si siempre accedes a la misma no introducirï¿½ retardos adicionales
 reg_last_addr: reg 	generic map (size => 7)
 					PORT MAP(Din => Bus_Addr(8 downto 2), CLK => CLK, reset => reset, load => load_addr, Dout => last_addr);
 reg_last_addr_valid: reg 	generic map (size => 1)
 							PORT MAP(Din => "1", CLK => CLK, reset => reset, load => load_addr, Dout => last_addr_valid_vector);
-last_addr_valid <= 	last_addr_valid_vector(0); -- conversión de tipos						
+last_addr_valid <= 	last_addr_valid_vector(0); -- conversiï¿½n de tipos						
 direccion_distinta <= '0' when ((last_addr= Bus_Addr(8 downto 2)) and (last_addr_valid='1')) else '1';
 --introducimos un retardo en la memoria de forma articial. Manda la primera palabra en el cuarto ciclo y el resto cada dos ciclos
 -- Pero si los accesos son a direcciones repetidas el retardo inicial desaparece
 
 memoria_preparada <= '0' when (cuenta_retardos < "00000011" or cuenta_retardos(0) = '1') else '1';
 ---------------------------------------------------------------------------
--- Máquina de estados para gestionar las transferencias e introducir retardos
+-- Mï¿½quina de estados para gestionar las transferencias e introducir retardos
 ---------------------------------------------------------------------------
 
 SYNC_PROC: process (clk)
@@ -146,7 +146,7 @@ SYNC_PROC: process (clk)
  --MEALY State-Machine - Outputs based on state and inputs
    OUTPUT_DECODE: process (state, direccion_distinta, Addr_in_range, memoria_preparada, Bus_Frame, reset_cuenta)
    begin
-		-- valores por defecto, si no se asigna otro valor en un estado valdrán lo que se asigna aquí
+		-- valores por defecto, si no se asigna otro valor en un estado valdrï¿½n lo que se asigna aquï¿½
 		contar_retardos <= '0';
 		reset_retardo <= '0';
 		load_addr <= '0';
@@ -165,41 +165,41 @@ SYNC_PROC: process (clk)
 			when Espera =>   
 				If (Addr_in_range= '0') then -- si no piden nada no hacemos nada
 					next_state <= Espera;
-				else  -- si detectamos que hay una transferencia y la dirección nos pertenece vamos al estado de transferencia
+				else  -- si detectamos que hay una transferencia y la direcciï¿½n nos pertenece vamos al estado de transferencia
 					next_state <= Detectado;
-					MD_Bus_DEVsel <= '1'; -- avisamos de que hemos visto que la dirección es nuestra
-					load_control <= '1'; -- Para cargar las señales de Bus_read y Bus_write
+					MD_Bus_DEVsel <= '1'; -- avisamos de que hemos visto que la direcciï¿½n es nuestra
+					load_control <= '1'; -- Para cargar las seï¿½ales de Bus_read y Bus_write
 					IF (direccion_distinta ='1') then
-						reset_retardo <= '1'; -- si se repite la dirección no metemos los retardos iniciales
-						load_addr <= '1'; --cargamos  la dirección 
+						reset_retardo <= '1'; -- si se repite la direcciï¿½n no metemos los retardos iniciales
+						load_addr <= '1'; --cargamos  la direcciï¿½n 
 					end if;	
 				end if;	
-   	    -- Estado Detectado: sirve para informar de que hemos visto que la dirección es nuestra y de que vamos a empezar a leer/escribir datos 
-      	when Detectado =>   
-				If (Bus_Frame = '1') then
-					next_state <= Transferencia;
-					MD_Bus_DEVsel <= '1'; -- avisamos de que hemos visto que la dirección es nuestra
-				  -- No empezamos a leer/escribir por si acaso no mandan los datos hasta el ciclo siguiente
-				else 	--Cuando Bus_Frame es 0 es que hemos terminado. No debería pasar porque todavía no hemos hecho nada
-					next_state <= Espera;
-				end if;
+   	    -- Estado Detectado: sirve para informar de que hemos visto que la direcciï¿½n es nuestra y de que vamos a empezar a leer/escribir datos 
+			when Detectado =>   
+					If (Bus_Frame = '1') then
+						next_state <= Transferencia;
+						MD_Bus_DEVsel <= '1'; -- avisamos de que hemos visto que la direcciï¿½n es nuestra
+					-- No empezamos a leer/escribir por si acaso no mandan los datos hasta el ciclo siguiente
+					else 	--Cuando Bus_Frame es 0 es que hemos terminado. No deberï¿½a pasar porque todavï¿½a no hemos hecho nada
+						next_state <= Espera;
+					end if;
 		  -- Estado Transferencia
 			when Transferencia =>   
-				if (Bus_Frame = '1') then -- si estamos en una transferencia seguimos enviando/recibiendo datos hasta que el master diga que no quiere más
-					MD_Bus_DEVsel <= '1'; -- avisamos de que hemos visto que la dirección es nuestra
-					MD_enable <= '1'; --habilitamos la MD para leer o escribir
+				if (Bus_Frame = '1') then -- si estamos en una transferencia seguimos enviando/recibiendo datos hasta que el master diga que no quiere mï¿½s
+					MD_Bus_DEVsel <= '1'; -- avisamos de que hemos visto que la direcciï¿½n es nuestra
+					MD_enable <= '1'; -- habilitamos la MD para leer o escribir
 					contar_retardos <= '1'; 
 					MD_Bus_TRDY <= memoria_preparada;
 					contar_palabras <= memoria_preparada; -- cada vez que mandamos una palabra se incrementa el contador
 					MEM_WE <= Bus_WE and memoria_preparada; --evitamos escribir varias veces
-					MD_send_data <= Bus_RE AND memoria_preparada; -- si la dirección está en rango y es una lectura se carga el dato de MD en el bus
-					if ((bus_last_word='1')and(memoria_preparada = '1')) then --si estamos enviando la última palabra hemos terminado
+					MD_send_data <= Bus_RE AND memoria_preparada; -- si la direcciï¿½n estï¿½ en rango y es una lectura se carga el dato de MD en el bus
+					if ((bus_last_word='1')and(memoria_preparada = '1')) then --si estamos enviando la ï¿½ltima palabra hemos terminado
 						next_state <= Espera;
 						reset_retardo <= '1';
 					else
 						next_state <= Transferencia;
 					end if;
-				else  --no debería pasar. Si pasa quiere decir que han desactivado el frame sin poner last_word
+				else  --no deberï¿½a pasar. Si pasa quiere decir que han desactivado el frame sin poner last_word
 					next_state <= Transferencia;
 					next_state <= Espera;
 				end if;	
@@ -208,15 +208,15 @@ SYNC_PROC: process (clk)
 
 ---------------------------------------------------------------------------
 -- calculo direcciones 
--- el contador cuenta mientras frame esté activo, la dirección pertenezca a la memoria y la memoria esté preparada para realizar la operación actual. 
+-- el contador cuenta mientras frame estï¿½ activo, la direcciï¿½n pertenezca a la memoria y la memoria estï¿½ preparada para realizar la operaciï¿½n actual. 
 ---------------------------------------------------------------------------
 
--- Para que este esquema funcione hay que avisar cuando se pide la última palabra. Al enviarla se resetea la cuenta de la ráfaga, y así la siguiente ráfaga empezara por la dirección inicial
+-- Para que este esquema funcione hay que avisar cuando se pide la ï¿½ltima palabra. Al enviarla se resetea la cuenta de la rï¿½faga, y asï¿½ la siguiente rï¿½faga empezara por la direcciï¿½n inicial
 reset_cuenta <= '1' when ((reset='1') or ((bus_last_word='1') and (memoria_preparada = '1'))) else '0';
 cont_palabras: counter 		generic map (size => 8) port map (clk => clk, reset => reset_cuenta, count_enable => contar_palabras, count => cuenta_palabras);
--- La dirección se calcula sumando la cuenta de palabras a la dirección inicial almacenada en el registro last_addr
+-- La direcciï¿½n se calcula sumando la cuenta de palabras a la direcciï¿½n inicial almacenada en el registro last_addr
 addr_Frame <= 	last_addr + cuenta_palabras(6 downto 0);
--- sólo asignamos los bits que se usan. El resto se quedan a 0.
+-- sï¿½lo asignamos los bits que se usan. El resto se quedan a 0.
 MD_addr(8 downto 2) <= 	addr_Frame; 
 MD_addr(1 downto 0) <= "00";
 MD_addr(31 downto 9) <= "00000000000000000000000";
