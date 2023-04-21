@@ -6,7 +6,9 @@ Añadir la nueva memoria que en este caso va a ser la cache añadiendo el modulo
 Modificiación de los contadores de MIPS para no contar de forma innecesaria
 
 
-
+21/04/23 ---------------->2.5
+Creación del automata de MC
+Codificación parcial del AFD
 
 
 

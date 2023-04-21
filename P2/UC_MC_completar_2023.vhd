@@ -81,7 +81,8 @@ component counter is
 					  );
 end component;		           
 -- Ejemplos de nombres de estado. No hay que usar estos. Nombrad a vuestros estados con nombres descriptivos. As� se facilita la depuraci�n
-type state_type is (Inicio, single_word_transfer_addr, single_word_transfer_data, block_transfer_addr, block_transfer_data, Send_Addr_Word, Send_ADDR_CB, fallo, CopyBack, bajar_Frame); 
+-- type state_type is (Inicio, single_word_transfer_addr, single_word_transfer_data, block_transfer_addr, block_transfer_data, Send_Addr_Word, Send_ADDR_CB, fallo, CopyBack, ,); 
+type state_type is (Beginning, Refereeing, Bring_block_to_cache, Carry_word_to_memory); 
 type error_type is (memory_error, No_error); 
 signal state, next_state : state_type; 
 signal error_state, next_error_state : error_type; 
@@ -160,33 +161,57 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 	load_addr_error <= '0';
 
         -- Estado Inicio          
-    if (state = Inicio) then 
+    if (state = Beginning) then 
 	    -- algunos ejemplos de las cosas que pueden pasar:
     	if (RE= '0' and WE= '0') then -- si no piden nada no hacemos nada
-			next_state <= Inicio;
+			next_state <= Beginning;
 			ready <= '1';
-		elsif (state = Inicio) and ((RE= '1') or (WE= '1')) and  (unaligned ='1') then -- si el procesador quiere leer una direcci�n no alineada
+		elsif (state = Beginning) and ((RE= '1') or (WE= '1')) and  (unaligned ='1') then -- si el procesador quiere leer una direcci�n no alineada
 			-- Se procesa el error y se ignora la solicitud
-			next_state <= Inicio;
+			next_state <= Beginning;
 			ready <= '1';
-			next_error_state <= memory_error; --�ltima direcci�n incorrecta (no alineada)
+			next_error_state <= memory_error; --Última direcci�n incorrecta (no alineada)
 			load_addr_error <= '1';
-	    elsif (state = Inicio and RE= '1' and  internal_addr ='1') then -- si quieren leer un registro de la MC se lo mandamos
-	    	next_state <= Inicio;
+	    elsif (state = Beginning and RE= '1' and  internal_addr ='1') then -- si quieren leer un registro de la MC se lo mandamos
+	    	next_state <= Beginning;
 			ready <= '1';
 			mux_output <= "00"; -- Completar. "00" es el valor por defecto. �Qu� valor hay que poner?
 			next_error_state <= No_error; --Cuando se lee el registro interno el controlador quita la se�al de error
-		elsif (state = Inicio and RE= '1' and  hit='1') then -- si piden y es acierto de lectura mandamos el dato
-	        next_state <= Inicio;
+		elsif (state = Beginning and RE= '1' and  hit='1') then -- si piden y es acierto de lectura mandamos el dato
+	        next_state <= Beginning;
 			ready <= '1';
 			mux_output <= "00"; -- Completar. Es el valor por defecto. �Qu� valor hay que poner? La salida es un dato almacenado en la MC
-		elsif (state = Inicio and ((WE = '1')OR(RE = '1'))) then -- escritura o fallo de lectura
+		elsif (state = Beginning and ((WE = '1') OR (RE = '1'))) then -- escritura o fallo de lectura
 			--pedimos el bus
 	        Bus_Req <= '1';
 	        ready <= '0';
-	        --Completar. �Qu� m�s hay que hacer?. 
+			next_state <= Refereeing --Vamos al estado de arbitraje
+	        
 	-- Completar. �A�adir estados?
 		end if;	
+	if (state = Refereeing) then --Estado de arbitraje
+
+		if (MC_bus_granted = '0') then --No me dan el bus porque está ocupado
+			next_state <= Refereeing; 
+		end if;
+
+		if (MC_bus_granted = '1' and hit = '1') then --Me han dado el permiso sobre el bus y, es un hit
+			next_state <= Bring_block_to_cache; 
+			Bus_Req <= '0';
+			MC_send_addr_ctrl <= '1'
+		end if;
+
+		if (MC_bus_granted = '1' and WE = '1' and hit = '1' and addr_non_cacheable = '1') then
+			
+		end if;
+
+	end if;
+	if (state = Bring_block_to_cache) then --Estado MP/MS -> MC
+		
+	end if;
+	if (state = Carry_word_to_memory) then --Estado de MC -> MP/MS
+		
+	end if;
 	end if;
 		
    end process;
