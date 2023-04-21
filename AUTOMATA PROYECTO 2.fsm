@@ -5,39 +5,33 @@
     <outputnames_moore></outputnames_moore>
     <inputnames></inputnames>
     <outputnames></outputnames>
-    <itransition ypos="111.6666666666667" endx="568.3333333333334" xpos="538.3333333333334" endy="111.6666666666667"/>
-    <state pencolor="0" exit_actions="" radius="70" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="111.6666666666667" code="0" xpos="638.3333333333334" linewidth="1">Beginning</state>
+    <itransition ypos="85.83333333333334" endx="577.4712637351554" xpos="452.5" endy="99.41717366929828"/>
+    <state pencolor="0" exit_actions="" radius="70" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="110" code="0" xpos="646.6666666666667" linewidth="1">Beginning</state>
     <state pencolor="0" exit_actions="" radius="70" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="370" code="1" xpos="599.1666666666667" linewidth="1">Refereeing</state>
     <state pencolor="0" exit_actions="" radius="70" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="467.5" code="2" xpos="226.6666666666667" linewidth="1">Bring_block_to_cache</state>
     <state pencolor="0" exit_actions="" radius="70" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="483.3333333333333" code="3" xpos="1163.333333333333" linewidth="1">Carry_word_to_memory</state>
-    <transition c1x="584.5608320138498" c2y="248.6229674972987" c1y="197.2459349945972" description="" straight="1" type="2" ypos="145.8689024918957" endx="599.1666716078431" xpos="577.257912216853" endy="300.0000000000002" c2x="591.8637518108463">
-      <from>0</from>
-      <to>1</to>
-      <inputs default="0" any="0" invert="0">WE OR NOT(HIT)</inputs>
-      <outputs></outputs>
-    </transition>
-    <transition c1x="490.8147579735319" c2y="-36.2485214026955" c1y="84.495543689974" description="" straight="1" type="2" ypos="81.60124376367125" endx="609.2339143509281" xpos="575.1188544090866" endy="48.00173271644227" c2x="613.4115128058273">
+    <transition c1x="499.1480913068652" c2y="-37.91518806936216" c1y="82.82887702330734" description="" straight="1" type="2" ypos="79.93457709700459" endx="617.5672476842615" xpos="583.4521877424199" endy="46.33506604977561" c2x="621.7448461391607">
       <from>0</from>
       <to>0</to>
       <inputs default="0" any="0" invert="0">RE' AND WE'</inputs>
       <outputs></outputs>
     </transition>
-    <transition c1x="611.974905907105" c2y="36.39311694040845" c1y="-35.99928507447186" description="" straight="1" type="2" ypos="41.92033758198706" endx="687.7264035726719" xpos="644.2872882551962" endy="62.06500729591799" c2x="768.0788253999502">
+    <transition c1x="620.3082392404384" c2y="34.72645027374179" c1y="-37.66595174113851" description="" straight="1" type="2" ypos="40.2536709153204" endx="696.0597369060052" xpos="652.6206215885296" endy="60.39834062925134" c2x="776.4121587332836">
       <from>0</from>
       <to>0</to>
       <inputs default="0" any="0" invert="0">RE AND HIT</inputs>
       <outputs></outputs>
     </transition>
-    <transition c1x="631.0090836844971" c2y="320.4713364355573" c1y="224.2580141903429" description="" straight="1" type="2" ypos="306.2224454013151" endx="647.5872143712769" xpos="628.018417556548" endy="325.3462518542103" c2x="729.4611862261224">
+    <transition c1x="615.3915091498606" c2y="258.6855664620545" c1y="217.3711329241089" description="" straight="1" type="2" ypos="176.0566993861632" endx="599.1666716078431" xpos="623.5039279208693" endy="300.0000000000002" c2x="607.2790903788518">
+      <from>0</from>
+      <to>1</to>
+      <inputs default="0" any="0" invert="0">WE OR NOT(HIT)</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="645.115876092228" c2y="364.3414527579272" c1y="227.2110993348366" description="" straight="1" type="2" ypos="311.1855537018881" endx="666.0498950493815" xpos="637.1253403348352" endy="349.3448853523969" c2x="749.059898145307">
       <from>1</from>
       <to>1</to>
       <inputs default="0" any="0" invert="0">NOT( MC_BUS_GRANT )</inputs>
-      <outputs></outputs>
-    </transition>
-    <transition c1x="809.5201482066168" c2y="451.6739309903107" c1y="400.8938739559573" description="" straight="1" type="2" ypos="350.1138169216039" endx="1095.995375507343" xpos="666.2825345562538" endy="502.4539880246641" c2x="952.7577618569798">
-      <from>1</from>
-      <to>3</to>
-      <inputs default="0" any="0" invert="0">GRANT AND NOT ( N_CACHEABLE ) AND WE AND HIT</inputs>
       <outputs></outputs>
     </transition>
     <transition c1x="457.8999844573683" c2y="430.9377016448315" c1y="419.8833576902989" description="" straight="1" type="2" ypos="408.829013735766" endx="291.8536612460695" xpos="540.9231460630177" endy="441.9920455993643" c2x="374.8768228517189">
@@ -46,10 +40,16 @@
       <inputs default="0" any="0" invert="0">GRANT AND NOT ( HIT )</inputs>
       <outputs></outputs>
     </transition>
-    <transition c1x="788.7697421254135" c2y="491.0984281675074" c1y="461.6840597187775" description="" straight="1" type="2" ypos="432.2696912700477" endx="1104.023237143939" xpos="631.1429946161507" endy="520.5127966162372" c2x="946.3964896346763">
+    <transition c1x="774.6030754587467" c2y="543.5984281675073" c1y="522.517393052111" description="" straight="0" type="2" ypos="432.2696912700477" endx="1104.023237143939" xpos="631.1429946161507" endy="520.5127966162372" c2x="939.7298229680097">
       <from>1</from>
       <to>3</to>
       <inputs default="0" any="0" invert="0">GRANT AND WE AND HIT AND N_CACHEABLE</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="836.4133815034552" c2y="462.507264323644" c1y="413.4239008587511" description="" straight="0" type="2" ypos="379.1966935694605" endx="1095.995375507343" xpos="668.5598999635051" endy="502.4539880246641" c2x="972.7577618569798">
+      <from>1</from>
+      <to>3</to>
+      <inputs default="0" any="0" invert="0">GRANT AND NOT ( N_CACHEABLE ) AND WE AND HIT</inputs>
       <outputs></outputs>
     </transition>
     <transition c1x="285.8436521294033" c2y="570.2500232217271" c1y="605.3335387035502" description="" straight="1" type="2" ypos="536.7781159616478" endx="189.8167530695348" xpos="236.6937623979578" endy="527.0154086593036" c2x="117.3852284992701">
@@ -70,49 +70,49 @@
       <inputs default="0" any="0" invert="0">DEV_SEL AND NOT (TRDY)</inputs>
       <outputs></outputs>
     </transition>
-    <transition c1x="335.2544789625852" c2y="214.333173733936" c1y="306.1678824779163" description="" straight="1" type="2" ypos="398.0025912218966" endx="569.1764671154111" xpos="218.2934848861723" endy="122.4984649899557" c2x="452.2154730389982">
+    <transition c1x="179.4211456292519" c2y="117.6665070672693" c1y="219.5012158112496" description="" straight="0" type="2" ypos="398.0025912218966" endx="577.5098004487445" xpos="218.2934848861723" endy="120.831798323289" c2x="196.3821397056649">
       <from>2</from>
       <to>0</to>
       <inputs default="0" any="0" invert="0">NOT ( DEV_SEL)</inputs>
       <outputs></outputs>
     </transition>
-    <transition c1x="368.6081060741989" c2y="233.5886441232875" c1y="320.9997415412468" description="" straight="1" type="2" ypos="408.4108389592061" endx="577.4317803239305" xpos="264.1962689493331" endy="146.1775467053283" c2x="473.0199431990648">
+    <transition c1x="281.1081060741989" c2y="176.9219774566209" c1y="287.6664082079135" description="" straight="0" type="2" ypos="408.4108389592061" endx="585.7651136572639" xpos="264.1962689493331" endy="144.5108800386616" c2x="388.8532765323981">
       <from>2</from>
       <to>0</to>
-      <inputs default="0" any="0" invert="0">TRDY AND RE AND NOT ( N_CACHEABLE)</inputs>
+      <inputs default="0" any="0" invert="0">TRDYANDREANDN_CACHEABLE</inputs>
       <outputs></outputs>
     </transition>
-    <transition c1x="389.957806015613" c2y="255.3670042991298" c1y="344.0250582140234" description="" straight="1" type="2" ypos="432.6831121289171" endx="595.0858246981002" xpos="287.3937966743695" endy="166.7089503842363" c2x="492.5218153568566">
+    <transition c1x="392.7355837933908" c2y="254.2558931880187" c1y="343.4695026584679" description="" straight="1" type="2" ypos="432.6831121289171" endx="603.4191580314335" xpos="287.3937966743695" endy="165.0422837175696" c2x="498.0773709124122">
       <from>2</from>
       <to>0</to>
       <inputs default="0" any="0" invert="0">RE AND HIT</inputs>
       <outputs></outputs>
     </transition>
-    <transition c1x="568.2306646037018" c2y="543.5149258269022" c1y="534.0439150057717" description="" straight="1" type="2" ypos="524.5729041846414" endx="1170.298593664803" xpos="267.1967000731511" endy="552.9859366480325" c2x="869.2646291342526">
+    <transition c1x="565.7306646037018" c2y="625.1815924935688" c1y="595.7105816724384" description="" straight="0" type="2" ypos="524.5729041846414" endx="1170.298593664803" xpos="267.1967000731511" endy="552.9859366480325" c2x="862.5979624675859">
       <from>2</from>
       <to>3</to>
       <inputs default="0" any="0" invert="0">WE AND HIT</inputs>
       <outputs></outputs>
     </transition>
-    <transition c1x="952.1043756023321" c2y="268.3487208294057" c1y="355.1605441149038" description="" straight="1" type="2" ypos="441.972367400402" endx="642.5937132648725" xpos="1106.859706771062" endy="181.5368975439075" c2x="797.3490444336023">
+    <transition c1x="968.7728634178418" c2y="255.8723801677642" c1y="348.9223737840831" description="" straight="1" type="2" ypos="441.972367400402" endx="692.5991767114018" xpos="1106.859706771062" endy="162.8223865514453" c2x="830.6860200646217">
       <from>3</from>
       <to>0</to>
       <inputs default="0" any="0" invert="0">NOT (DEV_SEL)</inputs>
       <outputs></outputs>
     </transition>
-    <transition c1x="1041.676571839902" c2y="193.4430126193169" c1y="314.4245318180834" description="" straight="1" type="2" ypos="435.40605101685" endx="696.3243187598805" xpos="1214.352698379913" endy="72.46149342055028" c2x="869.0004452998912">
+    <transition c1x="1174.176571839902" c2y="97.60967928598352" c1y="138.5911984847501" description="" straight="0" type="2" ypos="435.40605101685" endx="704.6576520932139" xpos="1214.352698379913" endy="70.79482675388363" c2x="969.8337786332246">
       <from>3</from>
       <to>0</to>
       <inputs default="0" any="0" invert="0">TRDY AND N_CACHEABLE</inputs>
       <outputs></outputs>
     </transition>
-    <transition c1x="988.3144227482998" c2y="234.6750302940459" c1y="327.7929525428772" description="" straight="1" type="2" ypos="420.9108747917084" endx="701.6307386055528" xpos="1131.656264819673" endy="141.5571080452147" c2x="844.9725806769263">
+    <transition c1x="1064.981089414966" c2y="165.5083636273793" c1y="233.6262858762106" description="" straight="0" type="2" ypos="420.9108747917084" endx="709.9640719388862" xpos="1131.656264819673" endy="139.8904413785481" c2x="899.139247343593">
       <from>3</from>
       <to>0</to>
       <inputs default="0" any="0" invert="0">TRDY AND NOT ( N_CACHEABLE )</inputs>
       <outputs></outputs>
     </transition>
-    <transition c1x="1312.16005999924" c2y="616.7805674121314" c1y="464.6088725957981" description="" straight="1" type="2" ypos="492.8686171668443" endx="1210.327452442724" xpos="1232.680852122504" endy="535.2135103678467" c2x="1231.830309301025">
+    <transition c1x="1350.493393332573" c2y="650.947234078798" c1y="459.6088725957981" description="" straight="0" type="2" ypos="492.8686171668443" endx="1210.327452442724" xpos="1232.680852122504" endy="535.2135103678467" c2x="1244.330309301025">
       <from>3</from>
       <to>3</to>
       <inputs default="0" any="0" invert="0">NOT ( TRDY ) AND DEV_SEL</inputs>

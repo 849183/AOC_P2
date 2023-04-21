@@ -191,27 +191,89 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 		end if;	
 	if (state = Refereeing) then --Estado de arbitraje
 
-		if (MC_bus_granted = '0') then --No me dan el bus porque está ocupado
+		if (Bus_grant = '0') then --No me dan el bus porque está ocupado
 			next_state <= Refereeing; 
-		end if;
-
-		if (MC_bus_granted = '1' and hit = '1') then --Me han dado el permiso sobre el bus y, es un hit
-			next_state <= Bring_block_to_cache; 
-			Bus_Req <= '0';
-			MC_send_addr_ctrl <= '1'
-		end if;
-
-		if (MC_bus_granted = '1' and WE = '1' and hit = '1' and addr_non_cacheable = '1') then
 			
+		else
+			
+			if (Bus_grant = '1' and hit = '0') then -- Me han dado el permiso sobre el bus y, es un miss
+				next_state <= Bring_block_to_cache; 
+				Bus_Req <= '0';
+				MC_send_addr_ctrl <= '1'
+
+			elsif (Bus_grant = '1' and WE = '1' and hit = '1' and addr_non_cacheable = '1') then -- Me han dado el permiso sobre el bus y, es un hit, y es una escritura en una dirección no cacheable
+				next_state <= Carry_word_to_memory;
+				Bus_Req <= '0';
+				MC_send_addr_ctrl <= '1'
+				MC_bus_Rd_Wr <= '1'
+				
+			elsif (Bus_grant = '1' and hit = '1' and WE = '1' and addr_non_cacheable = '0' ) then  -- Me han dado el permiso sobre el bus y, es un hit, y es una escritura en una dirección cacheable por lo tanto escribo en Cache
+				next_state <= Carry_word_to_memory;
+				bus_Req<= '0';
+				MC_send_addr_ctrl <= '1'
+				MC_bus_Rd_Wr <= '1'
+				if hit0 then
+					MC_WE0 <= '1'; -- Escribo en la MC
+				elsif hit1 then
+					MC_WE1 <= '1';
+				end if;
+			end if;
 		end if;
 
 	end if;
 	if (state = Bring_block_to_cache) then --Estado MP/MS -> MC
-		
+		if (Bus_DevSel = '1' and bus_TRDY = '0') then -- Algun slave me ha respondido, pero aun no esta listo.
+			next_state <= Bring_block_to_cache; -- Espero en el mismo ciclo, hasta que me digan que esta listo.
+			
+		elsif (Bus_DevSel = '0') then -- Ningun slave me ha respondido.
+			next_state <= Beginning; 
+			next_error_state <= Error; -- Voy a estado de error
+
+		elsif (bus_TRDY = '1' and count_enabled < 2) then -- Aun estoy mandado palabras del bloque y aun no es la ultima.
+			next_state <= Bring_block_to_cache; -- Sigo mandando palabras hasta llegar a la ultima.
+			MC_send_data <= '1'; -- Envio la palabra.
+			MC_send_address <= '1'; -- Envio la direccion de la siguiente ?????? PREGUNTAR
+
+		elsif (bus_TRDY = '1' and count_enabled = 3) then -- El slave esta preparado y es la última palabra
+			next_state <= Bring_block_to_cache;
+			last_Word <= '1'; -- Aviso de que es la útlima palabra.
+			
+		elsif (bus_TRDY = '1' and n_cacheable = '1') then -- El slave esta preparado y la dirección no es cacheable (pertenece a la Scratch)
+			next_state <= Beginning; 
+			mux_output <= '1'; -- Mando a Dout el contenido del bus
+
+		elsif (RE = '1' and hit = '1') then -- Me solicitan una acción de lectura y ya tengo el dato disponible
+			next_state <= Beginning;
+			mux_output <= '0'; -- Mando a Dout el la palabra solicitada que se encuentra en una de las dos vias de la Cache.
+
+		elsif (WE = '1' and hit = '1') then -- Me solicitan una acción de escritura y ya tengo el bloque correcto en la Cache.
+			next_state <= Carry_word_to_memory;
+		end if;
+			
 	end if;
 	if (state = Carry_word_to_memory) then --Estado de MC -> MP/MS
+		if (bus_TRDY = '0' and Bus_DevSel = '1') then
+			next_state <= Carry_word_to_memory;
+
+			
+		elsif (Bus_DevSel = '0') then --ningún server me ha respondido, almaceno la dirección y vuelvo a inicio
+			next_state <= Beginning; -- Vuelvo al inicio.
+			next_error_state <= Error; -- Voy a estado de error
 		
+		elsif (bus_TRDY = '1' and and addr_non_cacheable = '0') then --
+				
+
+
+
+
+			
+			
+		endif:	
+			
 	end if;
+
+
+
 	end if;
 		
    end process;

@@ -9,9 +9,16 @@ Modificiación de los contadores de MIPS para no contar de forma innecesaria
 21/04/23 ---------------->2.5
 Creación del automata de MC
 Codificación parcial del AFD
+NO BAJADAS LAS SEÑALES DE WE EN CACHE
 
 
 
+
+
+
+
+--A terminar
+NO BAJADAS LAS SEÑALES DE WE EN CACHE en el estado  Carry_word_to_memory
 
 
 
