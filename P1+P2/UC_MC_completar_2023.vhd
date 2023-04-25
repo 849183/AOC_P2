@@ -114,7 +114,7 @@ palabra <= palabra_UC;
       end if;
    end process;
  
-   ---------------------------------------------------------------------------
+---------------------------------------------------------------------------
 -- 2023
 -- M�quina de estados para el bit de error
 ---------------------------------------------------------------------------
@@ -198,9 +198,10 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 			if (Bus_grant = '1' and hit = '0') then -- Me han dado el permiso sobre el bus y, es un miss
 				MC_send_addr_ctrl <= '1';
 				Frame <= '1';
-				if Bus_DevSel = '0' then -- Tengo que saltar en el mismo ciclo que en el que me dan el grant. DevSel es combinacional, entonces puedo comprobarlo aqui.
+				if (Bus_DevSel = '0') then -- Tengo que saltar en el mismo ciclo que en el que me dan el grant. DevSel es combinacional, entonces puedo comprobarlo aqui.
 					next_state <= Beginning;
 					next_error_state <= memory_error; --Última direcci�n incorrecta (no cacheable)
+					load_addr_error <= '1';
 				else
 					MC_bus_Rd_Wr <= '0';
 					next_state <= Bring_block_to_cache;
@@ -209,9 +210,10 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 			elsif (Bus_grant = '1' and WE = '1' and hit = '1' and addr_non_cacheable = '1') then -- Me han dado el permiso sobre el bus y, es un hit, y es una escritura en una dirección no cacheable
 				MC_send_addr_ctrl <= '1';
 				Frame <= '1';
-				if Bus_DevSel = '0' then
+				if (Bus_DevSel = '0') then
 					next_state <= Beginning;
 					next_error_state <= memory_error; --Última direcci�n incorrecta (no cacheable)
+					load_addr_error <= '1';
 				else
 					next_state <= Carry_word_to_memory;
 					MC_bus_Rd_Wr <= '1';
@@ -222,7 +224,8 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 				Frame <= '1';	
 				if (Bus_DevSel = '0') then
 					next_state <= Beginning;
-					next_error_state <= memory_error; 
+					next_error_state <= memory_error;
+					load_addr_error <= '1'; 
 				else 
 					next_state <= Carry_word_to_memory;
 					
