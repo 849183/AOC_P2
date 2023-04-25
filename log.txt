@@ -1,0 +1,35 @@
+18/04/23 ----------------> 2.1 and 
+Renombrar a .bak la memoria de Datos
+Cambiado Banco_WB, cargará solo cuando sea necesario
+Eliminación de la memoria de datos anterior
+Añadir la nueva memoria que en este caso va a ser la cache añadiendo el modulo MD_mas_MC_mas_scratch_2023
+Modificiación de los contadores de MIPS para no contar de forma innecesaria
+
+
+21/04/23 ---------------->2.5
+Creación del automata de MC
+Codificación parcial del AFD
+NO BAJADAS LAS SEÑALES DE WE EN CACHE
+
+
+
+
+
+
+
+--A terminar
+NO BAJADAS LAS SEÑALES DE WE EN CACHE en el estado  Carry_word_to_memory
+
+
+
+-- PREGUNTAS
+    Archivo Mips_segmentado_IRQ_completar_2023, en los contadores, lo ponemos con Mem_ready o con parar_EX
+    Archivo MD_cont_2023, ¿Por qué pone next_state <= transferencia y seguido next_state <= Espera, no es innecesaria la primera instrucción?
+    En guión, en el punto 2.2 apartado de datos, indica que si el procesador quiere la palabra 4, se envia la 4,8,12, etc... pero, ¿no debería empezar en la 0?
+
+
+-- ANOTACIONES  
+    Direccionamos con 9 bits ---> 512 palabras en MP
+    8 bloques en total, 4 bloques por via
+    Tamaño de la Cache de 128 Bytes (32 palabras)
+    3 bits para tag, 2 para set y 4 para bloque
