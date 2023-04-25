@@ -1,0 +1,100 @@
+v 4
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "testbench_Mips.vhd" "0a18bb81afedffffbfb1a2e67c83e5a54a54d392" "20230425182203.343":
+  entity testbench at 3( 26) + 2 on 197;
+  architecture behavior of testbench at 10( 149) + 2 on 198;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "testbench_MD_mas_MC_alumnos.vhd" "eaabf12f5fa9bcc3331311b9fa8c353682188b75" "20230425191046.281":
+  entity testbench_md_mas_mc at 3( 26) + 2 on 399;
+  architecture behavior of testbench_md_mas_mc at 13( 240) + 2 on 400;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "mux4_1_32bits.vhd" "635b1c2a967854cacd1ee923fa6313d8675aa07d" "20230425182204.884":
+  entity mux4_1_32bits at 1( 0) + 0 on 223;
+  architecture behavioral of mux4_1_32bits at 12( 400) + 0 on 224;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "mux2_5bits.vhd" "380d4d9ec33f6a77c2e56b7f36dec5b19b69ff9d" "20230425182205.154":
+  entity mux2_5bits at 20( 489) + 0 on 229;
+  architecture behavioral of mux2_5bits at 39( 1068) + 0 on 230;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "mux2_1.vhd" "16c03f03addbb8a3f3dad9a1da21f497d0aa4854" "20230425182204.969":
+  entity mux2_1 at 20( 493) + 0 on 225;
+  architecture behavioral of mux2_1 at 39( 1069) + 0 on 226;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "memoriaRAM_datos_128_32_enable_test_2023.vhd" "3f93101719133c20c472fe8060db6387ce537c7c" "20230425191048.048":
+  entity ram_128_32 at 20( 489) + 0 on 423;
+  architecture behavioral of ram_128_32 at 44( 1361) + 0 on 424;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "memoriaRAM_I_tests.vhd" "dc35e4f993fba973b16e81f083db73f9447154a3" "20230425182203.974":
+  entity memoriaram_i at 26( 755) + 0 on 205;
+  architecture behavioral of memoriaram_i at 51( 1803) + 0 on 206;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "memoriaRAM_64_32_enable.vhd" "6eac88fc48db01c27a01cd07eef31b662a1f74de" "20230425191048.170":
+  entity ram_64_32 at 20( 489) + 0 on 425;
+  architecture behavioral of ram_64_32 at 44( 1359) + 0 on 426;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "counter_2bits.vhd" "0b21a2513aaec2d317495924f101cec487e9375b" "20230425174748.006":
+  entity counter_2bits at 20( 486) + 0 on 4;
+  architecture behavioral of counter_2bits at 34( 950) + 0 on 4;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "counter.vhd" "4c787804472fe6172d2d20f4bfdcfb0934d580c9" "20230425191047.278":
+  entity counter at 20( 487) + 0 on 411;
+  architecture behavioral of counter at 46( 1270) + 0 on 412;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "bits_shifter.vhd" "84314704fb90b0c3a56bacef575e87f50f736186" "20230425182204.359":
+  entity two_bits_shifter at 20( 491) + 0 on 213;
+  architecture behavioral of two_bits_shifter at 37( 1003) + 0 on 214;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "arbitro.vhd" "fdf034f52f3ecb1c46d2f0e563418c23bb29e91d" "20230425191047.182":
+  entity arbitro at 20( 484) + 0 on 409;
+  architecture behavioral of arbitro at 44( 1357) + 0 on 410;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "adder32.vhd" "314628325a7fba8ded83ce676b48051d32b99dc4" "20230425182203.886":
+  entity adder32 at 20( 486) + 0 on 203;
+  architecture behavioral of adder32 at 39( 1097) + 0 on 204;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "Via.vhd" "3d920083501126bfff23016d20e7eef38eda41d9" "20230425191047.506":
+  entity via at 1( 0) + 0 on 415;
+  architecture behavioral of via at 20( 914) + 0 on 416;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "UD_completar.vhd" "760af27a7797219223d0dc29e30c1951ad0bdded" "20230425182204.537":
+  entity ud at 2( 2) + 0 on 217;
+  architecture behavioral of ud at 26( 1501) + 0 on 218;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "UC_Mips_solucion.vhd" "35abd48d9bce394d88f349432eeb39e0b7fa9440" "20230425182204.440":
+  entity uc at 20( 481) + 0 on 215;
+  architecture behavioral of uc at 50( 1601) + 0 on 216;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "UC_MC_completar_2023.vhd" "4a30c9f77ee4e7e604f51a3b3ca55f4995287581" "20230425191047.773":
+  entity uc_mc at 20( 602) + 0 on 419;
+  architecture behavioral of uc_mc at 71( 3994) + 0 on 420;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "UA_completar.vhd" "5a1ed5153f4639fb7340cade2dde910da2cf37fd" "20230425182204.776":
+  entity ua at 1( 0) + 0 on 221;
+  architecture behavioral of ua at 29( 829) + 0 on 222;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "REGISTER.vhd" "bb1f16639744f39ecc1ef4892185e16345358757" "20230425191047.943":
+  entity reg at 2( 2) + 0 on 421;
+  architecture behavioral of reg at 15( 421) + 0 on 422;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "Mips_segmentado_IRQ_completar_2023.vhd" "292be065f468f1f396df24f0cb5923cdd6d0a207" "20230425182203.442":
+  entity mips_segmentado at 16( 824) + 0 on 199;
+  architecture behavioral of mips_segmentado at 28( 1283) + 0 on 200;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "MD_scratch.vhd" "d41e65420e67bd709f1c9b127c162ca49e83aa55" "20230425191047.045":
+  entity md_scratch at 19( 398) + 0 on 407;
+  architecture behavioral of md_scratch at 40( 1248) + 0 on 408;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "MD_mas_MC_mas_scratch_2023.vhd" "ed6cfb29c172b017815ad7b91fb87c9c632c0742" "20230425191046.518":
+  entity md_mas_mc at 6( 450) + 0 on 401;
+  architecture behavioral of md_mas_mc at 35( 1671) + 0 on 402;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "MD_cont_2023.vhd" "d643e179330a28d7ebeca3252690a24ae9850c11" "20230425191046.876":
+  entity md_cont at 19( 398) + 0 on 405;
+  architecture behavioral of md_cont at 41( 1341) + 0 on 406;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "MC_datos.vhd" "fee41b5d133a8c640adee4d16a5961de8a2fbbc6" "20230425191046.683":
+  entity mc_datos at 20( 636) + 0 on 403;
+  architecture behavioral of mc_datos at 58( 2545) + 0 on 404;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "IO_master.vhd" "cc7bdfa0fb852449e36842e56390773bd6a1d1c8" "20230425191047.393":
+  entity io_master at 1( 0) + 0 on 413;
+  architecture behavioral of io_master at 24( 1260) + 0 on 414;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "FIFO_reg.vhd" "05cf4847cc560ffcca35210b0249fba6811f815d" "20230425191047.672":
+  entity fifo_reg at 20( 481) + 0 on 417;
+  architecture behavioral of fifo_reg at 47( 1325) + 0 on 418;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "Ext_signo.vhd" "a86099b57bba8e351753e752f26601c7908ad4f4" "20230425182204.277":
+  entity ext_signo at 20( 488) + 0 on 211;
+  architecture behavioral of ext_signo at 37( 989) + 0 on 212;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "Banco_WB.vhd" "b7e69d6c5d6b0abc9126c7cc0c2d9db07c45ba7d" "20230425182205.536":
+  entity banco_wb at 20( 487) + 0 on 235;
+  architecture behavioral of banco_wb at 50( 1614) + 0 on 236;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "Banco_MEM.vhd" "c32a4dd83ae0231c761549d297a172c932d55835" "20230425182205.240":
+  entity banco_mem at 20( 488) + 0 on 231;
+  architecture behavioral of banco_mem at 58( 1975) + 0 on 232;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "Banco_ID.vhd" "688b006032428225982a73c4921ea61c8c20d37f" "20230425182204.073":
+  entity banco_id at 4( 288) + 0 on 207;
+  architecture behavioral of banco_id at 24( 1122) + 0 on 208;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "Banco_EX.vhd" "13c2b29b8d9f3811a13f523032b642af624d1cb0" "20230425182204.656":
+  entity banco_ex at 20( 487) + 0 on 219;
+  architecture behavioral of banco_ex at 72( 2533) + 0 on 220;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "BReg.vhd" "bb69d410cca56dd4f196ac706a7044ffa4091399" "20230425182204.162":
+  entity breg at 20( 481) + 0 on 209;
+  architecture behavioral of breg at 49( 1525) + 0 on 210;
+file "/mnt/c/Users/garii/Documents/Estudio/Universidad/2_CURSO/2_SEMESTRE/AOC2/PROYECTOS/PROYECTO 2/AOC_P2/fuentes/" "ALU.vhd" "36885e9b9fb1d4260cef66f02b1eb0f5c1fecac1" "20230425182205.053":
+  entity alu at 20( 482) + 0 on 227;
+  architecture behavioral of alu at 40( 1278) + 0 on 228;

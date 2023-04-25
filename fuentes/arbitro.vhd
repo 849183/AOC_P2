@@ -36,9 +36,9 @@ entity Arbitro is
 			last_word: in  STD_LOGIC; -- Cuando termina una transferencia cambiamos las prioridades
 			Bus_TRDY: in  STD_LOGIC; --para saber que la ultima transferencia va a realizarse este ciclo
     		Req0 : in  STD_LOGIC; -- hay dos solicitudes
-           	Req1 : in  STD_LOGIC;
-           	Grant0 : out std_LOGIC;
-           	Grant1 : out std_LOGIC);
+         Req1 : in  STD_LOGIC;
+         Grant0 : out std_LOGIC;
+         Grant1 : out std_LOGIC);
 end Arbitro;
 
 architecture Behavioral of Arbitro is
