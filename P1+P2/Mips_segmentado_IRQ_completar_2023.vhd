@@ -53,7 +53,7 @@ component MD_mas_MC is port (
 		  CLK : in std_logic;
 		  reset: in std_logic; 
 		  ADDR : in std_logic_vector (31 downto 0); --Dir solicitada por el Mips
-          	  Din : in std_logic_vector (31 downto 0);--entrada de datos desde el Mips
+          	Din : in std_logic_vector (31 downto 0);--entrada de datos desde el Mips
 		  WE : in std_logic;		-- write enable	del MIPS
 		  RE : in std_logic;		-- read enable del MIPS	
 		  IO_input: in std_logic_vector (31 downto 0); --dato que viene de una entrada del sistema
