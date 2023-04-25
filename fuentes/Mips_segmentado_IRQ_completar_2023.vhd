@@ -16,6 +16,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
+
 entity MIPs_segmentado is
     Port ( 	clk : in  STD_LOGIC;
            	reset : in  STD_LOGIC;
