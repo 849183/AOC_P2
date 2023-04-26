@@ -182,19 +182,16 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 			ready <= '1';
 			mux_output <= "00"; -- Completar. Es el valor por defecto. �Qu� valor hay que poner? La salida es un dato almacenado en la MC
 		elsif (state = Beginning and ((WE = '1') OR (hit = '0'))) then -- escritura o fallo de lectura
-			next_state <= Refereeing; --Vamos al estado de arbitraje
-			ready <= '0';
+	        ready <= '0';
 			Bus_req <= '1'; -- Pedimos el bus
+			next_state <= Refereeing; --Vamos al estado de arbitraje
 		end if;
 	        
 	elsif (state = Refereeing) then --Estado de arbitraje
-		
 		Bus_req <= '1'; -- Pedimos el bus
 		if (Bus_grant = '0') then --No me dan el bus porque está ocupado
-			
 			next_state <= Refereeing;
-			
-			ready <= '0';
+
 		else
 			
 			if (Bus_grant = '1' and WE = '1' and addr_non_cacheable = '1' ) then -- Me han dado el permiso sobre el bus y, es un hit, y es una escritura en una dirección no cacheable

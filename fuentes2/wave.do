@@ -27,12 +27,12 @@ add wave -noupdate -label Bus_frame /testbench_md_mas_mc/uut/Arbitraje/bus_frame
 add wave -noupdate -label last_word /testbench_md_mas_mc/uut/Arbitraje/last_word
 add wave -noupdate -color Pink -label inc_m /testbench_md_mas_mc/uut/MC/inc_m
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {36737 ps} 0}
-quietly wave cursor active 1
+WaveRestoreCursors {{Cursor 1} {27043 ps} 0} {{Cursor 2} {13013 ps} 0}
+quietly wave cursor active 2
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
 configure wave -justifyvalue left
-configure wave -signalnamewidth 1
+configure wave -signalnamewidth 0
 configure wave -snapdistance 10
 configure wave -datasetprefix 0
 configure wave -rowmargin 4
@@ -43,4 +43,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {0 ps} {93568 ps}
+WaveRestoreZoom {0 ps} {82688 ps}

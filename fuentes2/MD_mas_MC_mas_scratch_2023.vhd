@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------
 --
--- Description: Este módulo sustituye a la memoria de datos del mips. Incluye un memoria cache que se conecta a través de un bus a memoria principal
--- el interfaz añade una señal nueva (Mem_ready) que indica si la MC podrá ralizar la operación en el ciclo actual
+-- Description: Este mï¿½dulo sustituye a la memoria de datos del mips. Incluye un memoria cache que se conecta a travï¿½s de un bus a memoria principal
+-- el interfaz aï¿½ade una seï¿½al nueva (Mem_ready) que indica si la MC podrï¿½ ralizar la operaciï¿½n en el ciclo actual
 ----------------------------------------------------------------------------------
 library IEEE;
   USE ieee.std_logic_1164.ALL;
@@ -26,9 +26,9 @@ entity MD_mas_MC is port (
 		  WE : in std_logic;		-- write enable	del MIPS
 		  RE : in std_logic;		-- read enable del MIPS	
 		  IO_input: in std_logic_vector (31 downto 0); --dato que viene de una entrada del sistema
-		  Mem_ready: out std_logic; -- indica si podemos hacer la operación solicitada en el ciclo actual
-		  Data_abort: out std_logic; --indica que el último acceso a memoria ha sido un error
-		  Dout : out std_logic_vector (31 downto 0) --dato que se envía al Mips
+		  Mem_ready: out std_logic; -- indica si podemos hacer la operaciï¿½n solicitada en el ciclo actual
+		  Data_abort: out std_logic; --indica que el ï¿½ltimo acceso a memoria ha sido un error
+		  Dout : out std_logic_vector (31 downto 0) --dato que se envï¿½a al Mips
 		  ); 
 end MD_mas_MC;
 
@@ -37,14 +37,14 @@ architecture Behavioral of MD_mas_MC is
 component MD_cont is port (
 		  CLK : in std_logic;
 		  reset: in std_logic;
-		  Bus_Frame: in std_logic; -- indica que el master quiere más datos
-		  bus_last_word : in  STD_LOGIC; --indica que es el último dato de la transferencia
+		  Bus_Frame: in std_logic; -- indica que el master quiere mï¿½s datos
+		  bus_last_word : in  STD_LOGIC; --indica que es el ï¿½ltimo dato de la transferencia
 		  bus_Read: in std_logic;
 		  bus_Write: in std_logic;
 		  Bus_Addr : in std_logic_vector (31 downto 0); --Direcciones 
 		  Bus_Data : in std_logic_vector (31 downto 0); --Datos 
-          MD_Bus_DEVsel: out std_logic; -- para avisar de que se ha reconocido que la dirección pertenece a este módulo
-		  MD_Bus_TRDY: out std_logic; -- para avisar de que se va a realizar la operación solicitada en el ciclo actual
+          MD_Bus_DEVsel: out std_logic; -- para avisar de que se ha reconocido que la direcciï¿½n pertenece a este mï¿½dulo
+		  MD_Bus_TRDY: out std_logic; -- para avisar de que se va a realizar la operaciï¿½n solicitada en el ciclo actual
 		  MD_send_data: out std_logic; -- para enviar los datos al bus
                   MD_Dout : out std_logic_vector (31 downto 0)		  -- salida de datos
 		  );
@@ -59,37 +59,37 @@ COMPONENT MC_datos is port (
 			Din : in std_logic_vector (31 downto 0);
 			RE : in std_logic;		-- read enable		
 			WE : in  STD_LOGIC; 
-			ready : out  std_logic;  -- indica si podemos hacer la operación solicitada en el ciclo actual
-			Dout : out std_logic_vector (31 downto 0); --dato que se envía al Mips
-			-- Nueva señal de error
-			Mem_ERROR: out std_logic; -- Se activa si en la ultima transferencia el esclavo no respondió a su dirección
+			ready : out  std_logic;  -- indica si podemos hacer la operaciï¿½n solicitada en el ciclo actual
+			Dout : out std_logic_vector (31 downto 0); --dato que se envï¿½a al Mips
+			-- Nueva seï¿½al de error
+			Mem_ERROR: out std_logic; -- Se activa si en la ultima transferencia el esclavo no respondiï¿½ a su direcciï¿½n
 			--Interfaz con el bus
 			MC_Bus_Req: out  STD_LOGIC; --indica que la MC quiere usar el bus;
-			MC_Bus_Grant: in  STD_LOGIC; --indica que el árbitro permite usar el bus a la MC;
+			MC_Bus_Grant: in  STD_LOGIC; --indica que el ï¿½rbitro permite usar el bus a la MC;
 			MC_Bus_Din : in std_logic_vector (31 downto 0);--para leer datos del bus
-			Bus_TRDY : in  STD_LOGIC; --indica que el esclavo (la memoriade datos) puede realizar la operación solicitada en este ciclo
-			Bus_DevSel: in  STD_LOGIC; --indica que la memoria ha reconocido que la dirección está dentro de su rango
-			MC_send_addr_ctrl : out  STD_LOGIC; --ordena que se envíen la dirección y las señales de control al bus
-			MC_send_data : out  STD_LOGIC; --ordena que se envíen los datos
-			MC_frame : out  STD_LOGIC; --indica que la operación no ha terminado
-			MC_last_word : out  STD_LOGIC; --indica que es el último dato de la transferencia
+			Bus_TRDY : in  STD_LOGIC; --indica que el esclavo (la memoriade datos) puede realizar la operaciï¿½n solicitada en este ciclo
+			Bus_DevSel: in  STD_LOGIC; --indica que la memoria ha reconocido que la direcciï¿½n estï¿½ dentro de su rango
+			MC_send_addr_ctrl : out  STD_LOGIC; --ordena que se envï¿½en la direcciï¿½n y las seï¿½ales de control al bus
+			MC_send_data : out  STD_LOGIC; --ordena que se envï¿½en los datos
+			MC_frame : out  STD_LOGIC; --indica que la operaciï¿½n no ha terminado
+			MC_last_word : out  STD_LOGIC; --indica que es el ï¿½ltimo dato de la transferencia
 			MC_Bus_ADDR : out std_logic_vector (31 downto 0); --Dir 
 			MC_Bus_data_out : out std_logic_vector (31 downto 0);--para enviar datos por el bus
 			MC_bus_Rd_Wr : out  STD_LOGIC --'0' para lectura,  '1' para escritura
 			 );
   END COMPONENT;
--- Memoria scratch (Memoria rápida que contesta en el ciclo en el que se le pide algo)
--- Sólo tiene acceso palabra a palabra
+-- Memoria scratch (Memoria rï¿½pida que contesta en el ciclo en el que se le pide algo)
+-- Sï¿½lo tiene acceso palabra a palabra
   COMPONENT MD_scratch is port (
 		  CLK : in std_logic;
 		  reset: in std_logic;
-		  Bus_Frame: in std_logic; -- indica que el master quiere más datos
+		  Bus_Frame: in std_logic; -- indica que el master quiere mï¿½s datos
 		  bus_Read: in std_logic;
 		  bus_Write: in std_logic;
 		  Bus_Addr : in std_logic_vector (31 downto 0); --Direcciones 
 		  Bus_Data : in std_logic_vector (31 downto 0); --Datos  
-		  MD_Bus_DEVsel: out std_logic; -- para avisar de que se ha reconocido que la dirección pertenece a este módulo
-		  MD_Bus_TRDY: out std_logic; -- para avisar de que se va a realizar la operación solicitada en el ciclo actual
+		  MD_Bus_DEVsel: out std_logic; -- para avisar de que se ha reconocido que la direcciï¿½n pertenece a este mï¿½dulo
+		  MD_Bus_TRDY: out std_logic; -- para avisar de que se va a realizar la operaciï¿½n solicitada en el ciclo actual
 		  MD_send_data: out std_logic; -- para enviar los datos al bus
         MD_Dout : out std_logic_vector (31 downto 0)		  -- salida de datos
 		  );
@@ -112,9 +112,9 @@ COMPONENT IO_Master is
 		    reset: in  STD_LOGIC; 
 			IO_M_bus_Grant: in std_logic; 
 			IO_input: in STD_LOGIC_VECTOR (31 downto 0);
-			bus_TRDY : in  STD_LOGIC; --indica que el esclavo no puede realizar la operación solicitada en este ciclo
-			Bus_DevSel: in  STD_LOGIC; --indica que el esclavo ha reconocido que la dirección está dentro de su rango
-			IO_M_ERROR: out std_logic; -- Se activa si el esclavo no responde a su dirección
+			bus_TRDY : in  STD_LOGIC; --indica que el esclavo no puede realizar la operaciï¿½n solicitada en este ciclo
+			Bus_DevSel: in  STD_LOGIC; --indica que el esclavo ha reconocido que la direcciï¿½n estï¿½ dentro de su rango
+			IO_M_ERROR: out std_logic; -- Se activa si el esclavo no responde a su direcciï¿½n
 			IO_M_Req: out std_logic; 
 			IO_M_Read: out std_logic; 
 			IO_M_Write: out std_logic;
@@ -135,7 +135,7 @@ component counter is
 end component;
 
 component reg is
-    generic (size: natural := 32);  -- por defecto son de 32 bits, pero se puede usar cualquier tamaño
+    generic (size: natural := 32);  -- por defecto son de 32 bits, pero se puede usar cualquier tamaï¿½o
 	Port ( Din : in  STD_LOGIC_VECTOR (size -1 downto 0);
            clk : in  STD_LOGIC;
 		   reset : in  STD_LOGIC;
@@ -143,27 +143,27 @@ component reg is
            Dout : out  STD_LOGIC_VECTOR (size -1 downto 0));
 end component;
 
---señales del bus
+--seï¿½ales del bus
 signal Bus_Data_Addr:  std_logic_vector(31 downto 0); 
 signal Bus_TRDY, Bus_Devsel, bus_Read, bus_Write, Bus_Frame, Bus_last_word: std_logic;
---señales de MC
+--seï¿½ales de MC
 signal MC_Bus_Din, MC_Bus_ADDR, MC_Bus_data_out: std_logic_vector (31 downto 0);
 signal MC_send_addr_ctrl, MC_send_data, MC_frame, MC_bus_Rd_Wr, MC_last_word: std_logic;
---señales de MD_scratch
+--seï¿½ales de MD_scratch
 signal MD_scratch_Dout:  std_logic_vector(31 downto 0); 
 signal MD_scratch_Bus_DEVsel, MD_scratch_send_data, MD_scratch_Bus_TRDY: std_logic;
---señales de MD
+--seï¿½ales de MD
 signal MD_Dout:  std_logic_vector(31 downto 0); 
 signal MD_Bus_DEVsel, MD_send_data, MD_Bus_TRDY: std_logic;
--- señales para el arbitraje
+-- seï¿½ales para el arbitraje
 signal MC_Bus_Grant, MC_Bus_Req: std_logic;
-signal IO_M_bus_Grant, IO_M_Req: std_logic;-- señales para simular otros dispositivos que solicitan el bus
---señales del máster de IO
+signal IO_M_bus_Grant, IO_M_Req: std_logic;-- seï¿½ales para simular otros dispositivos que solicitan el bus
+--seï¿½ales del mï¿½ster de IO
 signal IO_M_Addr, IO_M_Data:  std_logic_vector(31 downto 0); 
 signal IO_M_read, IO_M_write, IO_M_last_word, IO_M_bus_Frame, IO_M_send_Addr, IO_M_send_Data, IO_M_ERROR: std_logic;
---señales de monitorización
+--seï¿½ales de monitorizaciï¿½n
 signal IO_M_count: STD_LOGIC_VECTOR (7 downto 0);
--- señales de error
+-- seï¿½ales de error
 signal Mem_ERROR: std_logic;
 begin
 ------------------------------------------------------------------------------------------------
@@ -215,10 +215,10 @@ begin
 	MC_Bus_Din <= Bus_Data_Addr;
 ------------------------------------------------------------------------------------------------	 
 ------------------------------------------------------------------------------------------------
---   	BUS: líneas compartidas y buffers triestado (cuando no se manda nada queda en estado "Z" de alta impedancia)
---		o OR cableada (cuando no se envía nada, el estado por defecto es "0")
---		MC actua de máster, MD de slave. Y simulamos que hay otros dispositivos haciendo cosas en el bus con "others". 
---		Estos otros dispositivos intentan usar el bus todo el tiempo, pero el árbitro va asignanado prioridades con un round-robin
+--   	BUS: lï¿½neas compartidas y buffers triestado (cuando no se manda nada queda en estado "Z" de alta impedancia)
+--		o OR cableada (cuando no se envï¿½a nada, el estado por defecto es "0")
+--		MC actua de mï¿½ster, MD de slave. Y simulamos que hay otros dispositivos haciendo cosas en el bus con "others". 
+--		Estos otros dispositivos intentan usar el bus todo el tiempo, pero el ï¿½rbitro va asignanado prioridades con un round-robin
 ------------------------------------------------------------------------------------------------
 -- Data: Tres fuentes de datos: MC, MD, y "others" 
 	Bus_Data_Addr <= 	MC_Bus_data_out when MC_send_data = '1' 	else 
@@ -226,45 +226,45 @@ begin
 						MD_Scratch_Dout when MD_Scratch_send_data = '1' 	else 
 						IO_M_Data when IO_M_send_Data = '1' 	else 
 						"ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"; 
--- Addr: la dirección la envía MC o "others"
+-- Addr: la direcciï¿½n la envï¿½a MC o "others"
 	Bus_Data_Addr <= 	MC_Bus_ADDR when (MC_send_addr_ctrl='1') 	else 
 						IO_M_Addr when (IO_M_send_Addr='1') 	else 
 						"ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"; 
 	Bus_Data_Addr <= 	x"00000000" when ((MC_send_data = '0')and (MD_send_data = '0') and (MD_Scratch_send_data = '0') and (IO_M_send_Data = '0') and (MC_send_addr_ctrl='0') and (IO_M_send_Addr='0')) else 
 						"ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"; 
--- Ponemos un 00000000 como valor por defecto para que el simulador no saque sin parar mensajes diciendo que hay señales con valor 'Z'						
+-- Ponemos un 00000000 como valor por defecto para que el simulador no saque sin parar mensajes diciendo que hay seï¿½ales con valor 'Z'						
 	--Control
 	--********************************************************************
 	bus_Read 	<= 	not(MC_bus_Rd_Wr) when (MC_send_addr_ctrl='1') else
 							IO_M_read when (IO_M_send_Addr = '1') 			else--en este ejemplo "others" nunca lee
 							'0';
 	bus_Write  	<= 	MC_bus_Rd_Wr when (MC_send_addr_ctrl='1') else
-							IO_M_write when (IO_M_send_Addr = '1') 			else--"others" escribe en una dirección fuera de rango. Es sólo para que se vea cuando usa el bus
+							IO_M_write when (IO_M_send_Addr = '1') 			else--"others" escribe en una direcciï¿½n fuera de rango. Es sï¿½lo para que se vea cuando usa el bus
 							'0';
 	
-	Bus_Frame <= MC_frame or IO_M_bus_Frame; --el bus está ocupado si cualquiera de los dos másters lo está usando
+	Bus_Frame <= MC_frame or IO_M_bus_Frame; --el bus estï¿½ ocupado si cualquiera de los dos mï¿½sters lo estï¿½ usando
 	
 	Bus_last_word <= 	MC_last_word 		when (MC_frame='1') else 
 							IO_M_last_word 	when (IO_M_bus_Frame='1') ELSE
 							'0';
 	
--- Señales de las memorias	
+-- Seï¿½ales de las memorias	
 	Bus_DevSel <= MD_Bus_DEVsel or MD_scratch_Bus_DEVsel; 
 	Bus_TRDY <= MD_Bus_TRDY or MD_scratch_Bus_TRDY; 
 	
--- Árbitraje
+-- ï¿½rbitraje
 	
 	Arbitraje: arbitro port map(clk => clk, reset => reset, Req0 => MC_Bus_Req, Req1 => IO_M_Req, Grant0 => MC_Bus_Grant, Grant1 => IO_M_bus_Grant, 
 								Bus_Frame=> Bus_Frame, Bus_TRDY=> Bus_TRDY, last_word => Bus_last_word);
 ------------------------------------------------------------------------------------------------	
--- este contador nos dice cuantos ciclos han podido usar el máster de IO. 
--- Su objetivo es ver si liberamos el bus en cuanto se puede o si lo retenemos más de la cuenta
+-- este contador nos dice cuantos ciclos han podido usar el mï¿½ster de IO. 
+-- Su objetivo es ver si liberamos el bus en cuanto se puede o si lo retenemos mï¿½s de la cuenta
 	
 	cont_IO: counter 		generic map (size => 8)
 						port map (clk => clk, reset => reset, count_enable => IO_M_bus_Grant, count => IO_M_count);	
 ------------------------------------------------------------------------------------------------	
--- Modulo_IO: una y otra vez escribe lo que haya en la entrada IO_M_input en la última palabra de la Scratch. Es una forma de hacer visible al procesador una entrada externa
--- Lo más habitual será que tuviese un registro direccionable, y que actuase como esclavo en el bus, en lugar de como máster. Pero lo hemos hecho así para que haya dos másters que compitan por el bus
+-- Modulo_IO: una y otra vez escribe lo que haya en la entrada IO_M_input en la ï¿½ltima palabra de la Scratch. Es una forma de hacer visible al procesador una entrada externa
+-- Lo mï¿½s habitual serï¿½ que tuviese un registro direccionable, y que actuase como esclavo en el bus, en lugar de como mï¿½ster. Pero lo hemos hecho asï¿½ para que haya dos mï¿½sters que compitan por el bus
 	Modulo_IO: IO_Master port map(	clk => clk, reset => reset, 
 														IO_M_Req => IO_M_Req, 
 														IO_M_bus_Grant => IO_M_bus_Grant, 
