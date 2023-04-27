@@ -184,7 +184,6 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 		elsif (state = Beginning and ((WE = '1') OR (hit = '0'))) then -- escritura o fallo de lectura
 			next_state <= Refereeing; --Vamos al estado de arbitraje
 			ready <= '0';
-			Bus_req <= '1'; -- Pedimos el bus
 		end if;
 	        
 	elsif (state = Refereeing) then --Estado de arbitraje
