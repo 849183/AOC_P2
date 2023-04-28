@@ -50,17 +50,17 @@
 		IRQ <= '1';
 		wait for CLK_period;
 		IRQ <= '0';
-		wait for CLK_period*40;
-		IRQ <= '1';
-		wait for CLK_period;
-		IRQ <= '0';
-		wait for CLK_period*41;
-		IRQ <= '1';
-		wait for CLK_period;
-		IRQ <= '0';
-		wait for CLK_period*20;
-		-- Ahora interrumpimos sin parar
-		IRQ <= '1';
+		-- wait for CLK_period*40;
+		-- IRQ <= '1';
+		-- wait for CLK_period;
+		-- IRQ <= '0';
+		-- wait for CLK_period*41;
+		-- IRQ <= '1';
+		-- wait for CLK_period;
+		-- IRQ <= '0';
+		-- wait for CLK_period*20;
+		-- -- Ahora interrumpimos sin parar
+		-- IRQ <= '1';
 		wait;
    end process;
 

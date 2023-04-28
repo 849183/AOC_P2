@@ -15,18 +15,17 @@ NO BAJADAS LAS SEÑALES DE WE EN CACHE
 
 
 
-
-
---A terminar
-NO BAJADAS LAS SEÑALES DE WE EN CACHE en el estado  Carry_word_to_memory
-
-
-
 -- PREGUNTAS
-    Archivo Mips_segmentado_IRQ_completar_2023, en los contadores, lo ponemos con Mem_ready o con parar_EX
-    Archivo MD_cont_2023, ¿Por qué pone next_state <= transferencia y seguido next_state <= Espera, no es innecesaria la primera instrucción?
-    En guión, en el punto 2.2 apartado de datos, indica que si el procesador quiere la palabra 4, se envia la 4,8,12, etc... pero, ¿no debería empezar en la 0?
+    700 ns pone un 000000 por que?
 
+
+
+-- PROBLEMAS QUE HEMOS TENIDO
+    Activabamos el Frame donde no debia ser, entonces creabamos un bucle combinacional.
+    Fallo al cargar en MDR ya que teniamos load <= parar_EX
+    Se nos olvidaba el ready en las transiciones las cuales no respondia ningun slave
+    cambio linea 240 preguntar
+   
 
 -- ANOTACIONES  
     Direccionamos con 9 bits ---> 512 palabras en MP
