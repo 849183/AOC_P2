@@ -45,11 +45,11 @@
    		reset <= '1';
     	wait for CLK_period*2;
 		reset <= '0';
-		wait for CLK_period*26;
-		-- Vamos a interrumpir en momentos distintos
-		IRQ <= '1';
-		wait for CLK_period;
-		IRQ <= '0';
+		-- wait for CLK_period*26;
+		-- -- Vamos a interrumpir en momentos distintos
+		-- IRQ <= '1';
+		-- wait for CLK_period;
+		-- IRQ <= '0';
 		-- wait for CLK_period*40;
 		-- IRQ <= '1';
 		-- wait for CLK_period;

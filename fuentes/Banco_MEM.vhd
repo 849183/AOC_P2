@@ -31,7 +31,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Banco_MEM is
 Port ( 		ALU_out_EX : in  STD_LOGIC_VECTOR (31 downto 0); 
-			ALU_out_MEM : out  STD_LOGIC_VECTOR (31 downto 0); -- instrucción leida en IF
+			ALU_out_MEM : out  STD_LOGIC_VECTOR (31 downto 0); -- instrucciï¿½n leida en IF
          	clk : in  STD_LOGIC;
 			reset : in  STD_LOGIC;
     		load : in  STD_LOGIC;
@@ -47,7 +47,7 @@ Port ( 		ALU_out_EX : in  STD_LOGIC_VECTOR (31 downto 0);
 			BusB_MEM: out  STD_LOGIC_VECTOR (31 downto 0); -- para los store
 			RW_EX : in  STD_LOGIC_VECTOR (4 downto 0); -- registro destino de la escritura
          	RW_MEM : out  STD_LOGIC_VECTOR (4 downto 0);
-         	-- Nuevo excepción
+         	-- Nuevo excepciï¿½n
             PC_exception_EX:  in  STD_LOGIC_VECTOR (31 downto 0);
             PC_exception_MEM:  out  STD_LOGIC_VECTOR (31 downto 0);        	
          	--bits de validez
@@ -80,7 +80,7 @@ SYNC_PROC: process (clk)
 					MemWrite_MEM <= MemWrite_EX;
 					MemRead_MEM <= MemRead_EX;
 					MemtoReg_MEM <= MemtoReg_EX;
-					RegWrite_MEM <= RegWrite_EX;
+					RegWrite_MEM <= RegWrite_EX and valid_I_EX;
 					valid_I_MEM <= valid_I_EX;
 					--nuevo excepciones
 					PC_exception_MEM <= PC_exception_EX;

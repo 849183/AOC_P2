@@ -197,6 +197,7 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 		else
 		
 			MC_send_addr_ctrl <= '1';
+			
 			MC_bus_Rd_Wr <= '0';
 			if (Bus_DevSel = '0') then --Comprobamos si existe un periférico
 				next_state <= Beginning;
@@ -219,9 +220,9 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 						end if;
 
 				elsif (Bus_grant = '1' and hit = '0') then -- Me han dado el permiso sobre el bus y, es un miss (importante poner esta la última porque si no si es WE miss de scratch, se ejecutaría)
-						
+					block_addr <= '1';
 					next_state <= Bring_block_to_cache;
-
+					
 				end if;
 		 	end if;
 		end if;

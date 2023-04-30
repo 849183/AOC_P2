@@ -536,7 +536,7 @@ begin
 	-- No reseteamos el banco si hay una excepci�n porque podr�a llegar a mitad de una transferencia y corromper la MC 
 	reset_MEM <= (reset);
 	--si paramos en EX no hay que cargar una instrucci�n nueva en la etap MEM
-	load_MEM <= not(parar_EX) and not(Exception_accepted);
+	load_MEM <= not(parar_EX);
 	valid_I_EX_AUX <= (valid_I_EX and not(Exception_accepted));
 	Banco_EX_MEM: Banco_MEM PORT MAP ( ALU_out_EX => ALU_out_EX, ALU_out_MEM => ALU_out_MEM, clk => clk, reset => reset_MEM, load => load_MEM, MemWrite_EX => MemWrite_EX,
 													MemRead_EX => MemRead_EX, MemtoReg_EX => MemtoReg_EX, RegWrite_EX => RegWrite_EX, MemWrite_MEM => MemWrite_MEM, MemRead_MEM => MemRead_MEM,
