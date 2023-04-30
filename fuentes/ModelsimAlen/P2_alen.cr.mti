@@ -198,6 +198,14 @@ Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
 -- Compiling entity MC_datos
 -- Compiling architecture Behavioral of MC_datos
 
+} {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_MC_completar_2023.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_MC_completar_2023.vhd
+Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity UC_MC
+-- Compiling architecture Behavioral of UC_MC
+
 } {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/counter_2bits.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/counter_2bits.vhd
 Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
 -- Loading package STANDARD
@@ -224,14 +232,6 @@ Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
 -- Loading package std_logic_1164
 -- Compiling entity Arbitro
 -- Compiling architecture Behavioral of Arbitro
-
-} {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_MC_completar_2023.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_MC_completar_2023.vhd
-Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity UC_MC
--- Compiling architecture Behavioral of UC_MC
 
 } {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_I_tests.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_I_tests.vhd
 Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
