@@ -195,9 +195,10 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 			
 			ready <= '0';
 		else
+		
 			MC_send_addr_ctrl <= '1';
 			MC_bus_Rd_Wr <= '0';
-			if (Bus_DevSel = '0') then
+			if (Bus_DevSel = '0') then --Comprobamos si existe un periférico
 				next_state <= Beginning;
 				next_error_state <= memory_error;
 				load_addr_error <= '1'; 
