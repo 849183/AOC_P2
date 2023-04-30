@@ -198,7 +198,7 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 		
 			MC_send_addr_ctrl <= '1';
 			
-			MC_bus_Rd_Wr <= '0';
+			
 			if (Bus_DevSel = '0') then --Comprobamos si existe un periférico
 				next_state <= Beginning;
 				next_error_state <= memory_error;
@@ -206,20 +206,21 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 				ready <= '1';
 			else 
 				if (Bus_grant = '1' and WE = '1' and addr_non_cacheable = '1' ) then -- Me han dado el permiso sobre el bus y, es un hit, y es una escritura en una dirección no cacheable
-						
+					MC_bus_Rd_Wr <= '1';
 					next_state <= Carry_word_to_memory;
 					
 				elsif (Bus_grant = '1' and hit = '1' and WE = '1' and addr_non_cacheable = '0' ) then  -- Me han dado el permiso sobre el bus y, es un hit, y es una escritura en una dirección cacheable por lo tanto escribo en Cache	
-						
-						next_state <= Carry_word_to_memory;
-						mux_origen <= '0';
-						if (hit0 = '1') then
-							MC_WE0 <= '1'; -- Escribo en la MC
-						elsif (hit1 = '1') then
-							MC_WE1 <= '1';
-						end if;
+					MC_bus_Rd_Wr <= '1';
+					next_state <= Carry_word_to_memory;
+					mux_origen <= '0';
+					if (hit0 = '1') then
+						MC_WE0 <= '1'; -- Escribo en la MC
+					elsif (hit1 = '1') then
+						MC_WE1 <= '1';
+					end if;
 
 				elsif (Bus_grant = '1' and hit = '0') then -- Me han dado el permiso sobre el bus y, es un miss (importante poner esta la última porque si no si es WE miss de scratch, se ejecutaría)
+					MC_bus_Rd_Wr <= '0';
 					block_addr <= '1';
 					next_state <= Bring_block_to_cache;
 					
