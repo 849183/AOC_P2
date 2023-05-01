@@ -131,7 +131,7 @@ error_reg: process (clk)
    end process;
    
 --Salida Mem Error
-Mem_ERROR <= '1' when (error_state = memory_error or next_error_state = memory_error) else '0';
+Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 
 --Mealy State-Machine - Outputs based on state and inputs
    
