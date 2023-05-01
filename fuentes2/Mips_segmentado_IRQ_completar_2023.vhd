@@ -16,6 +16,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
+
 entity MIPs_segmentado is
     Port ( 	clk : in  STD_LOGIC;
            	reset : in  STD_LOGIC;
@@ -49,11 +50,11 @@ component mux2_1 is
            Dout : out  STD_LOGIC_VECTOR (31 downto 0));
 end component;
 
-component Data_Memory_Subsystem is port (
+component MD_mas_MC is port (
 		  CLK : in std_logic;
 		  reset: in std_logic; 
 		  ADDR : in std_logic_vector (31 downto 0); --Dir solicitada por el Mips
-          	  Din : in std_logic_vector (31 downto 0);--entrada de datos desde el Mips
+          	Din : in std_logic_vector (31 downto 0);--entrada de datos desde el Mips
 		  WE : in std_logic;		-- write enable	del MIPS
 		  RE : in std_logic;		-- read enable del MIPS	
 		  IO_input: in std_logic_vector (31 downto 0); --dato que viene de una entrada del sistema
@@ -316,7 +317,7 @@ COMPONENT Banco_MEM
 	signal inc_cycles, inc_I, inc_data_stalls, inc_control_stalls, inc_Exceptions, inc_Exception_cycles : std_logic;
 --interfaz con memoria
 	signal Mem_ready : std_logic;
-	
+
 
 begin
 	-- ****************************************************************************************************
@@ -556,14 +557,16 @@ begin
 	WE <= MemWrite_MEM and valid_I_MEM; --s�lo se escribe si es una instrucci�n v�lida
 	RE <= MemRead_MEM and valid_I_MEM; --s�lo se lee si es una instrucci�n v�lida
 	
-	Mem_D: Data_Memory_Subsystem PORT MAP (CLK => CLK, ADDR => ALU_out_MEM, Din => BusB_MEM, WE => MemWrite_MEM, RE => MemRead_MEM, reset => reset, IO_input => IO_input, Mem_ready => Mem_ready, Dout => Mem_out, Data_abort => Data_abort);
-
+	
+	
+	-- Sustituimos la Memoria de Datos por el nuevo módulo que incorpora la MC + MD + Scratch
+	MD_MC: MD_mas_MC PORT MAP (CLK => CLK, ADDR => ALU_out_MEM, Din => BusB_MEM, WE => MemWrite_MEM, RE => MemRead_MEM, reset => reset, IO_input => IO_input, Mem_ready => Mem_ready, Dout => Mem_out, Data_abort => Data_abort);
 	
 	-- parar_EX indica que hay que detener la etapa de memoria (se usa m�s adelante cuando la jerarqu�a de memoria sea m�s compleja)
 	-- La instrucci�n en WB ser� v�lida el pr�ximo ciclo si la instrucci�n en Mem es v�lida y no hay que parar 
 	valid_I_WB_in <= valid_I_MEM and not(parar_EX);
 	
-	Banco_MEM_WB: Banco_WB PORT MAP ( 	ALU_out_MEM => ALU_out_MEM, ALU_out_WB => ALU_out_WB, Mem_out => Mem_out, MDR => MDR, clk => clk, reset => reset, load => '1', 
+	Banco_MEM_WB: Banco_WB PORT MAP ( 	ALU_out_MEM => ALU_out_MEM, ALU_out_WB => ALU_out_WB, Mem_out => Mem_out, MDR => MDR, clk => clk, reset => reset, load => parar_EX, 
 										MemtoReg_MEM => MemtoReg_MEM, RegWrite_MEM => RegWrite_MEM, MemtoReg_WB => MemtoReg_WB, RegWrite_WB => RegWrite_WB, 
 										RW_MEM => RW_MEM, RW_WB => RW_WB,
 										-- Nuevo
@@ -602,11 +605,13 @@ begin
 							port map (clk => clk, reset => reset, count_enable => inc_Exception_cycles, count => Exception_cycles);
 	------------------------------------------------------------------------------------
 	-- Completar:
-	--Modificado 16/03/2023
+	-- Modificado 18/04/2023
 	inc_cycles <= '1';--Done
 	inc_I <= valid_I_WB;
-	inc_data_stalls <= parar_ID and not Exception_accepted;
-	inc_control_stalls <= salto_tomado and not parar_ID;
+	-- Añadimos la señal Mem_ready, para no contar ciclos innecesarios.
+	inc_data_stalls <= parar_ID and not Exception_accepted and not Mem_ready; 
+	inc_control_stalls <= salto_tomado and not parar_ID and not Mem_ready; 
+
 	inc_Exceptions <= Exception_accepted;
 	inc_Exception_cycles <= MIPS_status(0);		
 	-- Fin completar;

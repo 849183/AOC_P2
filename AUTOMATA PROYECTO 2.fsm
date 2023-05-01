@@ -1,0 +1,110 @@
+<?xml version='1.0'?>
+<!DOCTYPE qfsmproject SYSTEM 'qfsm.dtd'>
+<qfsmproject version="0.54" author="Qfsm">
+  <machine nummooreout="0" transfontitalic="0" draw_it="1" statefontsize="8" transfont="Helvetica" statefontitalic="0" author="" description="" version="" name="Proyecto 2 AOC" arrowtype="1" numbits="2" statefontweight="50" statefont="Helvetica" numin="0" transfontsize="8" transfontweight="50" type="2" numout="0" initialstate="0">
+    <outputnames_moore></outputnames_moore>
+    <inputnames></inputnames>
+    <outputnames></outputnames>
+    <itransition ypos="145.8333333333334" endx="601.0269905543097" xpos="476.8333333333333" endy="168.0563052931753"/>
+    <state pencolor="0" exit_actions="" radius="70" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="170" code="0" xpos="671" linewidth="1">Beginning</state>
+    <state pencolor="0" exit_actions="" radius="70" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="457" code="1" xpos="616" linewidth="1">Refereeing</state>
+    <state pencolor="0" exit_actions="" radius="70" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="547" code="2" xpos="230" linewidth="1">Bring_block_to_cache</state>
+    <state pencolor="0" exit_actions="" radius="70" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="566.3055555555557" code="3" xpos="1168.388888888889" linewidth="1">Carry_word_to_memory</state>
+    <transition c1x="644.6415725737716" c2y="94.72645027374172" c1y="22.33404825886149" description="" straight="1" type="2" ypos="100.2536709153204" endx="720.3930702393384" xpos="676.9539549218629" endy="120.3983406292513" c2x="800.7454920666169">
+      <from>0</from>
+      <to>0</to>
+      <inputs default="0" any="0" invert="0">RE AND HIT</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="637.2248424831938" c2y="336.6855664620546" c1y="286.3711329241089" description="" straight="1" type="2" ypos="236.0566993861632" endx="616.0000049411764" xpos="647.8372612542025" endy="387.0000000000002" c2x="626.6124237121851">
+      <from>0</from>
+      <to>1</to>
+      <inputs default="0" any="0" invert="0">WE OR NOT(HIT)</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="535.9107421267759" c2y="20.75829500185665" c1y="104.8011318559781" description="" straight="1" type="2" ypos="124.2942264551376" endx="659.7644264686375" xpos="617.9813026879597" endy="100.9075844435777" c2x="686.0636479395649">
+      <from>0</from>
+      <to>0</to>
+      <inputs default="0" any="0" invert="0">RE' AND WE'</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="661.9492094255612" c2y="451.3414527579273" c1y="314.2110993348366" description="" straight="1" type="2" ypos="398.1855537018881" endx="682.8832283827147" xpos="653.9586736681684" endy="436.3448853523969" c2x="765.8932314786403">
+      <from>1</from>
+      <to>1</to>
+      <inputs default="0" any="0" invert="0">NOT( MC_BUS_GRANT )</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="470.2333177907016" c2y="512.9377016448316" c1y="504.3833576902988" description="" straight="1" type="2" ypos="495.829013735766" endx="295.1869945794028" xpos="557.756479396351" endy="521.4920455993643" c2x="382.7101561850521">
+      <from>1</from>
+      <to>2</to>
+      <inputs default="0" any="0" invert="0">GRANTandNOT(HIT)andDEV_SEL</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="791.43640879208" c2y="626.5706503897296" c1y="609.517393052111" description="" straight="0" type="2" ypos="519.2696912700476" endx="1109.078792699495" xpos="647.9763279494839" endy="603.4850188384595" c2x="944.7853785235656">
+      <from>1</from>
+      <to>3</to>
+      <inputs default="0" any="0" invert="0">GRANTandWEandHITandNOT(N_CACHEABLE)andDEV_SEL</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="853.2467148367884" c2y="545.4794865458663" c1y="500.4239008587511" description="" straight="0" type="2" ypos="466.1966935694605" endx="1101.050931062899" xpos="685.3932332968384" endy="585.4262102468864" c2x="977.8133174125356">
+      <from>1</from>
+      <to>3</to>
+      <inputs default="0" any="0" invert="0">GRANTandN_CACHEABLEandWEandDEV_SEL</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="472.4943639213518" c2y="267.6138671068266" c1y="448.4017279916854" description="" straight="0" type="2" ypos="430.3277869018591" endx="624.866264944621" xpos="551.280659394217" endy="222.6467329455503" c2x="558.8005392798785">
+      <from>1</from>
+      <to>0</to>
+      <inputs default="0" any="0" invert="0">GRANTandNOT(DEV_SEL)</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="152.809327129358" c2y="518.453124913191" c1y="675.6141517165881" description="" straight="1" type="2" ypos="595.6515467793233" endx="160.1729950283856" xpos="179.6708136765622" endy="551.9182696849742" c2x="82.74146570477444">
+      <from>2</from>
+      <to>2</to>
+      <inputs default="0" any="0" invert="0">TRDYandNOT(LAST_WORD_BLOCK)</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="80.51645721178534" c2y="410.7850050969018" c1y="559.4366569255569" description="" straight="1" type="2" ypos="534.5510601472267" endx="185.2337163348194" xpos="161.1158661479871" endy="493.1856910588961" c2x="167.1869825310951">
+      <from>2</from>
+      <to>2</to>
+      <inputs default="0" any="0" invert="0">NOT(TRDY)</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="379.0639979370351" c2y="620.3211376590424" c1y="664.2105816724384" description="" straight="0" type="2" ypos="604.0729041846414" endx="583.8251036043704" xpos="270.5300334064843" endy="519.1673229432513" c2x="535.4786216275122">
+      <from>2</from>
+      <to>1</to>
+      <inputs default="0" any="0" invert="0">TRDYandLAST_WORD_BLOCKandWE</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="167.310248341465" c2y="159.9927464465163" c1y="308.2364743990804" description="" straight="0" type="2" ypos="477.0700661911669" endx="601.1184656734635" xpos="226.8688089339329" endy="174.0707689898953" c2x="367.9717422058615">
+      <from>2</from>
+      <to>0</to>
+      <inputs default="0" any="0" invert="0">TRDYandN_CACHEABLE</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="271.5098718960927" c2y="218.2701750263609" c1y="369.8869774629002" description="" straight="0" type="2" ypos="490.6148910105507" endx="610.4831704497636" xpos="271.4815559525906" endy="205.1811503675994" c2x="423.6492989507058">
+      <from>2</from>
+      <to>0</to>
+      <inputs default="0" any="0" invert="0">TRDYandLAST_WORD_BLOCKandRE</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="1179.232127395458" c2y="157.6096792859835" c1y="221.5634207069724" description="" straight="0" type="2" ypos="518.3782732390723" endx="728.9909854265471" xpos="1219.408253935469" endy="130.7948267538837" c2x="994.1671119665579">
+      <from>3</from>
+      <to>0</to>
+      <inputs default="0" any="0" invert="0">TRDY AND N_CACHEABLE</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="1070.036644970522" c2y="225.5083636273793" c1y="316.5985080984329" description="" straight="0" type="2" ypos="503.8830970139307" endx="734.2974052722194" xpos="1136.711820375229" endy="199.8904413785481" c2x="923.4725806769262">
+      <from>3</from>
+      <to>0</to>
+      <inputs default="0" any="0" invert="0">TRDY AND NOT ( N_CACHEABLE )</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="1355.548948888129" c2y="733.9194563010203" c1y="542.5810948180204" description="" straight="0" type="2" ypos="575.8408393890666" endx="1215.38300799828" xpos="1237.73640767806" endy="618.1857325900689" c2x="1249.385864856581">
+      <from>3</from>
+      <to>3</to>
+      <inputs default="0" any="0" invert="0">NOT(TRDY)</inputs>
+      <outputs></outputs>
+    </transition>
+  </machine>
+</qfsmproject>

@@ -91,7 +91,8 @@ begin
 -- parar_EX_internal se define para poder leerla en el c?digo (en vhdl las salidas de una entidad no se pueden leer dentro de la entidad. 
 -- Depende de c?mo lo hag?is es necesaria o no
 
-	parar_EX_internal <= '0';
+	-- Activamos parar_EX, cuando la memoria no puede realizar la acción en este mismo ciclo.
+	parar_EX_internal <= not(Mem_ready);
 	parar_EX <= parar_EX_internal;
 -------------------------------------------------------------------------------------------------------------------------------
 end Behavioral;

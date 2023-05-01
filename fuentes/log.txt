@@ -1,0 +1,34 @@
+18/04/23 ----------------> 2.1 and 
+Renombrar a .bak la memoria de Datos
+Cambiado Banco_WB, cargará solo cuando sea necesario
+Eliminación de la memoria de datos anterior
+Añadir la nueva memoria que en este caso va a ser la cache añadiendo el modulo MD_mas_MC_mas_scratch_2023
+Modificiación de los contadores de MIPS para no contar de forma innecesaria
+
+
+21/04/23 ---------------->2.5
+Creación del automata de MC
+Codificación parcial del AFD
+NO BAJADAS LAS SEÑALES DE WE EN CACHE
+
+
+
+
+
+-- PREGUNTAS
+    700 ns pone un 000000 por que?
+
+
+
+-- PROBLEMAS QUE HEMOS TENIDO
+    Activabamos el Frame donde no debia ser, entonces creabamos un bucle combinacional.
+    Fallo al cargar en MDR ya que teniamos load <= parar_EX
+    Se nos olvidaba el ready en las transiciones las cuales no respondia ningun slave
+    cambio linea 240 preguntar
+   
+
+-- ANOTACIONES  
+    Direccionamos con 9 bits ---> 512 palabras en MP
+    8 bloques en total, 4 bloques por via
+    Tamaño de la Cache de 128 Bytes (32 palabras)
+    3 bits para tag, 2 para set y 4 para bloque

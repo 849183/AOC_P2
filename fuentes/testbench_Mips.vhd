@@ -3,7 +3,9 @@
   LIBRARY ieee;
   USE ieee.std_logic_1164.ALL;
   USE ieee.numeric_std.ALL;
-
+  use IEEE.std_logic_arith.all;
+  use IEEE.std_logic_unsigned.all;
+  
   ENTITY testbench IS
   END testbench;
 
@@ -45,22 +47,28 @@
    		reset <= '1';
     	wait for CLK_period*2;
 		reset <= '0';
-		wait for CLK_period*26;
-		-- Vamos a interrumpir en momentos distintos
-		IRQ <= '1';
-		wait for CLK_period;
-		IRQ <= '0';
-		wait for CLK_period*40;
-		IRQ <= '1';
-		wait for CLK_period;
-		IRQ <= '0';
-		wait for CLK_period*41;
-		IRQ <= '1';
-		wait for CLK_period;
-		IRQ <= '0';
-		wait for CLK_period*20;
-		-- Ahora interrumpimos sin parar
-		IRQ <= '1';
+		--  wait for CLK_period*26;
+		 IO_input <= conv_std_logic_vector(1024, 32);
+		-- -- Vamos a interrumpir en momentos distintos
+		-- IRQ <= '1';
+		-- wait for CLK_period;
+		-- IRQ <= '0';
+		--  wait for CLK_period*40;
+		wait for 1500 ns;
+		 IO_input <= conv_std_logic_vector(2048, 32);
+		-- IRQ <= '1';
+		-- wait for CLK_period;
+		-- IRQ <= '0';
+		--  wait for CLK_period*41;
+		wait for 1500 ns;
+
+		 IO_input <= conv_std_logic_vector(4096, 32);
+		-- IRQ <= '1';
+		-- wait for CLK_period;
+		-- IRQ <= '0';
+		-- wait for CLK_period*20;
+		-- -- Ahora interrumpimos sin parar
+		-- IRQ <= '1';
 		wait;
    end process;
 
