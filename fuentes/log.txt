@@ -32,3 +32,7 @@ NO BAJADAS LAS SEÑALES DE WE EN CACHE
     8 bloques en total, 4 bloques por via
     Tamaño de la Cache de 128 Bytes (32 palabras)
     3 bits para tag, 2 para set y 4 para bloque
+
+-- COSAS A MODIFICAR
+    134 - Mem_ERROR <= '1' when (error_state = memory_error or next_error_state = memory_error) else '0';
+    567 - valid_I_WB_in <= valid_I_MEM and not(parar_EX) and (not(Data_abort) or  (not(Exception_accepted) and Data_abort));

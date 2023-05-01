@@ -128,10 +128,10 @@ error_reg: process (clk)
             error_state <= next_error_state;
          end if;   
       end if;
-   end process;
+end process;
    
 --Salida Mem Error
-Mem_ERROR <= '1' when (error_state = memory_error or next_error_state = memory_error) else '0';
+Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 
 --Mealy State-Machine - Outputs based on state and inputs
    
@@ -268,19 +268,12 @@ Mem_ERROR <= '1' when (error_state = memory_error or next_error_state = memory_e
 		if (state = Carry_word_to_memory and (bus_TRDY = '0')) then
 			next_state <= Carry_word_to_memory; -- Espero a que el slave este listo.
 		
-		elsif (state = Carry_word_to_memory and (bus_TRDY = '1' and addr_non_cacheable = '0')) then 
+		elsif (state = Carry_word_to_memory and (bus_TRDY = '1')) then 
 			next_state <= Beginning;
 			last_Word <= '1'; -- Aviso de que es la útlima palabra.
 			MC_send_data <= '1'; -- Envio la palabra.
-			ready <= '1';
-		elsif (state = Carry_word_to_memory and (bus_TRDY = '1' and addr_non_cacheable = '1')) then -- La dirección no es cacheable (Es de scratch)
-			next_state <= Beginning;
-			last_Word <= '1'; -- Aviso de que es la útlima palabra.
-			MC_send_data <= '1'; -- Envio la palabra.
-			ready <= '1';
+			ready <= '1';	
 		end if;
-				
-			
 	end if;
 
 
