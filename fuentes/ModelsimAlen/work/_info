@@ -24,9 +24,15 @@ VKbbP6^b;CP<VQ7[ck9na30
 !s100 FdnT[E<XL_UiCO?C2]0L[0
 Z9 OW;C;10.5c;63
 32
+<<<<<<< HEAD
 Z10 !s110 1682883944
 !i10b 1
 Z11 !s108 1682883944.000000
+=======
+Z10 !s110 1682939482
+!i10b 1
+Z11 !s108 1682939482.000000
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/adder32.vhd|
 Z13 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/adder32.vhd|
 !i113 1
@@ -216,7 +222,11 @@ R31
 R14
 R15
 Ebanco_mem
+<<<<<<< HEAD
 Z32 w1682872542
+=======
+Z32 w1682938981
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 R4
 R5
 R6
@@ -228,11 +238,11 @@ VUjX=Ri43Zo2Wna@HE6;hS0
 !s100 e^lRR;M5;Ka;_1K5=gg]z2
 R9
 32
-R10
+Z35 !s110 1682939483
 !i10b 1
 R11
-Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_MEM.vhd|
-Z36 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_MEM.vhd|
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_MEM.vhd|
+Z37 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_MEM.vhd|
 !i113 1
 R14
 R15
@@ -246,11 +256,11 @@ Vn0<5lji;5J85Re9bn^Kb12
 !s100 [>c=fP=4jFi4H?o2OaH7R0
 R9
 32
-R10
+!s110 1682938447
 !i10b 1
-R11
-R35
+!s108 1682938447.000000
 R36
+R37
 !i113 1
 R14
 R15
@@ -259,19 +269,27 @@ R0
 R4
 R5
 R6
-Z37 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_WB.vhd
-Z38 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_WB.vhd
+Z38 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_WB.vhd
+Z39 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_WB.vhd
 l0
 L32
 VF_?P][ZHX7dgHR6;Og1dI3
 !s100 Ub;kk@e58KjG7fBJXE3g52
 R9
 32
+<<<<<<< HEAD
 R10
 !i10b 1
 R11
 Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_WB.vhd|
 Z40 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_WB.vhd|
+=======
+R35
+!i10b 1
+Z40 !s108 1682939483.000000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_WB.vhd|
+Z42 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_WB.vhd|
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -285,7 +303,11 @@ Vzz_jZlXzN`C]XDC[I@0kK3
 !s100 ?G7OZQBn>2V2zLWNB5WY;0
 R9
 32
+<<<<<<< HEAD
 R10
+=======
+R35
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i10b 1
 R11
 R39
@@ -309,7 +331,11 @@ VRQGI3A5HN^]_7_9zg^@S?0
 !s100 HBWhPB[m:GRl@dEoFDj?23
 R9
 32
+<<<<<<< HEAD
 Z43 !s110 1682883945
+=======
+R35
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i10b 1
 R11
 Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/BReg.vhd|
@@ -330,7 +356,11 @@ V7<>zQlG_eB5YPHzEOenH61
 !s100 PA:o5l3Ti2m4G[5D5>VGQ1
 R9
 32
+<<<<<<< HEAD
 R43
+=======
+R35
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i10b 1
 R11
 R44
@@ -354,7 +384,11 @@ VbSgk2MJ^;BTfo_ezC7mCH1
 !s100 _4j<kecJD9WAm<ZR0S7Dh0
 R9
 32
+<<<<<<< HEAD
 R43
+=======
+R35
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i10b 1
 Z48 !s108 1682883945.000000
 Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/counter.vhd|
@@ -375,7 +409,11 @@ VcPXK>f6VEOfVTCVNCK<PU0
 !s100 iHKVHO7k6h<mO^=E7hmE;2
 R9
 32
+<<<<<<< HEAD
 R43
+=======
+R35
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i10b 1
 R48
 R49
@@ -399,7 +437,11 @@ V=dThhSTi6khH>[3Z5]KeV3
 !s100 Vf_jfMQXQ@<_D2ISHdWD<3
 R9
 32
+<<<<<<< HEAD
 R43
+=======
+R35
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i10b 1
 R48
 Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/counter_2bits.vhd|
@@ -420,7 +462,11 @@ VNzGJCgoAWWBe`M39G0:n:0
 !s100 T85fP;@I;e?]IX@baHF4?3
 R9
 32
+<<<<<<< HEAD
 R43
+=======
+R35
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i10b 1
 R48
 R53
@@ -441,7 +487,11 @@ VOPfHQ]YXPXBWdjNnKXZO=1
 !s100 =jQT7hQEW^Q9VGDz6>Dnd0
 R9
 32
+<<<<<<< HEAD
 R43
+=======
+R35
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i10b 1
 R48
 Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Ext_signo.vhd|
@@ -459,7 +509,11 @@ V0e3eMCFkcGFOWFbZedjaN2
 !s100 LK3IFGmMiXJPmL2zW;mXf2
 R9
 32
+<<<<<<< HEAD
 R43
+=======
+R35
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i10b 1
 R48
 R57
@@ -483,7 +537,11 @@ VazoA=AOGQ;Mf5NggY2_NT2
 !s100 Ag4[78@Rz;E;jQ8=Pzb@<0
 R9
 32
+<<<<<<< HEAD
 R43
+=======
+R35
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i10b 1
 R48
 Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/FIFO_reg.vhd|
@@ -504,7 +562,11 @@ VR[S8^P6e3;Jbb:lJIW>gY2
 !s100 AMcZd>z_:K5e_E8gc9zM?2
 R9
 32
+<<<<<<< HEAD
 R43
+=======
+R35
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i10b 1
 R48
 R61
@@ -525,7 +587,11 @@ VjACX2J_B7fjMdi2jLMXZb3
 !s100 ?BVYJfXYd]QIdgPZAXN<53
 R9
 32
+<<<<<<< HEAD
 R43
+=======
+R35
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i10b 1
 R48
 Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/IO_master.vhd|
@@ -543,7 +609,11 @@ Vd0B6EnJ=jLS17ZU@Ebh^60
 !s100 GQzDT1:^oZDE>FHnh5ILS1
 R9
 32
+<<<<<<< HEAD
 R43
+=======
+R35
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i10b 1
 R48
 R65
@@ -567,7 +637,11 @@ VbQhD<18mK^lDcAgizm9b23
 !s100 lN7WVemL?m2R7P:H@Mh8N2
 R9
 32
+<<<<<<< HEAD
 R43
+=======
+R35
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i10b 1
 R48
 Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MC_datos.vhd|
@@ -588,7 +662,11 @@ VRSN`Sz;c1:;]=niM_:jZW2
 !s100 ;i39O`PzQXR__F0JUcQ^H2
 R9
 32
+<<<<<<< HEAD
 R43
+=======
+R35
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i10b 1
 R48
 R69
@@ -611,11 +689,19 @@ VGG64zjgkzUbgSPh7AF_SP2
 !s100 ;ccfQ9Z4z`M<o6GA8SS:72
 R9
 32
+<<<<<<< HEAD
 R43
 !i10b 1
 R48
 Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_cont_2023.vhd|
 Z74 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_cont_2023.vhd|
+=======
+Z73 !s110 1682939484
+!i10b 1
+R40
+Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_cont_2023.vhd|
+Z75 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_cont_2023.vhd|
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -631,11 +717,18 @@ VFMGMFh7:in=^MLgc`Z`@:1
 !s100 TlWa;``hEK`DDYaoIZCT60
 R9
 32
+<<<<<<< HEAD
 R43
 !i10b 1
 R48
 R73
+=======
+R73
+!i10b 1
+R40
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 R74
+R75
 !i113 1
 R14
 R15
@@ -647,19 +740,27 @@ R1
 R4
 R5
 R6
-Z75 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_mas_MC_mas_scratch_2023.vhd
-Z76 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_mas_MC_mas_scratch_2023.vhd
+Z76 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_mas_MC_mas_scratch_2023.vhd
+Z77 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_mas_MC_mas_scratch_2023.vhd
 l0
 L21
 Vc2NQf4Z8WzCBjYom1:A[Z0
 !s100 Ng1@Cka?6gD^>I@l`1V`42
 R9
 32
+<<<<<<< HEAD
 R43
 !i10b 1
 R48
 Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_mas_MC_mas_scratch_2023.vhd|
 Z78 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_mas_MC_mas_scratch_2023.vhd|
+=======
+R73
+!i10b 1
+Z78 !s108 1682939484.000000
+Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_mas_MC_mas_scratch_2023.vhd|
+Z80 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_mas_MC_mas_scratch_2023.vhd|
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -676,11 +777,19 @@ VQh2g;<n[j>=YCe=JSR>J42
 !s100 P;IEnXdYGfGK`4>MJKacQ1
 R9
 32
+<<<<<<< HEAD
 R43
 !i10b 1
 R48
 R77
 R78
+=======
+R73
+!i10b 1
+R78
+R79
+R80
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -691,19 +800,32 @@ R3
 R4
 R5
 R6
+<<<<<<< HEAD
 Z79 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_scratch.vhd
 Z80 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_scratch.vhd
+=======
+Z81 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_scratch.vhd
+Z82 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_scratch.vhd
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 l0
 L25
 V30AL<DBNKh8U3fNiM6Hof0
 !s100 :0gLjA8g599CodlhAk@KI1
 R9
 32
+<<<<<<< HEAD
 R43
 !i10b 1
 R48
 Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_scratch.vhd|
 Z82 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_scratch.vhd|
+=======
+R73
+!i10b 1
+R78
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_scratch.vhd|
+Z84 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_scratch.vhd|
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -719,32 +841,55 @@ VFB82b6_:P]@P7o:LRWc9;3
 !s100 ^eh:==e3K^dKN9mWPPUzQ3
 R9
 32
+<<<<<<< HEAD
 R43
 !i10b 1
 R48
 R81
 R82
+=======
+R73
+!i10b 1
+R78
+R83
+R84
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
 Ememoriaram_i
+<<<<<<< HEAD
 Z83 w1682880661
+=======
+Z85 w1682936569
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 R3
 R2
 R4
 R5
 R6
+<<<<<<< HEAD
 Z84 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_I_tests.vhd
 Z85 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_I_tests.vhd
+=======
+Z86 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_I_tests.vhd
+Z87 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_I_tests.vhd
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 l0
 L38
 VCUbIf5KK[?YU9YGT<9SR53
 !s100 H@fcR_fjoGd`4>M5e?87;0
 R9
 32
+<<<<<<< HEAD
 Z86 !s110 1682883946
 !i10b 1
 Z87 !s108 1682883946.000000
+=======
+R73
+!i10b 1
+R78
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_I_tests.vhd|
 Z89 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_I_tests.vhd|
 !i113 1
@@ -762,16 +907,26 @@ VAKUK_6iFNeLL3U63N4IJ:3
 !s100 [Yok5?CYF[dSoGj1T64XD3
 R9
 32
+<<<<<<< HEAD
 R86
 !i10b 1
 R87
+=======
+R73
+!i10b 1
+R78
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 R88
 R89
 !i113 1
 R14
 R15
 Emips_segmentado
+<<<<<<< HEAD
 Z90 w1682872508
+=======
+Z90 w1682939478
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 R4
 R5
 R6
@@ -783,9 +938,15 @@ VWL@Bk]a17LiU<J9dLMmG23
 !s100 nZf>RVf28<<fg0VWcNQij3
 R9
 32
+<<<<<<< HEAD
 R86
 !i10b 1
 R87
+=======
+R73
+!i10b 1
+R78
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 Z93 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Mips_segmentado_IRQ_completar_2023.vhd|
 Z94 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Mips_segmentado_IRQ_completar_2023.vhd|
 !i113 1
@@ -797,6 +958,7 @@ R5
 DEx4 work 15 mips_segmentado 0 22 WL@Bk]a17LiU<J9dLMmG23
 l322
 L28
+<<<<<<< HEAD
 V]>i9;hYHdT9YaiKENB=f01
 !s100 icYH@XfXSz7U5MUCa16DB1
 R9
@@ -804,6 +966,15 @@ R9
 R86
 !i10b 1
 R87
+=======
+VE8MQ^0Lkb>WHg01mom<9B0
+!s100 ^0jTDVHim<UF1mHlfccc33
+R9
+32
+!s110 1682938448
+!i10b 1
+!s108 1682938448.000000
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 R93
 R94
 !i113 1
@@ -822,9 +993,15 @@ V4B]44XS6mWPn0HgoN1FUY2
 !s100 [VRg3F0=o?Z:]Y[CCZJje0
 R9
 32
+<<<<<<< HEAD
 R86
 !i10b 1
 R87
+=======
+R73
+!i10b 1
+R78
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 Z97 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_1.vhd|
 Z98 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_1.vhd|
 !i113 1
@@ -840,9 +1017,15 @@ VaaZe^4G8MA4N6FjAm_c963
 !s100 zIQT7B^e_I4Qli6JQET>o2
 R9
 32
+<<<<<<< HEAD
 R86
 !i10b 1
 R87
+=======
+R73
+!i10b 1
+R78
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 R97
 R98
 !i113 1
@@ -861,9 +1044,15 @@ VCE>dzi[RXNe0h@zj?kL[43
 !s100 GnzQIA<O?`7V;D;ZbXOiA0
 R9
 32
+<<<<<<< HEAD
 R86
 !i10b 1
 R87
+=======
+R73
+!i10b 1
+R78
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 Z101 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_5bits.vhd|
 Z102 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_5bits.vhd|
 !i113 1
@@ -879,9 +1068,15 @@ VHoSRknWOKVD_Wn:Ndbj0O0
 !s100 =@Dj[OG[:JJ:5PSjamb5A3
 R9
 32
+<<<<<<< HEAD
 R86
 !i10b 1
 R87
+=======
+R73
+!i10b 1
+R78
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 R101
 R102
 !i113 1
@@ -900,11 +1095,19 @@ VaY]ZEc_oFdCJDCo0Dl`GW1
 !s100 eC]>Q3Z[89zBLkPeQ2Xj<1
 R9
 32
+<<<<<<< HEAD
 R86
 !i10b 1
 R87
 Z105 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux4_1_32bits.vhd|
 Z106 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux4_1_32bits.vhd|
+=======
+Z105 !s110 1682939485
+!i10b 1
+R78
+Z106 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux4_1_32bits.vhd|
+Z107 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux4_1_32bits.vhd|
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -918,35 +1121,60 @@ V28fm?0TJz:3Nl`6RERk412
 !s100 8bbIj9`VbVePPKl6mXQcJ1
 R9
 32
+<<<<<<< HEAD
 R86
 !i10b 1
 R87
 R105
 R106
+=======
+R105
+!i10b 1
+R78
+R106
+R107
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
 Eram_128_32
+<<<<<<< HEAD
 Z107 w1682882395
+=======
+Z108 w1682882395
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 R1
 R3
 R2
 R4
 R5
 R6
+<<<<<<< HEAD
 Z108 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_datos_128_32_enable_test_2023.vhd
 Z109 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_datos_128_32_enable_test_2023.vhd
+=======
+Z109 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_datos_128_32_enable_test_2023.vhd
+Z110 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_datos_128_32_enable_test_2023.vhd
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 l0
 L34
 VG_=F_HGXV_;K0O0E0i`7G2
 !s100 QCP]:Gok:;N17FRjCNm;j2
 R9
 32
+<<<<<<< HEAD
 R86
 !i10b 1
 R87
 Z110 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_datos_128_32_enable_test_2023.vhd|
 Z111 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_datos_128_32_enable_test_2023.vhd|
+=======
+R73
+!i10b 1
+R78
+Z111 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_datos_128_32_enable_test_2023.vhd|
+Z112 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_datos_128_32_enable_test_2023.vhd|
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -963,11 +1191,19 @@ VS@S[63[0Ofj0K3SI0OO>D2
 !s100 6D?fNCQnjOWZEl=]o@?=]0
 R9
 32
+<<<<<<< HEAD
 R86
 !i10b 1
 R87
 R110
 R111
+=======
+R73
+!i10b 1
+R78
+R111
+R112
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -979,19 +1215,32 @@ R2
 R4
 R5
 R6
+<<<<<<< HEAD
 Z112 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_64_32_enable.vhd
 Z113 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_64_32_enable.vhd
+=======
+Z113 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_64_32_enable.vhd
+Z114 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_64_32_enable.vhd
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 l0
 L34
 V=2JClA>`6KNRW3>3d=_e11
 !s100 A79elXojEP2HgAb4fAIoF2
 R9
 32
+<<<<<<< HEAD
 R86
 !i10b 1
 R48
 Z114 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_64_32_enable.vhd|
 Z115 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_64_32_enable.vhd|
+=======
+R73
+!i10b 1
+R78
+Z115 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_64_32_enable.vhd|
+Z116 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_64_32_enable.vhd|
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -1008,11 +1257,19 @@ VO0>J=RfhLcGLVR2@^P7dg0
 !s100 QiTaff<H]PU6ZJfz?D;iU1
 R9
 32
+<<<<<<< HEAD
 R86
 !i10b 1
 R48
 R114
 R115
+=======
+R73
+!i10b 1
+R78
+R115
+R116
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -1022,19 +1279,32 @@ R1
 R4
 R5
 R6
+<<<<<<< HEAD
 Z116 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/REGISTER.vhd
 Z117 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/REGISTER.vhd
+=======
+Z117 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/REGISTER.vhd
+Z118 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/REGISTER.vhd
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 l0
 L6
 VK4^E;RFLO]XkL1>ZakoF11
 !s100 fmG6Bk3QgT?@28_>gTiGo3
 R9
 32
+<<<<<<< HEAD
 R86
 !i10b 1
 R87
 Z118 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/REGISTER.vhd|
 Z119 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/REGISTER.vhd|
+=======
+R105
+!i10b 1
+Z119 !s108 1682939485.000000
+Z120 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/REGISTER.vhd|
+Z121 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/REGISTER.vhd|
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -1049,33 +1319,60 @@ V=28b??18dDM@YfFh2C4T63
 !s100 TQhM23ah_cam<LlbgO[C>2
 R9
 32
+<<<<<<< HEAD
 R86
 !i10b 1
 R87
 R118
 R119
+=======
+R105
+!i10b 1
+R119
+R120
+R121
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
 Etestbench
+<<<<<<< HEAD
 Z120 w1682877486
+=======
+Z122 w1682936728
+R2
+R3
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 R1
 R4
 R5
 R6
+<<<<<<< HEAD
 Z121 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_Mips.vhd
 Z122 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_Mips.vhd
+=======
+Z123 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_Mips.vhd
+Z124 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_Mips.vhd
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 l0
 L7
 VRJV9z85<3SZRbYGVYM5X81
 !s100 E5:`7ea_eNYOUE@_LK2MY1
 R9
 32
+<<<<<<< HEAD
 R86
 !i10b 1
 R87
 Z123 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_Mips.vhd|
 Z124 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_Mips.vhd|
+=======
+R105
+!i10b 1
+R119
+Z125 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_Mips.vhd|
+Z126 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_Mips.vhd|
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -1090,35 +1387,56 @@ VVkW:[E>Ok9L7UU4;TDP4a1
 !s100 ZnE`8i4WnT:dMPo?5IB4A0
 R9
 32
+<<<<<<< HEAD
 R86
 !i10b 1
 R87
 R123
 R124
+=======
+R105
+!i10b 1
+R119
+R125
+R126
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
 Etestbench_md_mas_mc
-R0
+Z127 w1682934117
 R2
 R3
 R1
 R4
 R5
 R6
+<<<<<<< HEAD
 Z125 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_MD_mas_MC_alumnos.vhd
 Z126 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_MD_mas_MC_alumnos.vhd
+=======
+Z128 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_MD_mas_MC_alumnos.vhd
+Z129 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_MD_mas_MC_alumnos.vhd
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 l0
 L10
 VHi`_zh?>H`hkfddijZI[`0
 !s100 [NEW8K5Cj:KBaPXgJ9Shg2
 R9
 32
+<<<<<<< HEAD
 R86
 !i10b 1
 R87
 Z127 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_MD_mas_MC_alumnos.vhd|
 Z128 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_MD_mas_MC_alumnos.vhd|
+=======
+R105
+!i10b 1
+R119
+Z130 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_MD_mas_MC_alumnos.vhd|
+Z131 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_MD_mas_MC_alumnos.vhd|
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -1135,11 +1453,19 @@ V6`@UW8Q[4fSSNVbM?:iah3
 !s100 oA<=Cz5?V:nhj3JkX@A2Z2
 R9
 32
+<<<<<<< HEAD
 R86
 !i10b 1
 R87
 R127
 R128
+=======
+R105
+!i10b 1
+R119
+R130
+R131
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -1148,19 +1474,32 @@ R0
 R4
 R5
 R6
+<<<<<<< HEAD
 Z129 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/bits_shifter.vhd
 Z130 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/bits_shifter.vhd
+=======
+Z132 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/bits_shifter.vhd
+Z133 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/bits_shifter.vhd
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 l0
 L32
 VgbG_ZdcOK@LUBG`N_`0b_1
 !s100 deJGV>HE6>8?]PdW4eZi]0
 R9
 32
+<<<<<<< HEAD
 R10
 !i10b 1
 R11
 Z131 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/bits_shifter.vhd|
 Z132 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/bits_shifter.vhd|
+=======
+R35
+!i10b 1
+R40
+Z134 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/bits_shifter.vhd|
+Z135 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/bits_shifter.vhd|
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -1174,11 +1513,19 @@ VmmMC^3B?0H2nOXaz;gkLU3
 !s100 i;0b?lmD0hmf`Rg0aMFK72
 R9
 32
+<<<<<<< HEAD
 R10
 !i10b 1
 R11
 R131
 R132
+=======
+R35
+!i10b 1
+R40
+R134
+R135
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -1187,19 +1534,32 @@ R0
 R4
 R5
 R6
+<<<<<<< HEAD
 Z133 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UA_completar.vhd
 Z134 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UA_completar.vhd
+=======
+Z136 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UA_completar.vhd
+Z137 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UA_completar.vhd
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 l0
 L14
 V71z<J]hO^KF2I6][DJLFH3
 !s100 S:0MPbcKNa?W>kPMadTYI1
 R9
 32
+<<<<<<< HEAD
 R86
 !i10b 1
 R87
 Z135 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UA_completar.vhd|
 Z136 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UA_completar.vhd|
+=======
+R105
+!i10b 1
+R119
+Z138 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UA_completar.vhd|
+Z139 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UA_completar.vhd|
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -1213,11 +1573,19 @@ VZOi@z4Rez`f5EdZ8d:RE31
 !s100 1D?9fzi=o_IYB;;LYBaZh1
 R9
 32
+<<<<<<< HEAD
 R86
 !i10b 1
 R87
 R135
 R136
+=======
+R105
+!i10b 1
+R119
+R138
+R139
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -1226,19 +1594,32 @@ R0
 R4
 R5
 R6
+<<<<<<< HEAD
 Z137 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_Mips_solucion.vhd
 Z138 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_Mips_solucion.vhd
+=======
+Z140 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_Mips_solucion.vhd
+Z141 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_Mips_solucion.vhd
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 l0
 L32
 Vnk<8d>K?F9lOQJ_7XJX4W1
 !s100 I[gLz^>_2SLMC9F7z9=E]0
 R9
 32
+<<<<<<< HEAD
 Z139 !s110 1682883947
 !i10b 1
 Z140 !s108 1682883947.000000
 Z141 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_Mips_solucion.vhd|
 Z142 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_Mips_solucion.vhd|
+=======
+R105
+!i10b 1
+R119
+Z142 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_Mips_solucion.vhd|
+Z143 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_Mips_solucion.vhd|
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -1252,32 +1633,57 @@ VdiO:J?FCb_c:oYS1XCASH3
 !s100 `197mjEgLlXQ]IoSFDbUR0
 R9
 32
+<<<<<<< HEAD
 R139
 !i10b 1
 R140
 R141
 R142
+=======
+R105
+!i10b 1
+R119
+R142
+R143
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
 Euc_mc
+<<<<<<< HEAD
 Z143 w1682883941
 R4
 R5
 R6
 Z144 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_MC_completar_2023.vhd
 Z145 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_MC_completar_2023.vhd
+=======
+Z144 w1682938389
+R4
+R5
+R6
+Z145 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_MC_completar_2023.vhd
+Z146 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_MC_completar_2023.vhd
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 l0
 L32
 VfKFj<UXg`632<1UH0X=AQ3
 !s100 Im?N@nT25;o2[;Qan`S<a1
 R9
 32
+<<<<<<< HEAD
 R139
 !i10b 1
 R140
 Z146 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_MC_completar_2023.vhd|
 Z147 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_MC_completar_2023.vhd|
+=======
+R105
+!i10b 1
+R119
+Z147 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_MC_completar_2023.vhd|
+Z148 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_MC_completar_2023.vhd|
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -1291,11 +1697,19 @@ VWX>V@YIomQTfn0WiB6Y5W2
 !s100 fO;JTjHo4kD==RE>0^Z7>0
 R9
 32
+<<<<<<< HEAD
 R139
 !i10b 1
 R140
 R146
 R147
+=======
+R105
+!i10b 1
+R119
+R147
+R148
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -1304,25 +1718,39 @@ R0
 R4
 R5
 R6
+<<<<<<< HEAD
 Z148 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UD_completar.vhd
 Z149 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UD_completar.vhd
+=======
+Z149 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UD_completar.vhd
+Z150 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UD_completar.vhd
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 l0
 L5
 VnZBe^3:4f=SH1UJO`Db]n2
 !s100 V`UVl4z@zR16K]=kgzN9Y1
 R9
 32
+<<<<<<< HEAD
 R139
 !i10b 1
 R140
 Z150 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UD_completar.vhd|
 Z151 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UD_completar.vhd|
+=======
+R105
+!i10b 1
+R119
+Z151 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UD_completar.vhd|
+Z152 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UD_completar.vhd|
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
 Abehavioral
 R4
 R5
+<<<<<<< HEAD
 Z152 DEx4 work 2 ud 0 22 nZBe^3:4f=SH1UJO`Db]n2
 l33
 L26
@@ -1335,6 +1763,20 @@ R139
 R140
 R150
 R151
+=======
+Z153 DEx4 work 2 ud 0 22 nZBe^3:4f=SH1UJO`Db]n2
+l33
+L26
+Z154 VbYn7WjChXnjii:X`T0FmK2
+Z155 !s100 5]Phb7I=iDNP=l=fMazkC3
+R9
+32
+R105
+!i10b 1
+R119
+R151
+R152
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -1346,8 +1788,13 @@ R2
 R4
 R5
 R6
+<<<<<<< HEAD
 Z155 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Via.vhd
 Z156 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Via.vhd
+=======
+Z156 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Via.vhd
+Z157 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Via.vhd
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 l0
 L5
 Ve^=078[SJ1ghiZM7eif]10
@@ -1357,8 +1804,13 @@ R9
 R10
 !i10b 1
 R11
+<<<<<<< HEAD
 Z157 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Via.vhd|
 Z158 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Via.vhd|
+=======
+Z158 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Via.vhd|
+Z159 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Via.vhd|
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15
@@ -1378,8 +1830,13 @@ R9
 R10
 !i10b 1
 R11
+<<<<<<< HEAD
 R157
 R158
+=======
+R158
+R159
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 !i113 1
 R14
 R15

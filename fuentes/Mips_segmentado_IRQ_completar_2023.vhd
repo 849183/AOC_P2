@@ -564,9 +564,16 @@ begin
 	
 	-- parar_EX indica que hay que detener la etapa de memoria (se usa m�s adelante cuando la jerarqu�a de memoria sea m�s compleja)
 	-- La instrucci�n en WB ser� v�lida el pr�ximo ciclo si la instrucci�n en Mem es v�lida y no hay que parar 
+<<<<<<< HEAD
 	valid_I_WB_in <= valid_I_MEM and not(parar_EX);
 	
 	Banco_MEM_WB: Banco_WB PORT MAP ( 	ALU_out_MEM => ALU_out_MEM, ALU_out_WB => ALU_out_WB, Mem_out => Mem_out, MDR => MDR, clk => clk, reset => reset, load => valid_I_WB_in, 
+=======
+	valid_I_WB_in <= valid_I_MEM and not(parar_EX) and not Data_abort;
+	load_WB <= not(parar_EX)
+
+	Banco_MEM_WB: Banco_WB PORT MAP ( 	ALU_out_MEM => ALU_out_MEM, ALU_out_WB => ALU_out_WB, Mem_out => Mem_out, MDR => MDR, clk => clk, reset => reset, load => load_WB, 
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 										MemtoReg_MEM => MemtoReg_MEM, RegWrite_MEM => RegWrite_MEM, MemtoReg_WB => MemtoReg_WB, RegWrite_WB => RegWrite_WB, 
 										RW_MEM => RW_MEM, RW_WB => RW_WB,
 										-- Nuevo

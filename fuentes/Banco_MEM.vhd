@@ -80,7 +80,11 @@ SYNC_PROC: process (clk)
 					MemWrite_MEM <= MemWrite_EX;
 					MemRead_MEM <= MemRead_EX;
 					MemtoReg_MEM <= MemtoReg_EX;
+<<<<<<< HEAD
 					RegWrite_MEM <= RegWrite_EX and valid_I_EX;
+=======
+					RegWrite_MEM <= RegWrite_EX 
+>>>>>>> parent of 1e470ef (last changes made on 01/05/2023)
 					valid_I_MEM <= valid_I_EX;
 					--nuevo excepciones
 					PC_exception_MEM <= PC_exception_EX;
