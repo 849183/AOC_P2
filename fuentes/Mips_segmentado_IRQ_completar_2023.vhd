@@ -564,7 +564,7 @@ begin
 	
 	-- parar_EX indica que hay que detener la etapa de memoria (se usa m�s adelante cuando la jerarqu�a de memoria sea m�s compleja)
 	-- La instrucci�n en WB ser� v�lida el pr�ximo ciclo si la instrucci�n en Mem es v�lida y no hay que parar 
-	valid_I_WB_in <= valid_I_MEM and not(parar_EX) and (not(Data_abort) or  (not(Exception_accepted) and Data_abort));
+	valid_I_WB_in <= valid_I_MEM and not(parar_EX);
 	load_WB <= not(parar_EX);
 
 	Banco_MEM_WB: Banco_WB PORT MAP ( 	ALU_out_MEM => ALU_out_MEM, ALU_out_WB => ALU_out_WB, Mem_out => Mem_out, MDR => MDR, clk => clk, reset => reset, load => load_WB, 

@@ -219,7 +219,7 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 					elsif (hit1 = '1') then
 						MC_WE1 <= '1';
 					end if;
-					inc_w <= '1';
+
 				elsif (Bus_grant = '1' and hit = '0') then -- Me han dado el permiso sobre el bus y, es un miss (importante poner esta la última porque si no si es WE miss de scratch, se ejecutaría)
 					MC_bus_Rd_Wr <= '0';
 					block_addr <= '1';

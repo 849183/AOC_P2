@@ -24,9 +24,9 @@ VKbbP6^b;CP<VQ7[ck9na30
 !s100 FdnT[E<XL_UiCO?C2]0L[0
 Z9 OW;C;10.5c;63
 32
-Z10 !s110 1683017988
+Z10 !s110 1683020308
 !i10b 1
-Z11 !s108 1683017988.000000
+Z11 !s108 1683020308.000000
 Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/adder32.vhd|
 Z13 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/adder32.vhd|
 !i113 1
@@ -69,11 +69,11 @@ V3Q<L;f8aUaiJN4MJCQ6Ka3
 !s100 E`1`MV@OJiDZHNeDL6[b81
 R9
 32
-R10
+Z19 !s110 1683020309
 !i10b 1
 R11
-Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/ALU.vhd|
-Z20 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/ALU.vhd|
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/ALU.vhd|
+Z21 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/ALU.vhd|
 !i113 1
 R14
 R15
@@ -90,11 +90,11 @@ Vg;W4ag`gbbCMU7ZS_`oKW1
 !s100 X[SimW`d>R`c<i=CA]RP[1
 R9
 32
-R10
+R19
 !i10b 1
 R11
-R19
 R20
+R21
 !i113 1
 R14
 R15
@@ -103,19 +103,19 @@ R0
 R4
 R5
 R6
-Z21 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/arbitro.vhd
-Z22 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/arbitro.vhd
+Z22 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/arbitro.vhd
+Z23 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/arbitro.vhd
 l0
 L32
 V63aW7hnoQ`I@;0HiVB_WS0
 !s100 1K6>P49A<d@l1m9ZR6Fhl1
 R9
 32
-R10
+R19
 !i10b 1
-R11
-Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/arbitro.vhd|
-Z24 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/arbitro.vhd|
+Z24 !s108 1683020309.000000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/arbitro.vhd|
+Z26 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/arbitro.vhd|
 !i113 1
 R14
 R15
@@ -129,11 +129,11 @@ VAeFgKX87gID:MS_S>n5RF3
 !s100 BQR`4dnOABdKX5]WYi<kF1
 R9
 32
-R10
+R19
 !i10b 1
-R11
-R23
 R24
+R25
+R26
 !i113 1
 R14
 R15
@@ -142,19 +142,19 @@ R16
 R4
 R5
 R6
-Z25 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_EX.vhd
-Z26 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_EX.vhd
+Z27 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_EX.vhd
+Z28 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_EX.vhd
 l0
 L32
 VKQi=bEAeWO`UXi8GRb]nH3
 !s100 _z;J?aU`PPeDa?i5BlBjk0
 R9
 32
-R10
+R19
 !i10b 1
-R11
-Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_EX.vhd|
-Z28 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_EX.vhd|
+R24
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_EX.vhd|
+Z30 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_EX.vhd|
 !i113 1
 R14
 R15
@@ -168,11 +168,11 @@ VWV2@:=3_lER_ohRAGARD83
 !s100 @GHo2LY2eoa^CMUADHB9O0
 R9
 32
-R10
+R19
 !i10b 1
-R11
-R27
-R28
+R24
+R29
+R30
 !i113 1
 R14
 R15
@@ -181,19 +181,19 @@ R16
 R4
 R5
 R6
-Z29 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_ID.vhd
-Z30 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_ID.vhd
+Z31 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_ID.vhd
+Z32 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_ID.vhd
 l0
 L8
 V^[2GPNhnc;=W_>9?Fc]0B1
 !s100 _TnlfeCYOGZBn[BXS2kD?1
 R9
 32
-R10
+R19
 !i10b 1
-R11
-Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_ID.vhd|
-Z32 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_ID.vhd|
+R24
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_ID.vhd|
+Z34 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_ID.vhd|
 !i113 1
 R14
 R15
@@ -207,32 +207,32 @@ V1RTL9UjGNmCg=`4:J:NN^2
 !s100 nVO:=mHJ8OJTc`_2VaJZ:1
 R9
 32
-R10
+R19
 !i10b 1
-R11
-R31
-R32
+R24
+R33
+R34
 !i113 1
 R14
 R15
 Ebanco_mem
-Z33 w1683016745
+Z35 w1683016745
 R4
 R5
 R6
-Z34 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_MEM.vhd
-Z35 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_MEM.vhd
+Z36 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_MEM.vhd
+Z37 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_MEM.vhd
 l0
 L32
 VUjX=Ri43Zo2Wna@HE6;hS0
 !s100 e^lRR;M5;Ka;_1K5=gg]z2
 R9
 32
-R10
+R19
 !i10b 1
-R11
-Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_MEM.vhd|
-Z37 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_MEM.vhd|
+R24
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_MEM.vhd|
+Z39 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_MEM.vhd|
 !i113 1
 R14
 R15
@@ -246,11 +246,11 @@ VZ1cVTiUXcJUmXC0o5@B;l2
 !s100 ^e?F_]JD8=I^2@^aEVfzQ2
 R9
 32
-R10
+R19
 !i10b 1
-R11
-R36
-R37
+R24
+R38
+R39
 !i113 1
 R14
 R15
@@ -259,19 +259,19 @@ R16
 R4
 R5
 R6
-Z38 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_WB.vhd
-Z39 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_WB.vhd
+Z40 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_WB.vhd
+Z41 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_WB.vhd
 l0
 L32
 VF_?P][ZHX7dgHR6;Og1dI3
 !s100 Ub;kk@e58KjG7fBJXE3g52
 R9
 32
-Z40 !s110 1683017989
+R19
 !i10b 1
-R11
-Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_WB.vhd|
-Z42 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_WB.vhd|
+R24
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_WB.vhd|
+Z43 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_WB.vhd|
 !i113 1
 R14
 R15
@@ -285,11 +285,11 @@ Vzz_jZlXzN`C]XDC[I@0kK3
 !s100 ?G7OZQBn>2V2zLWNB5WY;0
 R9
 32
-R40
+R19
 !i10b 1
-R11
-R41
+R24
 R42
+R43
 !i113 1
 R14
 R15
@@ -301,17 +301,17 @@ R1
 R4
 R5
 R6
-Z43 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/BReg.vhd
-Z44 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/BReg.vhd
+Z44 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/BReg.vhd
+Z45 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/BReg.vhd
 l0
 L35
 VRQGI3A5HN^]_7_9zg^@S?0
 !s100 HBWhPB[m:GRl@dEoFDj?23
 R9
 32
-R40
+R19
 !i10b 1
-Z45 !s108 1683017989.000000
+R24
 Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/BReg.vhd|
 Z47 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/BReg.vhd|
 !i113 1
@@ -330,9 +330,9 @@ V7<>zQlG_eB5YPHzEOenH61
 !s100 PA:o5l3Ti2m4G[5D5>VGQ1
 R9
 32
-R40
+R19
 !i10b 1
-R45
+R24
 R46
 R47
 !i113 1
@@ -354,9 +354,9 @@ VbSgk2MJ^;BTfo_ezC7mCH1
 !s100 _4j<kecJD9WAm<ZR0S7Dh0
 R9
 32
-R40
+R19
 !i10b 1
-R45
+R24
 Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/counter.vhd|
 Z51 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/counter.vhd|
 !i113 1
@@ -375,9 +375,9 @@ VcPXK>f6VEOfVTCVNCK<PU0
 !s100 iHKVHO7k6h<mO^=E7hmE;2
 R9
 32
-R40
+R19
 !i10b 1
-R45
+R24
 R50
 R51
 !i113 1
@@ -399,9 +399,9 @@ V=dThhSTi6khH>[3Z5]KeV3
 !s100 Vf_jfMQXQ@<_D2ISHdWD<3
 R9
 32
-R40
+R19
 !i10b 1
-R45
+R24
 Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/counter_2bits.vhd|
 Z55 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/counter_2bits.vhd|
 !i113 1
@@ -420,9 +420,9 @@ VNzGJCgoAWWBe`M39G0:n:0
 !s100 T85fP;@I;e?]IX@baHF4?3
 R9
 32
-R40
+R19
 !i10b 1
-R45
+R24
 R54
 R55
 !i113 1
@@ -441,11 +441,11 @@ VOPfHQ]YXPXBWdjNnKXZO=1
 !s100 =jQT7hQEW^Q9VGDz6>Dnd0
 R9
 32
-R40
+Z58 !s110 1683020310
 !i10b 1
-R45
-Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Ext_signo.vhd|
-Z59 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Ext_signo.vhd|
+R24
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Ext_signo.vhd|
+Z60 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Ext_signo.vhd|
 !i113 1
 R14
 R15
@@ -459,11 +459,11 @@ V0e3eMCFkcGFOWFbZedjaN2
 !s100 LK3IFGmMiXJPmL2zW;mXf2
 R9
 32
-R40
-!i10b 1
-R45
 R58
+!i10b 1
+R24
 R59
+R60
 !i113 1
 R14
 R15
@@ -475,19 +475,19 @@ R1
 R4
 R5
 R6
-Z60 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/FIFO_reg.vhd
-Z61 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/FIFO_reg.vhd
+Z61 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/FIFO_reg.vhd
+Z62 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/FIFO_reg.vhd
 l0
 L37
 VazoA=AOGQ;Mf5NggY2_NT2
 !s100 Ag4[78@Rz;E;jQ8=Pzb@<0
 R9
 32
-R40
+R58
 !i10b 1
-R45
-Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/FIFO_reg.vhd|
-Z63 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/FIFO_reg.vhd|
+Z63 !s108 1683020310.000000
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/FIFO_reg.vhd|
+Z65 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/FIFO_reg.vhd|
 !i113 1
 R14
 R15
@@ -504,11 +504,11 @@ VR[S8^P6e3;Jbb:lJIW>gY2
 !s100 AMcZd>z_:K5e_E8gc9zM?2
 R9
 32
-R40
+R58
 !i10b 1
-R45
-R62
 R63
+R64
+R65
 !i113 1
 R14
 R15
@@ -517,19 +517,19 @@ R16
 R4
 R5
 R6
-Z64 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/IO_master.vhd
-Z65 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/IO_master.vhd
+Z66 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/IO_master.vhd
+Z67 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/IO_master.vhd
 l0
 L6
 VjACX2J_B7fjMdi2jLMXZb3
 !s100 ?BVYJfXYd]QIdgPZAXN<53
 R9
 32
-R40
+R58
 !i10b 1
-R45
-Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/IO_master.vhd|
-Z67 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/IO_master.vhd|
+R63
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/IO_master.vhd|
+Z69 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/IO_master.vhd|
 !i113 1
 R14
 R15
@@ -543,11 +543,11 @@ Vd0B6EnJ=jLS17ZU@Ebh^60
 !s100 GQzDT1:^oZDE>FHnh5ILS1
 R9
 32
-R40
+R58
 !i10b 1
-R45
-R66
-R67
+R63
+R68
+R69
 !i113 1
 R14
 R15
@@ -559,19 +559,19 @@ R2
 R4
 R5
 R6
-Z68 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MC_datos.vhd
-Z69 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MC_datos.vhd
+Z70 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MC_datos.vhd
+Z71 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MC_datos.vhd
 l0
 L26
 VbQhD<18mK^lDcAgizm9b23
 !s100 lN7WVemL?m2R7P:H@Mh8N2
 R9
 32
-R40
+R58
 !i10b 1
-R45
-Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MC_datos.vhd|
-Z71 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MC_datos.vhd|
+R63
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MC_datos.vhd|
+Z73 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MC_datos.vhd|
 !i113 1
 R14
 R15
@@ -588,11 +588,11 @@ VRSN`Sz;c1:;]=niM_:jZW2
 !s100 ;i39O`PzQXR__F0JUcQ^H2
 R9
 32
-R40
+R58
 !i10b 1
-R45
-R70
-R71
+R63
+R72
+R73
 !i113 1
 R14
 R15
@@ -603,19 +603,19 @@ R3
 R4
 R5
 R6
-Z72 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_cont_2023.vhd
-Z73 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_cont_2023.vhd
+Z74 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_cont_2023.vhd
+Z75 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_cont_2023.vhd
 l0
 L25
 VGG64zjgkzUbgSPh7AF_SP2
 !s100 ;ccfQ9Z4z`M<o6GA8SS:72
 R9
 32
-R40
+R58
 !i10b 1
-R45
-Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_cont_2023.vhd|
-Z75 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_cont_2023.vhd|
+R63
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_cont_2023.vhd|
+Z77 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_cont_2023.vhd|
 !i113 1
 R14
 R15
@@ -631,35 +631,35 @@ VFMGMFh7:in=^MLgc`Z`@:1
 !s100 TlWa;``hEK`DDYaoIZCT60
 R9
 32
-R40
+R58
 !i10b 1
-R45
-R74
-R75
+R63
+R76
+R77
 !i113 1
 R14
 R15
 Emd_mas_mc
-Z76 w1683016281
+Z78 w1683016281
 R2
 R3
 R1
 R4
 R5
 R6
-Z77 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_mas_MC_mas_scratch_2023.vhd
-Z78 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_mas_MC_mas_scratch_2023.vhd
+Z79 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_mas_MC_mas_scratch_2023.vhd
+Z80 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_mas_MC_mas_scratch_2023.vhd
 l0
 L21
 Vc2NQf4Z8WzCBjYom1:A[Z0
 !s100 Ng1@Cka?6gD^>I@l`1V`42
 R9
 32
-R40
+R58
 !i10b 1
-R45
-Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_mas_MC_mas_scratch_2023.vhd|
-Z80 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_mas_MC_mas_scratch_2023.vhd|
+R63
+Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_mas_MC_mas_scratch_2023.vhd|
+Z82 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_mas_MC_mas_scratch_2023.vhd|
 !i113 1
 R14
 R15
@@ -676,11 +676,11 @@ VG=jE`=?^NDAH=E;9BIY5a0
 !s100 MZAD97hd[1d593cDLhI^D0
 R9
 32
-R40
+R58
 !i10b 1
-R45
-R79
-R80
+R63
+R81
+R82
 !i113 1
 R14
 R15
@@ -691,19 +691,19 @@ R3
 R4
 R5
 R6
-Z81 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_scratch.vhd
-Z82 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_scratch.vhd
+Z83 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_scratch.vhd
+Z84 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_scratch.vhd
 l0
 L25
 V30AL<DBNKh8U3fNiM6Hof0
 !s100 :0gLjA8g599CodlhAk@KI1
 R9
 32
-Z83 !s110 1683017990
+R58
 !i10b 1
-R45
-Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_scratch.vhd|
-Z85 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_scratch.vhd|
+R63
+Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_scratch.vhd|
+Z86 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_scratch.vhd|
 !i113 1
 R14
 R15
@@ -719,32 +719,32 @@ VFB82b6_:P]@P7o:LRWc9;3
 !s100 ^eh:==e3K^dKN9mWPPUzQ3
 R9
 32
-R83
+R58
 !i10b 1
-R45
-R84
+R63
 R85
+R86
 !i113 1
 R14
 R15
 Ememoriaram_i
-Z86 w1683017056
+Z87 w1683017056
 R3
 R2
 R4
 R5
 R6
-Z87 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_I_tests.vhd
-Z88 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_I_tests.vhd
+Z88 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_I_tests.vhd
+Z89 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_I_tests.vhd
 l0
 L38
 VCUbIf5KK[?YU9YGT<9SR53
 !s100 H@fcR_fjoGd`4>M5e?87;0
 R9
 32
-R83
+R58
 !i10b 1
-Z89 !s108 1683017990.000000
+R63
 Z90 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_I_tests.vhd|
 Z91 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_I_tests.vhd|
 !i113 1
@@ -762,16 +762,16 @@ V4h6X8:N[cTSmdX^H?gm`l0
 !s100 >QB4jZ?ikbPIIRH^UCRR92
 R9
 32
-R83
+R58
 !i10b 1
-R89
+R63
 R90
 R91
 !i113 1
 R14
 R15
 Emips_segmentado
-Z92 w1683016710
+Z92 w1683019901
 R4
 R5
 R6
@@ -783,11 +783,11 @@ VWL@Bk]a17LiU<J9dLMmG23
 !s100 nZf>RVf28<<fg0VWcNQij3
 R9
 32
-R83
+Z95 !s110 1683020311
 !i10b 1
-R89
-Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Mips_segmentado_IRQ_completar_2023.vhd|
-Z96 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Mips_segmentado_IRQ_completar_2023.vhd|
+Z96 !s108 1683020311.000000
+Z97 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Mips_segmentado_IRQ_completar_2023.vhd|
+Z98 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Mips_segmentado_IRQ_completar_2023.vhd|
 !i113 1
 R14
 R15
@@ -797,15 +797,15 @@ R5
 DEx4 work 15 mips_segmentado 0 22 WL@Bk]a17LiU<J9dLMmG23
 l322
 L28
-Vbll^N_:A:K6oN_JYXcB`z3
-!s100 ]Iz4=jCj_84hKXU8LZ2?82
+V;ci9dH>m;a@25JOBKFI>T1
+!s100 7[d5U0H2^UOAfe:MQ8:d]1
 R9
 32
-R83
-!i10b 1
-R89
 R95
+!i10b 1
 R96
+R97
+R98
 !i113 1
 R14
 R15
@@ -814,19 +814,19 @@ R0
 R4
 R5
 R6
-Z97 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_1.vhd
-Z98 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_1.vhd
+Z99 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_1.vhd
+Z100 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_1.vhd
 l0
 L32
 V4B]44XS6mWPn0HgoN1FUY2
 !s100 [VRg3F0=o?Z:]Y[CCZJje0
 R9
 32
-R83
+R95
 !i10b 1
-R89
-Z99 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_1.vhd|
-Z100 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_1.vhd|
+R96
+Z101 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_1.vhd|
+Z102 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_1.vhd|
 !i113 1
 R14
 R15
@@ -840,11 +840,11 @@ VaaZe^4G8MA4N6FjAm_c963
 !s100 zIQT7B^e_I4Qli6JQET>o2
 R9
 32
-R83
+R95
 !i10b 1
-R89
-R99
-R100
+R96
+R101
+R102
 !i113 1
 R14
 R15
@@ -853,19 +853,19 @@ R0
 R4
 R5
 R6
-Z101 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_5bits.vhd
-Z102 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_5bits.vhd
+Z103 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_5bits.vhd
+Z104 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_5bits.vhd
 l0
 L32
 VCE>dzi[RXNe0h@zj?kL[43
 !s100 GnzQIA<O?`7V;D;ZbXOiA0
 R9
 32
-R83
+R95
 !i10b 1
-R89
-Z103 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_5bits.vhd|
-Z104 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_5bits.vhd|
+R96
+Z105 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_5bits.vhd|
+Z106 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_5bits.vhd|
 !i113 1
 R14
 R15
@@ -879,11 +879,11 @@ VHoSRknWOKVD_Wn:Ndbj0O0
 !s100 =@Dj[OG[:JJ:5PSjamb5A3
 R9
 32
-R83
+R95
 !i10b 1
-R89
-R103
-R104
+R96
+R105
+R106
 !i113 1
 R14
 R15
@@ -892,19 +892,19 @@ R0
 R4
 R5
 R6
-Z105 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux4_1_32bits.vhd
-Z106 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux4_1_32bits.vhd
+Z107 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux4_1_32bits.vhd
+Z108 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux4_1_32bits.vhd
 l0
 L4
 VaY]ZEc_oFdCJDCo0Dl`GW1
 !s100 eC]>Q3Z[89zBLkPeQ2Xj<1
 R9
 32
-R83
+R95
 !i10b 1
-R89
-Z107 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux4_1_32bits.vhd|
-Z108 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux4_1_32bits.vhd|
+R96
+Z109 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux4_1_32bits.vhd|
+Z110 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux4_1_32bits.vhd|
 !i113 1
 R14
 R15
@@ -918,35 +918,35 @@ V28fm?0TJz:3Nl`6RERk412
 !s100 8bbIj9`VbVePPKl6mXQcJ1
 R9
 32
-R83
+R95
 !i10b 1
-R89
-R107
-R108
+R96
+R109
+R110
 !i113 1
 R14
 R15
 Eram_128_32
-Z109 w1683017072
+Z111 w1683017072
 R1
 R3
 R2
 R4
 R5
 R6
-Z110 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_datos_128_32_enable_test_2023.vhd
-Z111 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_datos_128_32_enable_test_2023.vhd
+Z112 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_datos_128_32_enable_test_2023.vhd
+Z113 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_datos_128_32_enable_test_2023.vhd
 l0
 L34
 VG_=F_HGXV_;K0O0E0i`7G2
 !s100 QCP]:Gok:;N17FRjCNm;j2
 R9
 32
-R83
+R58
 !i10b 1
-R89
-Z112 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_datos_128_32_enable_test_2023.vhd|
-Z113 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_datos_128_32_enable_test_2023.vhd|
+R63
+Z114 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_datos_128_32_enable_test_2023.vhd|
+Z115 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_datos_128_32_enable_test_2023.vhd|
 !i113 1
 R14
 R15
@@ -963,11 +963,11 @@ Vak3l>8:D>4iDUfEFVkMZG2
 !s100 Ek5GI7gbGlH@WgfQD`6HS1
 R9
 32
-R83
+R58
 !i10b 1
-R89
-R112
-R113
+R63
+R114
+R115
 !i113 1
 R14
 R15
@@ -979,19 +979,19 @@ R2
 R4
 R5
 R6
-Z114 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_64_32_enable.vhd
-Z115 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_64_32_enable.vhd
+Z116 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_64_32_enable.vhd
+Z117 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_64_32_enable.vhd
 l0
 L34
 V=2JClA>`6KNRW3>3d=_e11
 !s100 A79elXojEP2HgAb4fAIoF2
 R9
 32
-R83
+R58
 !i10b 1
-R89
-Z116 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_64_32_enable.vhd|
-Z117 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_64_32_enable.vhd|
+R63
+Z118 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_64_32_enable.vhd|
+Z119 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_64_32_enable.vhd|
 !i113 1
 R14
 R15
@@ -1008,11 +1008,11 @@ VO0>J=RfhLcGLVR2@^P7dg0
 !s100 QiTaff<H]PU6ZJfz?D;iU1
 R9
 32
-R83
+R58
 !i10b 1
-R89
-R116
-R117
+R63
+R118
+R119
 !i113 1
 R14
 R15
@@ -1022,19 +1022,19 @@ R1
 R4
 R5
 R6
-Z118 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/REGISTER.vhd
-Z119 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/REGISTER.vhd
+Z120 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/REGISTER.vhd
+Z121 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/REGISTER.vhd
 l0
 L6
 VK4^E;RFLO]XkL1>ZakoF11
 !s100 fmG6Bk3QgT?@28_>gTiGo3
 R9
 32
-R83
+R95
 !i10b 1
-R89
-Z120 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/REGISTER.vhd|
-Z121 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/REGISTER.vhd|
+R96
+Z122 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/REGISTER.vhd|
+Z123 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/REGISTER.vhd|
 !i113 1
 R14
 R15
@@ -1049,35 +1049,35 @@ V=28b??18dDM@YfFh2C4T63
 !s100 TQhM23ah_cam<LlbgO[C>2
 R9
 32
-R83
+R95
 !i10b 1
-R89
-R120
-R121
+R96
+R122
+R123
 !i113 1
 R14
 R15
 Etestbench
-Z122 w1683016879
+Z124 w1683016879
 R2
 R3
 R1
 R4
 R5
 R6
-Z123 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_Mips.vhd
-Z124 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_Mips.vhd
+Z125 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_Mips.vhd
+Z126 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_Mips.vhd
 l0
 L9
 Vkg0?EfG7HY:z>[=8@fF172
 !s100 ;n:@E3;6NaB^WNVHTC;BF1
 R9
 32
-R83
+R95
 !i10b 1
-R89
-Z125 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_Mips.vhd|
-Z126 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_Mips.vhd|
+R96
+Z127 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_Mips.vhd|
+Z128 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_Mips.vhd|
 !i113 1
 R14
 R15
@@ -1094,11 +1094,11 @@ VohPi2cX4K=2C1Rj^G36WZ3
 !s100 R]A[MnhdTlH]6bKgI2]F`0
 R9
 32
-R83
+R95
 !i10b 1
-R89
-R125
-R126
+R96
+R127
+R128
 !i113 1
 R14
 R15
@@ -1110,19 +1110,19 @@ R1
 R4
 R5
 R6
-Z127 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_MD_mas_MC_alumnos.vhd
-Z128 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_MD_mas_MC_alumnos.vhd
+Z129 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_MD_mas_MC_alumnos.vhd
+Z130 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_MD_mas_MC_alumnos.vhd
 l0
 L10
 VHi`_zh?>H`hkfddijZI[`0
 !s100 [NEW8K5Cj:KBaPXgJ9Shg2
 R9
 32
-R83
+R95
 !i10b 1
-R89
-Z129 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_MD_mas_MC_alumnos.vhd|
-Z130 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_MD_mas_MC_alumnos.vhd|
+R96
+Z131 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_MD_mas_MC_alumnos.vhd|
+Z132 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_MD_mas_MC_alumnos.vhd|
 !i113 1
 R14
 R15
@@ -1139,11 +1139,11 @@ V6`@UW8Q[4fSSNVbM?:iah3
 !s100 oA<=Cz5?V:nhj3JkX@A2Z2
 R9
 32
-R83
+R95
 !i10b 1
-R89
-R129
-R130
+R96
+R131
+R132
 !i113 1
 R14
 R15
@@ -1152,19 +1152,19 @@ R0
 R4
 R5
 R6
-Z131 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/bits_shifter.vhd
-Z132 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/bits_shifter.vhd
+Z133 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/bits_shifter.vhd
+Z134 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/bits_shifter.vhd
 l0
 L32
 VgbG_ZdcOK@LUBG`N_`0b_1
 !s100 deJGV>HE6>8?]PdW4eZi]0
 R9
 32
-R40
+R19
 !i10b 1
-R45
-Z133 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/bits_shifter.vhd|
-Z134 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/bits_shifter.vhd|
+R24
+Z135 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/bits_shifter.vhd|
+Z136 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/bits_shifter.vhd|
 !i113 1
 R14
 R15
@@ -1178,11 +1178,11 @@ VmmMC^3B?0H2nOXaz;gkLU3
 !s100 i;0b?lmD0hmf`Rg0aMFK72
 R9
 32
-R40
+R19
 !i10b 1
-R45
-R133
-R134
+R24
+R135
+R136
 !i113 1
 R14
 R15
@@ -1191,19 +1191,19 @@ R0
 R4
 R5
 R6
-Z135 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UA_completar.vhd
-Z136 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UA_completar.vhd
+Z137 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UA_completar.vhd
+Z138 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UA_completar.vhd
 l0
 L14
 V71z<J]hO^KF2I6][DJLFH3
 !s100 S:0MPbcKNa?W>kPMadTYI1
 R9
 32
-Z137 !s110 1683017991
+R95
 !i10b 1
-R89
-Z138 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UA_completar.vhd|
-Z139 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UA_completar.vhd|
+R96
+Z139 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UA_completar.vhd|
+Z140 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UA_completar.vhd|
 !i113 1
 R14
 R15
@@ -1217,11 +1217,11 @@ VZOi@z4Rez`f5EdZ8d:RE31
 !s100 1D?9fzi=o_IYB;;LYBaZh1
 R9
 32
-R137
+R95
 !i10b 1
-R89
-R138
+R96
 R139
+R140
 !i113 1
 R14
 R15
@@ -1230,17 +1230,17 @@ R0
 R4
 R5
 R6
-Z140 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_Mips_solucion.vhd
-Z141 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_Mips_solucion.vhd
+Z141 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_Mips_solucion.vhd
+Z142 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_Mips_solucion.vhd
 l0
 L32
 Vnk<8d>K?F9lOQJ_7XJX4W1
 !s100 I[gLz^>_2SLMC9F7z9=E]0
 R9
 32
-R137
+R95
 !i10b 1
-Z142 !s108 1683017991.000000
+R96
 Z143 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_Mips_solucion.vhd|
 Z144 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_Mips_solucion.vhd|
 !i113 1
@@ -1256,16 +1256,16 @@ VdiO:J?FCb_c:oYS1XCASH3
 !s100 `197mjEgLlXQ]IoSFDbUR0
 R9
 32
-R137
+R95
 !i10b 1
-R142
+R96
 R143
 R144
 !i113 1
 R14
 R15
 Euc_mc
-Z145 w1683017980
+Z145 w1683020306
 R4
 R5
 R6
@@ -1277,9 +1277,9 @@ VfKFj<UXg`632<1UH0X=AQ3
 !s100 Im?N@nT25;o2[;Qan`S<a1
 R9
 32
-R137
+R95
 !i10b 1
-R142
+R96
 Z148 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_MC_completar_2023.vhd|
 Z149 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_MC_completar_2023.vhd|
 !i113 1
@@ -1291,13 +1291,13 @@ R5
 DEx4 work 5 uc_mc 0 22 fKFj<UXg`632<1UH0X=AQ3
 l94
 L71
-VAjCn]l_h`Q@62VeP8zzfa2
-!s100 dW`YBUi=`bLKio6hc@_>k0
+VoQ=I^cnTcUMgaW68=@:RX1
+!s100 FcVd8lf7Sgl]z8zJTgA1o0
 R9
 32
-R137
+R95
 !i10b 1
-R142
+R96
 R148
 R149
 !i113 1
@@ -1316,29 +1316,29 @@ VnZBe^3:4f=SH1UJO`Db]n2
 !s100 V`UVl4z@zR16K]=kgzN9Y1
 R9
 32
-R137
+Z152 !s110 1683020312
 !i10b 1
-R142
-Z152 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UD_completar.vhd|
-Z153 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UD_completar.vhd|
+Z153 !s108 1683020312.000000
+Z154 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UD_completar.vhd|
+Z155 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UD_completar.vhd|
 !i113 1
 R14
 R15
 Abehavioral
 R4
 R5
-Z154 DEx4 work 2 ud 0 22 nZBe^3:4f=SH1UJO`Db]n2
+Z156 DEx4 work 2 ud 0 22 nZBe^3:4f=SH1UJO`Db]n2
 l33
 L26
-Z155 VbYn7WjChXnjii:X`T0FmK2
-Z156 !s100 5]Phb7I=iDNP=l=fMazkC3
+Z157 VbYn7WjChXnjii:X`T0FmK2
+Z158 !s100 5]Phb7I=iDNP=l=fMazkC3
 R9
 32
-R137
-!i10b 1
-R142
 R152
+!i10b 1
 R153
+R154
+R155
 !i113 1
 R14
 R15
@@ -1350,8 +1350,8 @@ R2
 R4
 R5
 R6
-Z157 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Via.vhd
-Z158 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Via.vhd
+Z159 8C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Via.vhd
+Z160 FC:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Via.vhd
 l0
 L5
 Ve^=078[SJ1ghiZM7eif]10
@@ -1361,8 +1361,8 @@ R9
 R10
 !i10b 1
 R11
-Z159 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Via.vhd|
-Z160 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Via.vhd|
+Z161 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Via.vhd|
+Z162 !s107 C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Via.vhd|
 !i113 1
 R14
 R15
@@ -1382,8 +1382,8 @@ R9
 R10
 !i10b 1
 R11
-R159
-R160
+R161
+R162
 !i113 1
 R14
 R15
