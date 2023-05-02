@@ -184,6 +184,7 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 		elsif (state = Beginning and ((WE = '1') OR (hit = '0'))) then -- escritura o fallo de lectura
 			next_state <= Refereeing; --Vamos al estado de arbitraje
 			ready <= '0';
+
 		end if;
 	        
 	elsif (state = Refereeing) then --Estado de arbitraje
@@ -218,7 +219,7 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 					elsif (hit1 = '1') then
 						MC_WE1 <= '1';
 					end if;
-
+					inc_w <= '1';
 				elsif (Bus_grant = '1' and hit = '0') then -- Me han dado el permiso sobre el bus y, es un miss (importante poner esta la última porque si no si es WE miss de scratch, se ejecutaría)
 					MC_bus_Rd_Wr <= '0';
 					block_addr <= '1';
@@ -254,13 +255,14 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 				count_enable <= '1';
 				MC_tags_WE <= '1';
 				mux_origen <= '1';
-
+				inc_m <= '1';
 			elsif (state = Bring_block_to_cache and (bus_TRDY = '1' and last_word_block = '1' and WE = '1')) then -- Me solicitan una acción de escritura y ya tengo el bloque correcto en la Cache.
 				count_enable <= '1';
 				MC_tags_WE <= '1';
 				next_state <= Refereeing;
 				mux_origen <= '1';
 				last_Word <= '1'; -- Aviso de que es la útlima palabra.
+				inc_m <= '1';
 			end if;
 		end if;	
 	elsif (state = Carry_word_to_memory) then --Estado de MC -> MP/MS
@@ -272,7 +274,8 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 			next_state <= Beginning;
 			last_Word <= '1'; -- Aviso de que es la útlima palabra.
 			MC_send_data <= '1'; -- Envio la palabra.
-			ready <= '1';	
+			ready <= '1';
+			inc_w <= '1';	
 		end if;
 	end if;
 
