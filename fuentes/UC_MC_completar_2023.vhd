@@ -269,7 +269,7 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 		Frame <= '1';
 		if (state = Carry_word_to_memory and (bus_TRDY = '0')) then
 			next_state <= Carry_word_to_memory; -- Espero a que el slave este listo.
-		
+
 		elsif (state = Carry_word_to_memory and (bus_TRDY = '1')) then 
 			next_state <= Beginning;
 			last_Word <= '1'; -- Aviso de que es la útlima palabra.
