@@ -289,6 +289,10 @@ COMPONENT Banco_MEM
        		count_enable 	: in  STD_LOGIC;
        		count 			: out  STD_LOGIC_VECTOR (size-1 downto 0));
 	end COMPONENT;
+
+
+
+
 -- Se�ales internas MIPS	
 	CONSTANT ARIT : STD_LOGIC_VECTOR (5 downto 0) := "000001";
 	signal load_PC, RegWrite_ID, RegWrite_EX, RegWrite_MEM, RegWrite_WB, RegWrite, Z, Branch_ID, RegDst_ID, RegDst_EX, ALUSrc_ID, ALUSrc_EX: std_logic;
@@ -560,6 +564,7 @@ begin
 	
 	
 	-- Sustituimos la Memoria de Datos por el nuevo módulo que incorpora la MC + MD + Scratch
+
 	MD_MC: MD_mas_MC PORT MAP (CLK => CLK, ADDR => ALU_out_MEM, Din => BusB_MEM, WE => WE, RE => RE, reset => reset, IO_input => IO_input, Mem_ready => Mem_ready, Dout => Mem_out, Data_abort => Data_abort);
 	
 	-- parar_EX indica que hay que detener la etapa de memoria (se usa m�s adelante cuando la jerarqu�a de memoria sea m�s compleja)

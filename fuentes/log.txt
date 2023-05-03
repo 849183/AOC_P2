@@ -12,7 +12,8 @@ Codificación parcial del AFD
 NO BAJADAS LAS SEÑALES DE WE EN CACHE
 
 
-
+--buscar etiqueta para cambiar pruebas con MD:
+        --CAMBIOS_SPEEDUP
 
 
 -- PREGUNTAS
