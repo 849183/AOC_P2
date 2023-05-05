@@ -132,7 +132,6 @@ end process;
    
 --Salida Mem Error
 Mem_ERROR <= '1' when (error_state = memory_error) else '0';
-
 --Mealy State-Machine - Outputs based on state and inputs
    
    --MEALY State-Machine - Outputs based on state and inputs
@@ -222,8 +221,11 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 
 				elsif (Bus_grant = '1' and hit = '0') then -- Me han dado el permiso sobre el bus y, es un miss (importante poner esta la última porque si no si es WE miss de scratch, se ejecutaría)
 					MC_bus_Rd_Wr <= '0';
-					block_addr <= '1';
+					
 					next_state <= Bring_block_to_cache;
+					if (addr_non_cacheable = '0') then
+						block_addr <= '1'; -- En el caso de que no se lea de Scratch,  indicaremos que la dirección es la del bloque.
+					end if;
 					
 				end if;
 		 	end if;
@@ -248,6 +250,7 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 				next_state <= Bring_block_to_cache; -- Sigo mandando palabras hasta llegar a la ultima.
 				mux_origen <= '1';
 				count_enable <= '1';
+				
 				
 			elsif (state = Bring_block_to_cache and (bus_TRDY = '1' and last_word_block = '1' and RE = '1')) then -- El slave esta preparado y es la última palabra
 				next_state <= Beginning;

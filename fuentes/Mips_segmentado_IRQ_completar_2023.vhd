@@ -569,6 +569,7 @@ begin
 	
 	-- parar_EX indica que hay que detener la etapa de memoria (se usa m�s adelante cuando la jerarqu�a de memoria sea m�s compleja)
 	-- La instrucci�n en WB ser� v�lida el pr�ximo ciclo si la instrucci�n en Mem es v�lida y no hay que parar 
+
 	valid_I_WB_in <= valid_I_MEM and not(parar_EX);
 	load_WB <= not(parar_EX);
 

@@ -110,6 +110,17 @@ Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
 -- Compiling entity RAM_128_32
 -- Compiling architecture Behavioral of RAM_128_32
 
+} {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_64_32_enable.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_64_32_enable.vhd
+Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity RAM_64_32
+-- Compiling architecture Behavioral of RAM_64_32
+
 } {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/adder32.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/adder32.vhd
 Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
 -- Loading package STANDARD
@@ -121,16 +132,13 @@ Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
 -- Compiling entity adder32
 -- Compiling architecture Behavioral of adder32
 
-} {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_64_32_enable.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_64_32_enable.vhd
+} {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Mips_segmentado_IRQ_completar_2023.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Mips_segmentado_IRQ_completar_2023.vhd
 Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Loading package NUMERIC_STD
--- Compiling entity RAM_64_32
--- Compiling architecture Behavioral of RAM_64_32
+-- Compiling entity MIPs_segmentado
+-- Compiling architecture Behavioral of MIPs_segmentado
 
 } {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/bits_shifter.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/bits_shifter.vhd
 Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
@@ -159,17 +167,6 @@ Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
 -- Compiling entity testbench
 -- Compiling architecture behavior of testbench
 
-} {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Via.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Via.vhd
-Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Loading package NUMERIC_STD
--- Compiling entity Via
--- Compiling architecture Behavioral of Via
-
 } {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/BReg.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/BReg.vhd
 Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
 -- Loading package STANDARD
@@ -180,6 +177,17 @@ Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity BReg
 -- Compiling architecture Behavioral of BReg
+
+} {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Via.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Via.vhd
+Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity Via
+-- Compiling architecture Behavioral of Via
 
 } {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MC_datos.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MC_datos.vhd
 Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
@@ -192,21 +200,13 @@ Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
 -- Compiling entity MC_datos
 -- Compiling architecture Behavioral of MC_datos
 
-} {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/arbitro.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/arbitro.vhd
+} {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_MC_completar_2023.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_MC_completar_2023.vhd
 Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity Arbitro
--- Compiling architecture Behavioral of Arbitro
-
-} {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_WB.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_WB.vhd
-Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity Banco_WB
--- Compiling architecture Behavioral of Banco_WB
+-- Compiling entity UC_MC
+-- Compiling architecture Behavioral of UC_MC
 
 } {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/counter_2bits.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/counter_2bits.vhd
 Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
@@ -219,13 +219,21 @@ Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
 -- Compiling entity counter_2bits
 -- Compiling architecture Behavioral of counter_2bits
 
-} {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_MC_completar_2023.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/UC_MC_completar_2023.vhd
+} {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_WB.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_WB.vhd
 Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity UC_MC
--- Compiling architecture Behavioral of UC_MC
+-- Compiling entity Banco_WB
+-- Compiling architecture Behavioral of Banco_WB
+
+} {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/arbitro.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/arbitro.vhd
+Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Arbitro
+-- Compiling architecture Behavioral of Arbitro
 
 } {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_I_tests.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/memoriaRAM_I_tests.vhd
 Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
@@ -237,14 +245,6 @@ Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
 -- Compiling entity memoriaRAM_I
 -- Compiling architecture Behavioral of memoriaRAM_I
 
-} {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_1.vhd
-Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity mux2_1
--- Compiling architecture Behavioral of mux2_1
-
 } {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux4_1_32bits.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux4_1_32bits.vhd
 Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
 -- Loading package STANDARD
@@ -253,25 +253,13 @@ Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
 -- Compiling entity mux4_1_32bits
 -- Compiling architecture Behavioral of mux4_1_32bits
 
-} {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_mas_MC_mas_scratch_2023.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_mas_MC_mas_scratch_2023.vhd
+} {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/mux2_1.vhd
 Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity MD_mas_MC
--- Compiling architecture Behavioral of MD_mas_MC
-
-} {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/REGISTER.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/REGISTER.vhd
-Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity reg
--- Compiling architecture behavioral of REG
+-- Compiling entity mux2_1
+-- Compiling architecture Behavioral of mux2_1
 
 } {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_MD_mas_MC_alumnos.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/testbench_MD_mas_MC_alumnos.vhd
 Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
@@ -284,13 +272,25 @@ Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
 -- Compiling entity testbench_MD_mas_MC
 -- Compiling architecture behavior of testbench_MD_mas_MC
 
-} {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_EX.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_EX.vhd
+} {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/REGISTER.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/REGISTER.vhd
 Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity Banco_EX
--- Compiling architecture Behavioral of Banco_EX
+-- Loading package NUMERIC_STD
+-- Compiling entity reg
+-- Compiling architecture behavioral of REG
+
+} {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_mas_MC_mas_scratch_2023.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/MD_mas_MC_mas_scratch_2023.vhd
+Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity MD_mas_MC
+-- Compiling architecture Behavioral of MD_mas_MC
 
 } {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_ID.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_ID.vhd
 Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
@@ -299,5 +299,13 @@ Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
 -- Loading package std_logic_1164
 -- Compiling entity Banco_ID
 -- Compiling architecture Behavioral of Banco_ID
+
+} {} {}} C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_EX.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Alen/Desktop/Ingenieria_informatica/2/2_cuatri/AOC2/proyectos/proyecto_2/AOC_P2/fuentes/Banco_EX.vhd
+Model Technology ModelSim Microsemi vcom 10.5c Compiler 2016.07 Jul 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Banco_EX
+-- Compiling architecture Behavioral of Banco_EX
 
 } {} {}}
