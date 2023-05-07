@@ -159,13 +159,13 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 	next_error_state <= error_state; -- por defecto se mantiene el estado
 	load_addr_error <= '0';
 
-        -- Estado Inicio          
+    -- Estado Inicio          
     if (state = Beginning) then 
 	    -- algunos ejemplos de las cosas que pueden pasar:
     	if (RE= '0' and WE= '0') then -- si no piden nada no hacemos nada
 			next_state <= Beginning;
 			ready <= '1';
-		elsif (state = Beginning) and ((RE= '1') or (WE= '1')) and  (unaligned ='1') then -- si el procesador quiere leer una direcci�n no alineada
+		elsif (state = Beginning) and ((RE= '1') or (WE= '1')) and (unaligned ='1') then -- si el procesador quiere leer una direcci�n no alineada
 			-- Se procesa el error y se ignora la solicitud
 			next_state <= Beginning;
 			ready <= '1';
@@ -179,76 +179,91 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 		elsif (state = Beginning and RE = '1' and  hit ='1') then -- si piden y es acierto de lectura mandamos el dato
 	        next_state <= Beginning;
 			ready <= '1';
-			mux_output <= "00"; -- Completar. Es el valor por defecto. �Qu� valor hay que poner? La salida es un dato almacenado en la MC
+			mux_output <= "00";
 		elsif (state = Beginning and ((WE = '1') OR (hit = '0'))) then -- escritura o fallo de lectura
-			next_state <= Refereeing; --Vamos al estado de arbitraje
-			ready <= '0';
-
+			next_state <= Refereeing; --Vamos al estado de arbitraje para pedir el bus
+			ready <= '0'; --No estamos listos para dar el dato
 		end if;
 	        
 	elsif (state = Refereeing) then --Estado de arbitraje
 		
 		Bus_req <= '1'; -- Pedimos el bus
-		if (Bus_grant = '0') then --No me dan el bus porque está ocupado
+		if (Bus_grant = '0') then --No me dan el bus y tengo que esperar
 			
-		 	next_state <= Refereeing;
-			
+		 	next_state <= Refereeing; --Seguire en el estado de arbitraje en el siguiente ciclo
 			ready <= '0';
-		else
+		else --Me han dado el bus y puedo empezar a trabajar
 		
-			MC_send_addr_ctrl <= '1';
+			MC_send_addr_ctrl <= '1'; 
 			
 			
-			if (Bus_DevSel = '0') then --Comprobamos si existe un periférico
-				next_state <= Beginning;
+			if (Bus_DevSel = '0') then --Si ningun dispositivo me responde
+				next_state <= Beginning;  	--Vuelvo al estado inicial
 				next_error_state <= memory_error;
-				load_addr_error <= '1'; 
+				load_addr_error <= '1';
 				ready <= '1';
-			else 
+			else --Si algun dispositivo me responde
 				if (Bus_grant = '1' and WE = '1' and addr_non_cacheable = '1' ) then -- Me han dado el permiso sobre el bus y, es un hit, y es una escritura en una dirección no cacheable
-					MC_bus_Rd_Wr <= '1';
-					next_state <= Carry_word_to_memory;
+					MC_bus_Rd_Wr <= '1'; -- Operación de escritura en servidor
+					next_state <= Carry_word_to_memory; --Voy al estado de escritura en memoria cache
 					
 				elsif (Bus_grant = '1' and hit = '1' and WE = '1' and addr_non_cacheable = '0' ) then  -- Me han dado el permiso sobre el bus y, es un hit, y es una escritura en una dirección cacheable por lo tanto escribo en Cache	
-					MC_bus_Rd_Wr <= '1';
-					next_state <= Carry_word_to_memory;
-					mux_origen <= '0';
-					if (hit0 = '1') then
-						MC_WE0 <= '1'; -- Escribo en la MC
-					elsif (hit1 = '1') then
-						MC_WE1 <= '1';
+					MC_bus_Rd_Wr <= '1'; -- Operación de escritura en servidor
+					next_state <= Carry_word_to_memory; --Voy al estado de escritura en memoria cache
+
+					--Además de ir a escribir en la MD, tengo que escribir en la MC
+					mux_origen <= '0'; -- Pongo el mux de origen a 0 para que escriba en la MC lo que viene desde Din
+	
+					if (hit0 = '1') then -- Si es un hit en la vía 0
+						MC_WE0 <= '1'; -- Escribo en la Via 0
+					elsif (hit1 = '1') then --Si es un hit en la vía 1
+						MC_WE1 <= '1'; -- Escribo en la Via 1
 					end if;
 
 				elsif (Bus_grant = '1' and hit = '0') then -- Me han dado el permiso sobre el bus y, es un miss (importante poner esta la última porque si no si es WE miss de scratch, se ejecutaría)
-					MC_bus_Rd_Wr <= '0';
+					MC_bus_Rd_Wr <= '0'; -- Operación de lectura en servidor
 					
-					next_state <= Bring_block_to_cache;
-					if (addr_non_cacheable = '0') then
-						block_addr <= '1'; -- En el caso de que no se lea de Scratch,  indicaremos que la dirección es la del bloque.
+					next_state <= Bring_block_to_cache; --Voy al estado de traer bloque a cache
+
+					if (addr_non_cacheable = '0') then -- Si es una dirección cacheable
+
+						block_addr <= '1'; --Indicaremos que la dirección es la del bloque.
+						
 					end if;
 					
 				end if;
+
 		 	end if;
+			
 		end if;
+
 	elsif (state = Bring_block_to_cache) then --Estado MP/MS -> MC
-		Frame <= '1';
-		if (state = Bring_block_to_cache and (bus_TRDY = '0')) then -- Algun slave me ha respondido, pero aun no esta listo.
-			next_state <= Bring_block_to_cache; -- Espero en el mismo ciclo, hasta que me digan que esta listo.
-		else	
+		Frame <= '1';  -- Activamos Frame debido a que vamos a realizar una operacion usando el Bus y así el arbitro no se lo da a otro dispositivo.
 		
-			if ( state = Bring_block_to_cache and via_2_rpl = '0' and addr_non_cacheable = '0' ) then
-				MC_WE0 <= '1';
-			elsif (via_2_rpl = '1' and addr_non_cacheable = '0' )  then
-				MC_WE1 <= '1';
+		if (state = Bring_block_to_cache and (bus_TRDY = '0')) then -- Algun slave me ha respondido, pero aun no esta listo.
+			
+			next_state <= Bring_block_to_cache; -- Seguire en el estado de traer bloque a cache en el siguiente ciclo.
+		
+		else -- Si el servidor esta listo.
+		
+			if ( state = Bring_block_to_cache and via_2_rpl = '0' and addr_non_cacheable = '0' ) then -- Si la vía a reemplazar es la 0 y la dirección es cacheable.
+
+				MC_WE0 <= '1'; -- Doy permiso de escritura a la vía 0.
+				
+			elsif (via_2_rpl = '1' and addr_non_cacheable = '0' )  then -- Si la vía a reemplazar es la 1 y la dirección es cacheable.
+
+				MC_WE1 <= '1'; -- Doy permiso de escritura a la vía 1.
+
 			end if;
 
 			if (state = Bring_block_to_cache and (bus_TRDY = '1' and addr_non_cacheable = '1')) then -- El slave esta preparado y la dirección no es cacheable (pertenece a la Scratch)
 				next_state <= Beginning; 
 				mux_output <= "01"; -- Mando a Dout el contenido del bus
-				ready <= '1';
+				ready <= '1'; -- Indico que la operación se procesa en este ciclo
+
 			elsif (state = Bring_block_to_cache and (bus_TRDY = '1' and last_word_block = '0' )) then -- Aun estoy mandado palabras del bloque y aun no es la ultima.
 				next_state <= Bring_block_to_cache; -- Sigo mandando palabras hasta llegar a la ultima.
-				mux_origen <= '1';
+				mux_origen <= '1'; -- Pongo el mux de origen a 1 para que escriba en la MC lo que viene desde el bus
 				count_enable <= '1';
 				
 				
@@ -256,28 +271,29 @@ Mem_ERROR <= '1' when (error_state = memory_error) else '0';
 				next_state <= Beginning;
 				last_Word <= '1'; -- Aviso de que es la útlima palabra.
 				count_enable <= '1';
-				MC_tags_WE <= '1';
-				mux_origen <= '1';
+				MC_tags_WE <= '1'; -- Escribo el nuevo tag
+				mux_origen <= '1'; -- Pongo el mux de origen a 1 para que escriba en la MC lo que viene desde el bus
 				inc_m <= '1';
+				
 			elsif (state = Bring_block_to_cache and (bus_TRDY = '1' and last_word_block = '1' and WE = '1')) then -- Me solicitan una acción de escritura y ya tengo el bloque correcto en la Cache.
 				count_enable <= '1';
-				MC_tags_WE <= '1';
+				MC_tags_WE <= '1'; -- Escribo el nuevo tag
 				next_state <= Refereeing;
-				mux_origen <= '1';
+				mux_origen <= '1'; -- Pongo el mux de origen a 1 para que escriba en la MC lo que viene desde el bus
 				last_Word <= '1'; -- Aviso de que es la útlima palabra.
 				inc_m <= '1';
 			end if;
 		end if;	
 	elsif (state = Carry_word_to_memory) then --Estado de MC -> MP/MS
-		Frame <= '1';
-		if (state = Carry_word_to_memory and (bus_TRDY = '0')) then
-			next_state <= Carry_word_to_memory; -- Espero a que el slave este listo.
+		Frame <= '1'; -- Indicamos que aun no hemos terminado la operación soliticada
+		if (state = Carry_word_to_memory and (bus_TRDY = '0')) then -- Entramos en bucle hasta que el slave este listo.
+			next_state <= Carry_word_to_memory;
 
 		elsif (state = Carry_word_to_memory and (bus_TRDY = '1')) then 
 			next_state <= Beginning;
 			last_Word <= '1'; -- Aviso de que es la útlima palabra.
 			MC_send_data <= '1'; -- Envio la palabra.
-			ready <= '1';
+			ready <= '1'; -- Indicamos que la operación se procesa en este ciclo
 			inc_w <= '1';	
 		end if;
 	end if;
