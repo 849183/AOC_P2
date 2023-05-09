@@ -615,12 +615,12 @@ begin
 							port map (clk => clk, reset => reset, count_enable => inc_memory_stalls, count => paradas_mem);
 	------------------------------------------------------------------------------------
 	-- Completar:
-	-- Modificado 18/04/2023
+	-- Modificado 08/05/2023
 	inc_cycles <= '1';--Done
 	inc_I <= valid_I_WB;
 	-- Añadimos la señal Mem_ready, para no contar ciclos innecesarios.
 	inc_data_stalls <= parar_ID and not Exception_accepted and Mem_ready; 
-	inc_control_stalls <= salto_tomado and not parar_ID and Mem_ready; 
+	inc_control_stalls <= salto_tomado and not parar_ID and Mem_ready;  -- La señal Mem_ready es innecesaria, pero la mantenemos por legibilidad de código
 
 	inc_memory_stalls <= not Mem_ready;
 	inc_Exceptions <= Exception_accepted;
